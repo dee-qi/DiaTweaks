@@ -181,7 +181,8 @@ static NSMenuItem *DPPeekItemFor(NSMenu *menu, NSEvent *event) {
 // The new tab and window shortcuts, wherever the user has put them, act on the window and not on the tab behind the card.
 static BOOL DPPeekWindowCommand(NSEvent *event) {
     if (!(event.modifierFlags & NSEventModifierFlagCommand)) return NO;
-    return [@[ @"New Tab", @"New Window", @"New Incognito Window" ] containsObject:DPPeekItemFor(NSApp.mainMenu, event).title ?: @""];
+    NSString *title = DPPeekItemFor(NSApp.mainMenu, event).title;
+    return DPTextMatches(title, @"New Tab") || DPTextMatches(title, @"New Window") || DPTextMatches(title, @"New Incognito Window");
 }
 
 // A focused Peek page swallows the shortcuts Dia's tabs pass on to the menu. ⌘S and every ⌃ shortcut, such as ⌃Tab and ⌃1–9, go on to it.

@@ -55,6 +55,6 @@ void DPInstallAutoPipHold(void) {
     DPHook(DPDiaTabList, @selector(handleBackgroundDoubleClick:), (IMP)DPTabList_backgroundDoubleClick);
     DPHook(DPDiaTabSurfaceButton, @selector(mouseDown:), (IMP)DPPlusButton_mouseDown);
     [NSNotificationCenter.defaultCenter addObserverForName:NSMenuWillSendActionNotification object:nil queue:nil usingBlock:^(NSNotification *note) {
-        if ([[note.userInfo[@"MenuItem"] title] isEqual:@"New Tab"]) DPHoldAutoPip();
+        if (DPTextMatches([note.userInfo[@"MenuItem"] title], @"New Tab")) DPHoldAutoPip();
     }];
 }

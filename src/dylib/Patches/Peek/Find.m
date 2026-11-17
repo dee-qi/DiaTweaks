@@ -32,7 +32,7 @@ static const CGFloat DPFindWidth = 260, DPFindHeight = 30, DPFindMargin = 8, DPF
     self.layer.cornerCurve = kCACornerCurveContinuous;
     self.layer.borderWidth = 1 / (peek.window.backingScaleFactor ?: 2);
     self.field = [NSSearchField new];
-    self.field.placeholderString = @"Find in page";
+    self.field.placeholderString = DPLocalize(@"Find in page", @"tweaks");
     self.field.delegate = self;
     self.count = [NSTextField labelWithString:@""];
     self.count.textColor = NSColor.secondaryLabelColor;

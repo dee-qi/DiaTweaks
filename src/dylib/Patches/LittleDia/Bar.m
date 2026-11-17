@@ -64,6 +64,7 @@ void DPMatchPage(NSView *row, id page) {
 
 - (instancetype)initWithSymbol:(NSString *)symbol size:(CGFloat)size label:(NSString *)label {
     if (!(self = [super initWithFrame:NSZeroRect])) return nil;
+    label = DPLocalize(label, @"tweaks");
     self.bordered = NO;
     self.wantsLayer = YES;
     self.layer.cornerRadius = 6;
@@ -167,12 +168,12 @@ static NSButton *DPMakeOpenInDiaButton(void (^action)(void)) {
     button.pillIcon = [NSImageView imageViewWithImage:button.image];
     button.image = nil;
     button.pillIcon.frame = NSMakeRect(10, 6, 16, 16);
-    button.pillLabel = [NSTextField labelWithString:@"Open in Dia"];
+    button.pillLabel = [NSTextField labelWithString:DPLocalize(@"Open in Dia", @"tweaks")];
     button.pillLabel.font = [NSFont systemFontOfSize:13];
     button.pillLabel.frame = NSMakeRect(30, 6, ceil(button.pillLabel.intrinsicContentSize.width), 16);
     [button addSubview:button.pillIcon];
     [button addSubview:button.pillLabel];
-    button.toolTip = @"Open this page in a tab (⌘O)";
+    button.toolTip = DPLocalize(@"Open this page in a tab (⌘O)", @"tweaks");
     button.keyEquivalent = @"o";
     button.keyEquivalentModifierMask = NSEventModifierFlagCommand;
     button.handler = action;

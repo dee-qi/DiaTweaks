@@ -201,5 +201,68 @@
     "contexts": [
       "tweaks"
     ]
+  },
+  "tweak.upstream.open.links.from.tabs": {
+    "en": "Open Links from Tabs",
+    "zh-Hans": "从标签页打开链接",
+    "contexts": [
+      "tweaks"
+    ]
+  },
+  "tweak.upstream.open.links.from": {
+    "en": "Open Links From",
+    "zh-Hans": "打开以下标签页中的链接",
+    "contexts": [
+      "tweaks"
+    ]
+  },
+  "tweak.upstream.pinned.tabs": {
+    "en": "Pinned Tabs",
+    "zh-Hans": "固定标签页",
+    "contexts": [
+      "tweaks"
+    ]
+  },
+  "tweak.upstream.all.tabs": {
+    "en": "All Tabs",
+    "zh-Hans": "所有标签页",
+    "contexts": [
+      "tweaks"
+    ]
+  },
+  "tweak.upstream.find.in.page": {
+    "en": "Find in page",
+    "zh-Hans": "在页面中查找",
+    "contexts": [
+      "tweaks"
+    ]
+  },
+  "tweak.upstream.previous": {
+    "en": "Previous",
+    "zh-Hans": "上一个",
+    "contexts": [
+      "tweaks"
+    ]
+  },
+  "tweak.upstream.next": {
+    "en": "Next",
+    "zh-Hans": "下一个",
+    "contexts": [
+      "tweaks"
+    ]
+  },
+  "tweak.upstream.open.this.page.in.a.tab.o": {
+    "en": "Open this page in a tab (⌘O)",
+    "zh-Hans": "在标签页中打开此页面（⌘O）",
+    "contexts": [
+      "tweaks"
+    ]
+  },
+  "tweak.upstream.links.that.would.open.a.new.tab.open.in.little.dia.over.the.page.instead.choose.pinned.tabs.only.inc": {
+    "en": "Links that would open a new tab open in Little Dia over the page instead. Choose pinned tabs only, including links that leave a pinned tab's site, or every tab. Clicks with Option, Command, Shift or Control held keep their usual meaning. Experimental.",
+    "zh-Hans": "将原本会在新标签页中打开的链接改为在页面上方的 Little Dia 小窗口中打开。可选择仅固定标签页（包括离开固定网站的链接）或所有标签页。按住 Option、Command、Shift 或 Control 点击时保留原有行为。此功能为实验性功能。",
+    "contexts": [
+      "tweaks"
+    ]
   }
 }
