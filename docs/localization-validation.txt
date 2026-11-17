@@ -117,3 +117,8 @@ Final live regression: sidebar vertical 115 scenarios / 0 problems (before error
 2026-11-18 — Horizontal tab strip follow-up
 Added missing New tab tooltip context and menu entries for New Group, New Live Group, Edit Profile, Bookmark All Tabs plus live-group/profile submenu labels. Existing identifiers and actions unchanged. Build, localization/native checks passed; SwiftUI tooltip ABI stress now exercises New tab across 16,000 translations.
 Installed via install.sh; Computer Use verified horizontal tab-strip menu and its submenu text in Chinese, screenshot build/verification/tabstrip-menu-zh.png. Original sidebar layout restored. New tab physical hover was not independently observed (tool has no hover-only action); initialization/reuse tested through actual SwiftUI Text ABI.
+
+2026-11-18 — Contribution review refactor
+Split native adapter into shared text helpers, scope checks, per-view translation, menu hooks, control hooks and bundle hooks; moved Dia class/scope constants into StdPatch/Dia.h. Production Localization files are at most 99 lines. Fixed README and developer guide language-selector path and tooltip stress count.
+make, install.sh --yes, make check and scripts/check-tweak-docs passed (81 wiki pages). Live regression after split: vertical 115/0 and horizontal 115/0. The final header-only class-name centralization was included in the top run. Reports build/contribution-sidebar-report.json and build/contribution-top-report.json. Sidebar restored through Computer Use. No changes to user tabs or shortcuts.
+PR draft and cropped static before/after proof added. Historical commit cleanup and whether to claim transition/performance improvements remain pending user choices; no PR published.
