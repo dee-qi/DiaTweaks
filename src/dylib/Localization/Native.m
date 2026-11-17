@@ -79,6 +79,9 @@ static BOOL DPBookmarksTab(NSView *view) {
 
 static BOOL DPSettingsView(NSView *view) {
     if (DPBookmarksTab(view)) return YES;
+    // NativeError uses ordinary AppKit labels under its view controller.
+    for (NSView *ancestor = view; ancestor; ancestor = ancestor.superview)
+        if ([NSStringFromClass(ancestor.nextResponder.class) containsString:@"NativeErrorViewController"]) return YES;
     if (DPHasAncestor(view, @"_TtC14AssistantPanel24AssistantPanelHeaderView")
         || [view.accessibilityIdentifier isEqual:@"commandBarToolbarButton"]) return YES;
     if (DPHasAncestor(view, @"ChatPlaceholderMessageView") || DPHasAncestor(view, @"AssistantPanel.ContextBundleUpsellView")) return YES;
@@ -290,16 +293,16 @@ static void DPField_richPlaceholder(NSTextField *self, SEL _cmd, NSAttributedStr
 static NSString *DPBundle_tooltip(NSBundle *self, SEL _cmd, NSString *key, NSString *value, NSString *table) {
     NSString *original = DPCallOriginal(DPBundle_tooltip, self, key, value, table);
     if (self != NSBundle.mainBundle) return original;
-    return DPLocalize(DPLocalize(DPLocalize(DPLocalize(original, @"tooltip"), @"newtab"), @"shortcut"), @"chat");
+    return DPLocalize(DPLocalize(DPLocalize(DPLocalize(DPLocalize(original, @"tooltip"), @"newtab"), @"shortcut"), @"chat"), @"native-error");
 }
 
 static NSString *DPBundle_tooltipLocales(NSBundle *self, SEL _cmd, NSString *key, NSString *value, NSString *table, NSArray *localizations) {
     NSString *original = DPCallOriginal(DPBundle_tooltipLocales, self, key, value, table, localizations);
-    return self == NSBundle.mainBundle ? DPLocalize(DPLocalize(DPLocalize(DPLocalize(original, @"tooltip"), @"newtab"), @"shortcut"), @"chat") : original;
+    return self == NSBundle.mainBundle ? DPLocalize(DPLocalize(DPLocalize(DPLocalize(DPLocalize(original, @"tooltip"), @"newtab"), @"shortcut"), @"chat"), @"native-error") : original;
 }
 static NSAttributedString *DPBundle_tooltipAttributed(NSBundle *self, SEL _cmd, NSString *key, NSString *value, NSString *table) {
     NSAttributedString *original = DPCallOriginal(DPBundle_tooltipAttributed, self, key, value, table);
-    return self == NSBundle.mainBundle ? DPRichTranslation(DPRichTranslation(DPRichTranslation(DPRichTranslation(original, @"tooltip"), @"newtab"), @"shortcut"), @"chat") : original;
+    return self == NSBundle.mainBundle ? DPRichTranslation(DPRichTranslation(DPRichTranslation(DPRichTranslation(DPRichTranslation(original, @"tooltip"), @"newtab"), @"shortcut"), @"chat"), @"native-error") : original;
 }
 
 extern BOOL DPInstallTooltipImport(void);

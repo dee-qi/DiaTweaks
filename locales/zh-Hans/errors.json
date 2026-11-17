@@ -1,0 +1,99 @@
+{
+  "error.ui.couldn.t.load.this.artifact": {
+    "en": "Couldn’t load this artifact",
+    "zh-Hans": "无法加载此作品",
+    "contexts": [
+      "native-error",
+      "settings"
+    ]
+  },
+  "error.ui.this.tab.needs.to.reload": {
+    "en": "This tab needs to reload",
+    "zh-Hans": "此标签页需要重新加载",
+    "contexts": [
+      "native-error",
+      "settings"
+    ]
+  },
+  "error.ui.this.page.isn.t.available.here": {
+    "en": "This page isn’t available here",
+    "zh-Hans": "此页面在当前设备上不可用",
+    "contexts": [
+      "native-error",
+      "settings"
+    ]
+  },
+  "error.ui.this.artifact.isn.t.available.here": {
+    "en": "This artifact isn’t available here",
+    "zh-Hans": "此作品在当前设备上不可用",
+    "contexts": [
+      "native-error",
+      "settings"
+    ]
+  },
+  "error.ui.this.chat.isn.t.available.here": {
+    "en": "This chat isn’t available here",
+    "zh-Hans": "此聊天在当前设备上不可用",
+    "contexts": [
+      "native-error",
+      "settings"
+    ]
+  },
+  "error.ui.dia.couldn.t.load.this.artifact.try.reloading": {
+    "en": "Dia couldn’t load this artifact. Try reloading.",
+    "zh-Hans": "Dia 无法加载此作品，请尝试重新加载。",
+    "contexts": [
+      "native-error",
+      "settings"
+    ]
+  },
+  "error.ui.something.went.wrong.with.this.tab.reloading.often.fixes.it": {
+    "en": "Something went wrong with this tab. Reloading often fixes it.",
+    "zh-Hans": "此标签页出现了问题，重新加载通常可以解决。",
+    "contexts": [
+      "native-error",
+      "settings"
+    ]
+  },
+  "error.ui.this.kind.of.page.doesn.t.yet.sync.between.your.devices.open.dia.on.the.device.that.c": {
+    "en": "This kind of page doesn’t yet sync between your devices. Open Dia on the device that created it to see it.",
+    "zh-Hans": "此类页面暂不支持在设备间同步。请在创建此页面的设备上打开 Dia 查看。",
+    "contexts": [
+      "native-error",
+      "settings"
+    ]
+  },
+  "error.ui.artifacts.don.t.yet.sync.between.your.devices.open.dia.on.the.device.you.created.this": {
+    "en": "Artifacts don’t yet sync between your devices. Open Dia on the device you created this artifact on to see it.",
+    "zh-Hans": "作品暂不支持在设备间同步。请在创建此作品的设备上打开 Dia 查看。",
+    "contexts": [
+      "native-error",
+      "settings"
+    ]
+  },
+  "error.ui.chats.don.t.yet.sync.between.your.devices.open.dia.on.the.device.you.created.this.cha": {
+    "en": "Chats don’t yet sync between your devices. Open Dia on the device you created this chat on to see it.",
+    "zh-Hans": "聊天暂不支持在设备间同步。请在创建此聊天的设备上打开 Dia 查看。",
+    "contexts": [
+      "native-error",
+      "settings"
+    ]
+  },
+  "error.ui.learn.more": {
+    "en": "Learn more",
+    "zh-Hans": "了解更多",
+    "contexts": [
+      "native-error",
+      "settings"
+    ]
+  },
+  "error.code": {
+    "en": "Code %1$@",
+    "zh-Hans": "错误代码 %1$@",
+    "contexts": [
+      "settings"
+    ],
+    "pattern": "^Code ([0-9]+)$",
+    "prefix": "Code "
+  }
+}
