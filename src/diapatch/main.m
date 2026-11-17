@@ -298,7 +298,11 @@ static BOOL sign(NSString *app) {
         @"com.apple.security.device.camera" : @YES,
         @"com.apple.security.personal-information.location" : @YES,
     };
-    BOOL ok = ([granted writeToURL:entitlements error:NULL] || fail(@"cannot write %@", entitlements.path))
+    // Localization updates ArcCore's sealed locale packs. Re-sign the nested
+    // framework before the outer app so its resource seal covers those bytes.
+    NSString *core = [app stringByAppendingPathComponent:@"Contents/Frameworks/ArcCore.framework"];
+    BOOL ok = check([codesign arrayByAddingObject:core])
+        && ([granted writeToURL:entitlements error:NULL] || fail(@"cannot write %@", entitlements.path))
         && check([codesign arrayByAddingObjectsFromArray:@[ @"--entitlements", entitlements.path, app ]]);
     [NSFileManager.defaultManager removeItemAtURL:entitlements error:NULL];
     if (ok) note(@"signed %@ with %@", app, codesign[4]);
