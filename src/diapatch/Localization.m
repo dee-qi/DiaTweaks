@@ -29,6 +29,47 @@ NSData *DPTranslateLocalePack(NSData *data, NSDictionary<NSString *, NSString *>
     return out;
 }
 
+// Only the dedicated onboarding renderer's title/subtitle fields are adapted.
+// No DOM scanning, response text replacement, or user-content interception.
+NSString *DPTranslateChatHints(NSString *script, NSDictionary *translations) {
+    if ([script containsString:@"const __dpHintText="]) return script;
+    if (![script containsString:@"--hint-image-width"] || ![script containsString:@"t.hint.subtitle"]) return script;
+    if ([script componentsSeparatedByString:@"t.hint.title"].count != 3
+        || [script componentsSeparatedByString:@"t.hint.subtitle"].count != 2) return script;
+    NSData *json = [NSJSONSerialization dataWithJSONObject:translations options:NSJSONWritingSortedKeys error:nil];
+    if (!json) return script;
+    NSString *map = [[NSString alloc] initWithData:json encoding:NSUTF8StringEncoding];
+    NSString *prefix = [NSString stringWithFormat:@"const __dpHintText=(s)=>(%@)[navigator.language.toLowerCase()]?.[s]??s;\n", map];
+    NSString *result = [script stringByReplacingOccurrencesOfString:@"t.hint.title" withString:@"__dpHintText(t.hint.title)"];
+    result = [result stringByReplacingOccurrencesOfString:@"t.hint.subtitle" withString:@"__dpHintText(t.hint.subtitle)"];
+    return [prefix stringByAppendingString:result];
+}
+
+static BOOL DPPrepareChatHints(NSString *app, NSDictionary *resource) {
+    NSMutableDictionary *maps = [NSMutableDictionary new];
+    for (NSDictionary *language in resource[@"languages"]) {
+        NSMutableDictionary *strings = [NSMutableDictionary new];
+        for (NSDictionary *entry in [resource[@"messages"] allValues])
+            if ([entry[@"contexts"] containsObject:@"chat-hint"] && entry[language[@"id"]]) strings[entry[@"en"]] = entry[language[@"id"]];
+        maps[[language[@"chromium"] lowercaseString]] = strings;
+    }
+    NSString *root = [app stringByAppendingPathComponent:@"Contents/Resources/web-chat-resources/dist/app/immutable/nodes"];
+    BOOL matched = NO;
+    for (NSString *name in [NSFileManager.defaultManager contentsOfDirectoryAtPath:root error:nil]) {
+        if (![name.pathExtension isEqual:@"js"]) continue;
+        NSString *path = [root stringByAppendingPathComponent:name];
+        NSString *source = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+        if (!source) continue;
+        NSString *result = DPTranslateChatHints(source, maps);
+        if (![result isEqual:source]) {
+            matched = YES;
+            if (![result writeToFile:path atomically:YES encoding:NSUTF8StringEncoding error:nil]) return NO;
+        } else if ([source containsString:@"const __dpHintText="]) matched = YES;
+    }
+    if (!matched) fprintf(stderr, "warning: unsupported chat hint renderer; kept original resources\n");
+    return YES;
+}
+
 BOOL DPPrepareLocalization(NSString *app) {
     NSDictionary *resource = [NSJSONSerialization JSONObjectWithData:[NSData dataWithBytes:DPCatalogBytes length:sizeof DPCatalogBytes] options:0 error:nil];
     NSString *infoPath = [app stringByAppendingPathComponent:@"Contents/Info.plist"];
@@ -50,6 +91,7 @@ BOOL DPPrepareLocalization(NSString *app) {
         if (!localized) { fprintf(stderr, "warning: unsupported Chromium language pack; kept its original resources\n"); continue; }
         if (![localized isEqual:data] && ![localized writeToFile:path options:NSDataWritingAtomic error:nil]) return NO;
     }
+    if (!DPPrepareChatHints(app, resource)) return NO;
     info[@"CFBundleLocalizations"] = languages.array;
     return [info writeToFile:infoPath atomically:YES];
 }

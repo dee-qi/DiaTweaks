@@ -1,0 +1,399 @@
+{
+  "chat.ui.translate.this.page": {
+    "en": "Translate this page",
+    "zh-Hans": "翻译此页面",
+    "contexts": [
+      "chat",
+      "menu",
+      "tooltip",
+      "settings"
+    ]
+  },
+  "chat.ui.translate.to.english": {
+    "en": "Translate to English",
+    "zh-Hans": "翻译成英语",
+    "contexts": [
+      "chat",
+      "menu",
+      "tooltip",
+      "settings"
+    ]
+  },
+  "chat.ui.choose.another.language": {
+    "en": "Choose Another Language",
+    "zh-Hans": "选择其他语言",
+    "contexts": [
+      "chat",
+      "menu",
+      "tooltip",
+      "settings"
+    ]
+  },
+  "chat.ui.never.translate.this.site": {
+    "en": "Never Translate This Site",
+    "zh-Hans": "永不翻译此网站",
+    "contexts": [
+      "chat",
+      "menu",
+      "tooltip",
+      "settings"
+    ]
+  },
+  "chat.ui.language.settings": {
+    "en": "Language Settings",
+    "zh-Hans": "语言设置",
+    "contexts": [
+      "chat",
+      "menu",
+      "tooltip",
+      "settings"
+    ]
+  },
+  "chat.ui.hide.chat": {
+    "en": "Hide chat",
+    "zh-Hans": "隐藏聊天",
+    "contexts": [
+      "chat",
+      "menu",
+      "tooltip",
+      "settings"
+    ]
+  },
+  "chat.ui.show.chat": {
+    "en": "Show chat",
+    "zh-Hans": "显示聊天",
+    "contexts": [
+      "chat",
+      "menu",
+      "tooltip",
+      "settings"
+    ]
+  },
+  "chat.ui.view.options": {
+    "en": "View Options",
+    "zh-Hans": "视图选项",
+    "contexts": [
+      "chat",
+      "menu",
+      "tooltip",
+      "settings"
+    ]
+  },
+  "chat.ui.view.options.case": {
+    "en": "View options",
+    "zh-Hans": "视图选项",
+    "contexts": [
+      "chat",
+      "menu",
+      "tooltip",
+      "settings"
+    ]
+  },
+  "chat.ui.floating": {
+    "en": "Floating",
+    "zh-Hans": "浮动窗口",
+    "contexts": [
+      "chat",
+      "menu",
+      "tooltip",
+      "settings"
+    ]
+  },
+  "chat.ui.open.in.new.tab": {
+    "en": "Open in New Tab",
+    "zh-Hans": "在新标签页中打开",
+    "contexts": [
+      "chat",
+      "menu",
+      "tooltip",
+      "settings"
+    ]
+  },
+  "chat.ui.capture.tool": {
+    "en": "Capture Tool",
+    "zh-Hans": "截图工具",
+    "contexts": [
+      "chat",
+      "menu",
+      "tooltip",
+      "settings"
+    ]
+  },
+  "chat.ui.what.s.the.story.behind.this.painting": {
+    "en": "What's the story behind this painting?",
+    "zh-Hans": "这幅画背后有什么故事？",
+    "contexts": [
+      "chat",
+      "menu",
+      "tooltip",
+      "settings"
+    ]
+  },
+  "chat.ui.ask.about.something.you.see": {
+    "en": "Ask about something you see",
+    "zh-Hans": "询问你看到的内容",
+    "contexts": [
+      "chat",
+      "menu",
+      "tooltip",
+      "settings",
+      "chat-hint"
+    ]
+  },
+  "chat.ui.click.the.camera.to.add.a.screen.capture": {
+    "en": "Click the camera to add a screen capture",
+    "zh-Hans": "点击相机按钮添加屏幕截图",
+    "contexts": [
+      "chat",
+      "menu",
+      "tooltip",
+      "settings",
+      "chat-hint"
+    ]
+  },
+  "chat.ui.ask.a.question.about.this.page": {
+    "en": "Ask a question about this page",
+    "zh-Hans": "询问此页面的相关问题",
+    "contexts": [
+      "chat",
+      "menu",
+      "tooltip",
+      "settings"
+    ]
+  },
+  "chat.ui.ask.a.question.about.this.page.dots": {
+    "en": "Ask a question about this page...",
+    "zh-Hans": "询问此页面的相关问题…",
+    "contexts": [
+      "chat",
+      "menu",
+      "tooltip",
+      "settings"
+    ]
+  },
+  "chat.ui.ask.a.question.about.this.page.ellipsis": {
+    "en": "Ask a question about this page…",
+    "zh-Hans": "询问此页面的相关问题…",
+    "contexts": [
+      "chat",
+      "menu",
+      "tooltip",
+      "settings"
+    ]
+  },
+  "chat.ui.speak.to.type.hold": {
+    "en": "Speak to type - Hold",
+    "zh-Hans": "按住说话以输入",
+    "contexts": [
+      "chat",
+      "menu",
+      "tooltip",
+      "settings"
+    ]
+  },
+  "chat.ui.add.a.tab.or.file": {
+    "en": "Add a tab or file",
+    "zh-Hans": "添加标签页或文件",
+    "contexts": [
+      "chat",
+      "menu",
+      "tooltip",
+      "settings"
+    ]
+  },
+  "chat.ui.add.tabs.or.files": {
+    "en": "Add tabs or files",
+    "zh-Hans": "添加标签页或文件",
+    "contexts": [
+      "chat",
+      "menu",
+      "tooltip",
+      "settings"
+    ]
+  },
+  "chat.ui.add.a.screen.capture": {
+    "en": "Add a screen capture",
+    "zh-Hans": "添加屏幕截图",
+    "contexts": [
+      "chat",
+      "menu",
+      "tooltip",
+      "settings"
+    ]
+  },
+  "chat.ui.send.current.prompt.button": {
+    "en": "Send current prompt button",
+    "zh-Hans": "发送当前提问",
+    "contexts": [
+      "chat",
+      "menu",
+      "tooltip",
+      "settings"
+    ]
+  },
+  "chat.ui.send.chat.prompt.now": {
+    "en": "Send chat prompt now",
+    "zh-Hans": "立即发送聊天提问",
+    "contexts": [
+      "chat",
+      "menu",
+      "tooltip",
+      "settings"
+    ]
+  },
+  "chat.ui.mention.tabs.to.add.context": {
+    "en": "Mention tabs to add context",
+    "zh-Hans": "引用标签页以添加上下文",
+    "contexts": [
+      "chat",
+      "tooltip",
+      "settings",
+      "chat-hint"
+    ]
+  },
+  "chat.ui.type.to.mention.a.tab": {
+    "en": "Type @ to mention a tab",
+    "zh-Hans": "输入 @ 引用标签页",
+    "contexts": [
+      "chat",
+      "tooltip",
+      "settings",
+      "chat-hint"
+    ]
+  },
+  "chat.ui.send.prompt": {
+    "en": "Send prompt",
+    "zh-Hans": "发送提问",
+    "contexts": [
+      "chat",
+      "tooltip",
+      "settings"
+    ]
+  },
+  "chat.hint.better.youtube.support": {
+    "en": "Better YouTube support",
+    "zh-Hans": "更完善的 YouTube 支持",
+    "contexts": [
+      "chat-hint"
+    ]
+  },
+  "chat.hint.dia.can.now.read.the.transcript.of.any.youtube.video": {
+    "en": "Dia can now read the transcript of any YouTube video",
+    "zh-Hans": "Dia 现在可以读取任意 YouTube 视频的文字记录",
+    "contexts": [
+      "chat-hint"
+    ]
+  },
+  "chat.hint.better.google.sheets.support": {
+    "en": "Better Google Sheets support",
+    "zh-Hans": "更完善的 Google 表格支持",
+    "contexts": [
+      "chat-hint"
+    ]
+  },
+  "chat.hint.dia.can.now.read.any.sheet.inside.your.file.not.just.the.open.tab": {
+    "en": "Dia can now read any sheet inside your file, not just the open tab",
+    "zh-Hans": "Dia 现在可以读取文件中的所有工作表，而不仅是当前打开的一张",
+    "contexts": [
+      "chat-hint"
+    ]
+  },
+  "chat.hint.your.calendar.as.context": {
+    "en": "Your calendar as context",
+    "zh-Hans": "将日历用作上下文",
+    "contexts": [
+      "chat-hint"
+    ]
+  },
+  "chat.hint.your.channels.as.context": {
+    "en": "Your channels as context",
+    "zh-Hans": "将频道用作上下文",
+    "contexts": [
+      "chat-hint"
+    ]
+  },
+  "chat.hint.your.inbox.as.context": {
+    "en": "Your Inbox as context",
+    "zh-Hans": "将收件箱用作上下文",
+    "contexts": [
+      "chat-hint"
+    ]
+  },
+  "chat.hint.shortcuts.for.complex.tasks": {
+    "en": "Shortcuts for complex tasks",
+    "zh-Hans": "使用技能处理复杂任务",
+    "contexts": [
+      "chat-hint"
+    ]
+  },
+  "chat.hint.type.to.use.a.skill": {
+    "en": "Type / to use a skill",
+    "zh-Hans": "输入 / 使用技能",
+    "contexts": [
+      "chat-hint"
+    ]
+  },
+  "chat.placeholder.ask": {
+    "en": "Ask a question",
+    "zh-Hans": "输入你的问题",
+    "contexts": [
+      "settings",
+      "chat"
+    ]
+  },
+  "chat.placeholder.ask.dots": {
+    "en": "Ask a question...",
+    "zh-Hans": "输入你的问题…",
+    "contexts": [
+      "settings",
+      "chat"
+    ]
+  },
+  "chat.placeholder.ask.ellipsis": {
+    "en": "Ask a question…",
+    "zh-Hans": "输入你的问题…",
+    "contexts": [
+      "settings",
+      "chat"
+    ]
+  },
+  "chat.hint.calendar": {
+    "en": "Type @Calendar to work with GCal — anywhere in Dia",
+    "zh-Hans": "在 Dia 中随时输入 @Calendar 使用 Google 日历",
+    "contexts": [
+      "chat-hint"
+    ]
+  },
+  "chat.hint.slack": {
+    "en": "Type @Slack to reference channels, DMs, and activity — anywhere in Dia",
+    "zh-Hans": "在 Dia 中随时输入 @Slack 引用频道、私信和动态",
+    "contexts": [
+      "chat-hint"
+    ]
+  },
+  "chat.hint.gmail": {
+    "en": "Type @Gmail to find emails or write drafts — anywhere in Dia",
+    "zh-Hans": "在 Dia 中随时输入 @Gmail 查找邮件或起草回复",
+    "contexts": [
+      "chat-hint"
+    ]
+  },
+  "chat.tooltip.send.or.queue": {
+    "en": "Send or queue",
+    "zh-Hans": "发送或加入队列",
+    "contexts": [
+      "tooltip",
+      "settings",
+      "chat"
+    ]
+  },
+  "chat.tooltip.send.now": {
+    "en": "Send now and skip the queue",
+    "zh-Hans": "立即发送并跳过队列",
+    "contexts": [
+      "tooltip",
+      "settings",
+      "chat"
+    ]
+  }
+}

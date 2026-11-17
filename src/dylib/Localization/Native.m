@@ -79,6 +79,9 @@ static BOOL DPBookmarksTab(NSView *view) {
 
 static BOOL DPSettingsView(NSView *view) {
     if (DPBookmarksTab(view)) return YES;
+    if (DPHasAncestor(view, @"_TtC14AssistantPanel24AssistantPanelHeaderView")
+        || [view.accessibilityIdentifier isEqual:@"commandBarToolbarButton"]) return YES;
+    if (DPHasAncestor(view, @"ChatPlaceholderMessageView") || DPHasAncestor(view, @"AssistantPanel.ContextBundleUpsellView")) return YES;
     if (DPHasAncestor(view, @"NewTabPage.ConnectAppsUpsellView")
         || DPHasAncestor(view, @"NewTabPage.ConnectAppRowView")) return YES;
     if (DPHasAncestor(view, @"BookmarkTableCellView") || DPHasAncestor(view, @"AddressTableCellView")) return NO;
@@ -219,7 +222,10 @@ static void DPItem_title(NSMenuItem *self, SEL _cmd, NSString *title) {
 
 static NSAttributedString *DPPlaceholder_localized(NSView *self, SEL _cmd) {
     NSAttributedString *source = DPCallOriginal(DPPlaceholder_localized, self);
-    if (!DPSettingsView(self) && ![self.accessibilityIdentifier isEqual:@"commandBarTextField"]) return source;
+    if (!DPSettingsView(self) && ![self.accessibilityIdentifier isEqual:@"commandBarTextField"]) {
+        // Only the placeholder getter, never the editor contents or chat response.
+        return DPRichTranslation(source, @"chat");
+    }
     NSString *text = DPLocalize(source.string, @"settings");
     if (!source || [text isEqual:source.string]) return source;
     NSMutableAttributedString *translated = [source mutableCopy];
@@ -284,16 +290,16 @@ static void DPField_richPlaceholder(NSTextField *self, SEL _cmd, NSAttributedStr
 static NSString *DPBundle_tooltip(NSBundle *self, SEL _cmd, NSString *key, NSString *value, NSString *table) {
     NSString *original = DPCallOriginal(DPBundle_tooltip, self, key, value, table);
     if (self != NSBundle.mainBundle) return original;
-    return DPLocalize(DPLocalize(DPLocalize(original, @"tooltip"), @"newtab"), @"shortcut");
+    return DPLocalize(DPLocalize(DPLocalize(DPLocalize(original, @"tooltip"), @"newtab"), @"shortcut"), @"chat");
 }
 
 static NSString *DPBundle_tooltipLocales(NSBundle *self, SEL _cmd, NSString *key, NSString *value, NSString *table, NSArray *localizations) {
     NSString *original = DPCallOriginal(DPBundle_tooltipLocales, self, key, value, table, localizations);
-    return self == NSBundle.mainBundle ? DPLocalize(DPLocalize(DPLocalize(original, @"tooltip"), @"newtab"), @"shortcut") : original;
+    return self == NSBundle.mainBundle ? DPLocalize(DPLocalize(DPLocalize(DPLocalize(original, @"tooltip"), @"newtab"), @"shortcut"), @"chat") : original;
 }
 static NSAttributedString *DPBundle_tooltipAttributed(NSBundle *self, SEL _cmd, NSString *key, NSString *value, NSString *table) {
     NSAttributedString *original = DPCallOriginal(DPBundle_tooltipAttributed, self, key, value, table);
-    return self == NSBundle.mainBundle ? DPRichTranslation(DPRichTranslation(DPRichTranslation(original, @"tooltip"), @"newtab"), @"shortcut") : original;
+    return self == NSBundle.mainBundle ? DPRichTranslation(DPRichTranslation(DPRichTranslation(DPRichTranslation(original, @"tooltip"), @"newtab"), @"shortcut"), @"chat") : original;
 }
 
 extern BOOL DPInstallTooltipImport(void);

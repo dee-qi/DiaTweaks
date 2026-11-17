@@ -75,3 +75,7 @@ Welcome strings use the `newtab` context at main-bundle lookup, plus narrowly sc
 ### Shortcut descriptions and conflict menu
 
 `shortcuts.json` contains the individually enumerated shortcut descriptions and conflict-policy menu text. Exact `shortcut` resource lookups translate descriptions before their views are constructed, with the scoped settings adapter as fallback. Original actions and key bindings are untouched by the implementation. `docs/localization-shortcuts-90935.json` records 55 physically clicked, currently reachable items before and after installation. Profile 2–9 descriptions are catalogued but not live verified because only Profile 1 exists locally. Five AI-related rows hidden by TurnOffAI are excluded from the 55-item coverage claim.
+
+### Chat controls and onboarding hints
+
+`chat.json` separates native tooltip/menu/placeholder strings from `chat-hint` fields. The installer adapts only the packaged chat onboarding renderer’s two title references and one subtitle reference, guarded by its expected marker and occurrence counts. The locale is selected at runtime from Chromium’s `navigator.language`, so English and restart-based language switching retain their fallback behavior. This changes no conversation messages or AI responses and uses no DOM observer. Unknown renderer shapes remain untouched with an installer warning. Reinstall from the pristine app when catalogs change; the transformation is idempotent. Text baked into vendor illustration PNGs is outside this text adapter.

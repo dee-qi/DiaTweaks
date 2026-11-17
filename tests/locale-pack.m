@@ -16,5 +16,12 @@ int main(void) { @autoreleasepool {
     assert(!DPTranslateLocalePack([input subdataWithRange:NSMakeRange(0,20)], @{}));
     fixture[20]=2;
     assert(!DPTranslateLocalePack([NSData dataWithBytes:fixture length:sizeof fixture], @{}));
+    NSDictionary *hints = @{@"zh-cn": @{@"Hint": @"提示"}};
+    NSString *fixtureJS = @"const marker='--hint-image-width'; label(t.hint.title); title(t.hint.title); subtitle(t.hint.subtitle); response(message.text);";
+    NSString *patched = DPTranslateChatHints(fixtureJS, hints);
+    assert([patched containsString:@"label(__dpHintText(t.hint.title))"]);
+    assert([patched containsString:@"response(message.text)"]);
+    assert([DPTranslateChatHints(patched, hints) isEqual:patched]);
+    assert([DPTranslateChatHints(@"title(t.hint.title); response(message.text)", hints) isEqual:@"title(t.hint.title); response(message.text)"]);
     puts("locale-pack: offsets, aliases, untouched bytes, idempotence and corrupt input passed");
 } }
