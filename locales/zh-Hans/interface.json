@@ -4438,7 +4438,8 @@
       "menu",
       "settings",
       "tweaks",
-      "chrome"
+      "chrome",
+      "tooltip"
     ]
   },
   "native.go": {
@@ -5994,6 +5995,86 @@
     "zh-Hans": "或",
     "contexts": [
       "newtab",
+      "settings"
+    ]
+  },
+  "native.tabstrip.new.group": {
+    "en": "New Group",
+    "zh-Hans": "新建分组",
+    "contexts": [
+      "menu",
+      "settings"
+    ]
+  },
+  "native.tabstrip.new.live.group": {
+    "en": "New Live Group",
+    "zh-Hans": "新建动态分组",
+    "contexts": [
+      "menu",
+      "settings"
+    ]
+  },
+  "native.tabstrip.edit.profile.ellipsis": {
+    "en": "Edit Profile…",
+    "zh-Hans": "编辑个人资料…",
+    "contexts": [
+      "menu",
+      "settings"
+    ]
+  },
+  "native.tabstrip.edit.profile.dots": {
+    "en": "Edit Profile...",
+    "zh-Hans": "编辑个人资料…",
+    "contexts": [
+      "menu",
+      "settings"
+    ]
+  },
+  "native.tabstrip.bookmark.all.tabs": {
+    "en": "Bookmark All Tabs",
+    "zh-Hans": "将所有标签页加入书签",
+    "contexts": [
+      "menu",
+      "settings"
+    ]
+  },
+  "native.tabstrip.live.pull.requests": {
+    "en": "Pull Requests",
+    "zh-Hans": "拉取请求",
+    "contexts": [
+      "menu",
+      "settings"
+    ]
+  },
+  "native.tabstrip.live.documents": {
+    "en": "Documents",
+    "zh-Hans": "文档",
+    "contexts": [
+      "menu",
+      "settings"
+    ]
+  },
+  "native.tabstrip.profile.customize": {
+    "en": "Customize",
+    "zh-Hans": "自定义",
+    "contexts": [
+      "menu",
+      "settings"
+    ]
+  },
+  "native.tabstrip.profile.settings": {
+    "en": "Profile Settings",
+    "zh-Hans": "个人资料设置",
+    "contexts": [
+      "menu",
+      "settings"
+    ]
+  },
+  "native.tabstrip.profile.intensity": {
+    "en": "Intensity",
+    "zh-Hans": "强度",
+    "contexts": [
+      "menu",
       "settings"
     ]
   }
