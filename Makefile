@@ -61,12 +61,16 @@ build/split-client-hello: tests/split-client-hello.m $(wildcard $(SPLIT)/Split.[
 build/vertical-tab-glow: tests/vertical-tab-glow.m src/dylib/Localization/Catalog.m build/Catalog.inc $(wildcard src/dylib/Patches/HideVerticalTabGlow/*.[hm]) | build
 	clang $(CFLAGS) -Isrc/dylib -Ibuild -framework AppKit -framework QuartzCore -o $@ $< src/dylib/Localization/Catalog.m
 
-check: build/diapatch build/group-tabs build/mouse-back-forward build/vertical-tab-glow build/split-client-hello build/patches.json
+build/peek-cursor: tests/peek-cursor.m src/dylib/Patches/Peek/Cursor.m src/dylib/Patches/Peek/Peek.h src/dylib/StdPatch/Hook.m $(wildcard src/dylib/StdPatch/*.h) | build
+	clang $(CFLAGS) -Isrc/dylib -framework AppKit -o $@ $<
+
+check: build/diapatch build/group-tabs build/mouse-back-forward build/vertical-tab-glow build/split-client-hello build/peek-cursor build/patches.json
 	tests/tweaks-update
 	build/group-tabs
 	build/mouse-back-forward
 	build/vertical-tab-glow
 	build/split-client-hello
+	build/peek-cursor
 	tests/sidebar-grain
 	scripts/check-patches
 
