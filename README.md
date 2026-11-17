@@ -55,7 +55,7 @@ Tweak names work as keys or titles, like `hideToolbar` or `"Hide Toolbar"`, and 
 
 ## Interface language
 
-Choose **Settings → Home → Interface Language**: Follow System (default), 简体中文, or English. Restart Dia to apply it to native menus, settings, supported dialogs and Chromium pages. Website language preferences follow the choice; ordinary page content is not translated. In Chinese, the setting is **设置 → 主页 → 界面语言**.
+Choose **Settings → Patches → Language → Language Patch**: Follow System (default), 简体中文, or English. Restart Dia to apply it to native menus, settings, supported dialogs and Chromium pages. Website language preferences follow the choice; ordinary page content is not translated. In Chinese, the setting is **设置 → 补丁 → 语言 → 语言补丁**.
 
 Language packs and adapter maintenance are documented in [docs/localization.md](docs/localization.md).
 

@@ -101,8 +101,9 @@ check-localization: build/localization build/locale-pack
 build/locale-pack: tests/locale-pack.m src/diapatch/Localization.m build/Catalog.inc | build
 	clang $(CFLAGS) -Isrc/diapatch -Ibuild -framework Foundation -o $@ $(filter %.m,$^)
 
-build/localization-native: tests/localization-native.m src/dylib/Localization/Native.m src/dylib/Localization/Catalog.m build/Catalog.inc | build
-	clang $(CFLAGS) -Isrc/dylib -Ibuild -framework AppKit -framework QuartzCore -o $@ tests/localization-native.m src/dylib/Localization/Catalog.m
+LOCALIZATION_NATIVE_SOURCES := $(addprefix src/dylib/Localization/,Native.m Text.m Scope.m Views.m Menus.m Controls.m Bundle.m Catalog.m)
+build/localization-native: tests/localization-native.m $(LOCALIZATION_NATIVE_SOURCES) src/dylib/Localization/Native.h build/Catalog.inc | build
+	clang $(CFLAGS) -Isrc/dylib -Ibuild -framework AppKit -framework QuartzCore -o $@ tests/localization-native.m $(LOCALIZATION_NATIVE_SOURCES)
 check-localization-native: build/localization-native
 	build/localization-native
 check: check-localization-native

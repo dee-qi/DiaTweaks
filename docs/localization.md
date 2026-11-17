@@ -1,6 +1,6 @@
 # Localization
 
-DiaTweaks provides Follow System, English and Simplified Chinese under Settings → Home → Interface Language. Restart Dia after changing the choice. The preference is `interfaceLanguage` in `com.diapatches` (`system`, `en`, `zh-Hans`). An unset preference means Follow System. Unsupported system languages fall back to English; Traditional Chinese is not silently treated as Simplified Chinese.
+DiaTweaks provides Follow System, English and Simplified Chinese under Settings → Patches → Language → Language Patch. Restart Dia after changing the choice. The preference is `interfaceLanguage` in `com.diapatches` (`system`, `en`, `zh-Hans`). An unset preference means Follow System. Unsupported system languages fall back to English; Traditional Chinese is not silently treated as Simplified Chinese.
 
 ## Resource model
 
@@ -19,7 +19,7 @@ The generator rejects duplicate IDs, contradictory translations in the same cont
 - `Catalog.m` resolves the process language once and provides ID-based and contextual source lookup. Original tweak keys, manifest data and Wiki URLs remain English/stable; settings search includes both English and translated metadata.
 - `Runtime.m` uses an in-process volatile AppleLanguages override and the existing Chromium configuration hook for `--lang` and `--accept-lang`. It constrains the main bundle's preferred localization to the selected language. No global or persistent browser language preference is rewritten; uninstalling the patch removes these overrides.
 - The installer advertises the registered bundle languages before signing. It patches only exact catalog matches in existing Chromium DataPack v5 resources, preserving resource IDs, aliases, encoding and unrelated bytes. It operates on the staged copy, never the pristine backup. Unknown pack formats keep their original contents with a diagnostic.
-- `Native.m` translates native menus and non-editable controls in preferences, sheets and selected known browser controls. It skips web-content views and editable text. It retains source text per object/property so existing menu lookup and label-dependent patches can still use English identifiers. Dropdown item values, menu actions and shortcuts are preserved.
+- `Native.m` installs the native adapters split into Text, Scope, Views, Controls, Menus and Bundle files. They translate native menus and non-editable controls in preferences, sheets and selected known browser controls. It skips web-content views and editable text. It retains source text per object/property so existing menu lookup and label-dependent patches can still use English identifiers. Dropdown item values, menu actions and shortcuts are preserved.
 - Owned DiaTweaks controls and alerts call localization explicitly. Translation does not rewrite user input, URLs, page content or AI output. Chrome Web Store's UI uses the preferred website languages; extension names and publisher descriptions remain the publisher's content.
 
 ## Verification and recovery
@@ -66,7 +66,7 @@ The trampoline checks the return address against the seven DiaTooltip constructo
 
 To support a new Dia build, independently identify its tooltip constructors and import slot, record its UUID, and verify the call instructions and Swift ABI before adding an adapter. Do not reuse offsets from build 90312 or remove UUID validation. Translation additions belong in the language catalog, not in the binary adapter.
 
-`make check-localization-tooltip` exercises the actual SwiftUI initializer with 14,000 repeated translations and alternates translated and excluded calls. It checks that caller-owned strings remain unchanged and verifies unknown-string and Substring fallback. Physical hover reuse and shortcut rendering still require live UI verification; an ABI test alone is not a visual pass.
+`make check-localization-tooltip` exercises the actual SwiftUI initializer with 16,000 repeated translations and alternates translated and excluded calls. It checks that caller-owned strings remain unchanged and verifies unknown-string and Substring fallback. Physical hover reuse and shortcut rendering still require live UI verification; an ABI test alone is not a visual pass.
 
 ### New-tab welcome UI
 

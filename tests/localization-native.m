@@ -1,5 +1,5 @@
 #define DP_LOCALIZATION_TEST 1
-#import "Localization/Native.m"
+#import "Localization/Native.h"
 #import "StdPatch/Hook.m"
 #include <assert.h>
 BOOL DPInstallTooltipImport(void) { return NO; }
@@ -13,6 +13,15 @@ void DPOnLaunch(void (^block)(void)) {}
 @implementation TestBookmarkTableCellView @end
 @interface TestAddressTableCellView : NSView @end
 @implementation TestAddressTableCellView @end
+// Test helper; production never recursively walks a window or newly attached tree.
+#ifdef DP_LOCALIZATION_TEST
+static void DPTranslateView(NSView *view) {
+    DPTranslateViewOnly(view);
+    for (NSView *child in view.subviews) DPTranslateView(child);
+}
+
+#endif
+
 int main(void) { @autoreleasepool {
     NSString *domain = [@"com.diapatches.localization-test." stringByAppendingString:NSUUID.UUID.UUIDString];
     setenv("DIATWEAKS_DOMAIN", domain.UTF8String, 1);
