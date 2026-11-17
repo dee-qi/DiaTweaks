@@ -1,3 +1,4 @@
+#import "Localization/Localization.h"
 #import "GrainSettings.h"
 
 @interface DPGrainMenu : NSObject
@@ -14,7 +15,7 @@
 @end
 
 static NSStackView *DPGrainLabeledRow(NSString *title, NSView *control) {
-    NSTextField *label = [NSTextField labelWithString:title];
+    NSTextField *label = [NSTextField labelWithString:DPLocalize(title, @"tweaks")];
     [label setContentHuggingPriority:NSLayoutPriorityDefaultLow forOrientation:NSLayoutConstraintOrientationHorizontal];
     NSStackView *row = [NSStackView stackViewWithViews:@[ label, control ]];
     row.distribution = NSStackViewDistributionFill;

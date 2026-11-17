@@ -1,3 +1,4 @@
+#import "Localization/Localization.h"
 #import "StdPatch/StdPatch.h"
 #import "Commands/GroupTabs/GroupTabs.h"
 #import "Patches/CommandBar/Tabs.h"
@@ -8,7 +9,7 @@ static BOOL DPJustClosed;
 static NSMenuItem *DPReopenItem(void) {
     for (NSMenuItem *top in NSApp.mainMenu.itemArray)
         for (NSMenuItem *item in top.submenu.itemArray)
-            if ([item.title isEqualToString:@"Reopen Closed Tab"]) return item;
+            if (DPTextMatches(item.title, @"Reopen Closed Tab")) return item;
     return nil;
 }
 

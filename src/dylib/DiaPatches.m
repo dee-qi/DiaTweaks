@@ -1,4 +1,5 @@
 #import "StdPatch/StdPatch.h"
+#import "Localization/Localization.h"
 #import "SafeMode/SafeMode.h"
 #import "Settings/Settings.h"
 #import "Updates/Updates.h"
@@ -11,6 +12,7 @@ __attribute__((constructor)) static void DPInit(void) {
     if (manifest && [NSProcessInfo.processInfo.processName isEqualToString:@"diapatch"]) _exit(DPWriteManifest(manifest) ? 0 : 1);
     DPBeginLaunch();
     if (DPSafeMode == 2) return;
+    DPInstallLocalization();
     DPLoadPatches();
     if (!DPSafeMode) DPInstallPatches();
     DPInstallSettings();

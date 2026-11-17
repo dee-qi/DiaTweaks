@@ -1,3 +1,4 @@
+#import "Localization/Localization.h"
 #import "LittleDia.h"
 #import "Patches/Peek/Peek.h"
 
@@ -54,7 +55,7 @@ static NSView *DPSizeSlider(NSString *title, NSString *key, double min, double m
     [field.widthAnchor constraintEqualToConstant:52].active = YES;
     NSStackView *controls = [NSStackView stackViewWithViews:@[ slider, field, [NSTextField labelWithString:@"pt"] ]];
 
-    NSTextField *label = [NSTextField labelWithString:title];
+    NSTextField *label = [NSTextField labelWithString:DPLocalize(title, @"tweaks")];
     DPSizeRow *row = [DPSizeRow stackViewWithViews:@[ label, controls ]];
     row.orientation = NSUserInterfaceLayoutOrientationVertical;
     row.alignment = NSLayoutAttributeLeading;

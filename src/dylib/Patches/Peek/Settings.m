@@ -1,3 +1,4 @@
+#import "Localization/Localization.h"
 #import "Patches/Peek/Peek.h"
 #import "Settings/Settings.h"
 
@@ -51,7 +52,7 @@ BOOL DPPeekShowsToolbar(void) { return DPPeekTuned(DPPeekToolbarKey) != 0; }
 @end
 
 static DPPeekTuneRow *DPPeekRow(NSString *title, NSString *key, double scale, NSView *control) {
-    NSTextField *label = [NSTextField labelWithString:title];
+    NSTextField *label = [NSTextField labelWithString:DPLocalize(title, @"tweaks")];
     [label setContentHuggingPriority:NSLayoutPriorityDefaultLow forOrientation:NSLayoutConstraintOrientationHorizontal];
     DPPeekTuneRow *row = [DPPeekTuneRow stackViewWithViews:@[ label, control ]];
     row.key = key;

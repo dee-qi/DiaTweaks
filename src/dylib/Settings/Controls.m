@@ -86,7 +86,7 @@ NSView *DPLinkRow(NSView *row, NSString *title, void (^open)(void)) {
     link.open = open;
     link.accessibilityElement = YES;
     link.accessibilityRole = NSAccessibilityButtonRole;
-    link.accessibilityLabel = title;
+    link.accessibilityLabel = DPLocalize(title, @"tweaks");
     row.translatesAutoresizingMaskIntoConstraints = NO;
     [link addSubview:row];
     [NSLayoutConstraint activateConstraints:@[
@@ -144,7 +144,7 @@ NSStackView *DPColumn(NSArray<NSView *> *views, CGFloat spacing) {
 NSTextField *DPHeader(NSString *text) { return DPLabel(text, 12, NSFontWeightSemibold, NSColor.secondaryLabelColor); }
 
 NSTextField *DPLabel(NSString *text, CGFloat size, NSFontWeight weight, NSColor *color) {
-    NSTextField *label = [NSTextField wrappingLabelWithString:text];
+    NSTextField *label = [NSTextField wrappingLabelWithString:DPLocalize(text, @"tweaks")];
     label.lineBreakStrategy = NSLineBreakStrategyStandard;
     label.font = [NSFont systemFontOfSize:size weight:weight];
     label.textColor = color;

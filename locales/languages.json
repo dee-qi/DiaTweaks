@@ -1,0 +1,4 @@
+[
+  {"id":"en","name":"English","matches":["en"],"cocoa":"en","chromium":"en-US","accept":"en-US,en"},
+  {"id":"zh-Hans","name":"简体中文","matches":["zh","zh-Hans","zh-CN","zh-SG"],"cocoa":"zh_CN","chromium":"zh-CN","accept":"zh-CN,zh,en-US,en"}
+]

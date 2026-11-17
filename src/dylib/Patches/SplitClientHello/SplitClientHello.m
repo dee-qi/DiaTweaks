@@ -46,10 +46,10 @@ static void DPApplySplitClientHello(DPPatch *patch) {
     DPSplitting = patch->on && gInProcess;
     if (patch->on == gInProcess || patch->on != DPSavedOn(patch)) return;  // the self-test flips patches without saving
     NSAlert *alert = [NSAlert new];
-    alert.messageText = patch->on ? @"Relaunch Dia to split ClientHellos" : @"Relaunch Dia to sandbox its network service again";
-    alert.informativeText = patch->on ? @"Until then, Dia sends them whole. After, its network code runs outside its sandbox." : @"Until then, its network code keeps running outside its sandbox.";
-    [alert addButtonWithTitle:@"Relaunch"];
-    [alert addButtonWithTitle:@"Later"];
+    alert.messageText = patch->on ? DPLocalized(@"native.relaunch.dia.to.split.clienthellos", @"Relaunch Dia to split ClientHellos") : DPLocalized(@"native.relaunch.dia.to.sandbox.its.network.service.again", @"Relaunch Dia to sandbox its network service again");
+    alert.informativeText = patch->on ? DPLocalized(@"native.until.then.dia.sends.them.whole.after.its.network.code.runs.outside.its.sandbox", @"Until then, Dia sends them whole. After, its network code runs outside its sandbox.") : DPLocalized(@"native.until.then.its.network.code.keeps.running.outside.its.sandbox", @"Until then, its network code keeps running outside its sandbox.");
+    [alert addButtonWithTitle:DPLocalized(@"language.relaunch", @"Relaunch")];
+    [alert addButtonWithTitle:DPLocalized(@"language.later", @"Later")];
     if ([alert runModal] == NSAlertFirstButtonReturn) DPHandOffAndQuit(@[ @"apply" ]);
 }
 

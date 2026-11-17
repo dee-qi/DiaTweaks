@@ -244,15 +244,15 @@ static void DPShowUpdateAlert(void) {
         }
         NSAlert *alert = [NSAlert new];
         if (!parts.count) {
-            alert.messageText = !updates.found ? @"Couldn’t check for updates" : updates.checkProblem ?: @"Dia and DiaTweaks are up to date";
+            alert.messageText = !updates.found ? DPLocalized(@"updates.couldn.t.check.for.updates", @"Couldn’t check for updates") : updates.checkProblem ?: DPLocalized(@"native.dia.and.diatweaks.are.up.to.date", @"Dia and DiaTweaks are up to date");
             [alert runModal];
             return;
         }
         alert.messageText = [[names componentsJoinedByString:@" and "] stringByAppendingString:@" available"];
-        alert.informativeText = parts.count > 1 ? @"Dia relaunches to install them once they’re downloaded."
+        alert.informativeText = parts.count > 1 ? DPLocalized(@"native.dia.relaunches.to.install.them.once.they.re.downloaded", @"Dia relaunches to install them once they’re downloaded.")
                                                 : @"Dia relaunches to install it once it’s downloaded.";
-        [alert addButtonWithTitle:@"Update and Relaunch"];
-        [alert addButtonWithTitle:@"Later"];
+        [alert addButtonWithTitle:DPLocalized(@"native.update.and.relaunch", @"Update and Relaunch")];
+        [alert addButtonWithTitle:DPLocalized(@"language.later", @"Later")];
         if ([alert runModal] != NSAlertFirstButtonReturn) return;
         __block NSUInteger left = parts.count;
         for (NSString *part in parts)

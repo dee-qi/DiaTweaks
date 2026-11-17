@@ -1,3 +1,4 @@
+#import "Localization/Localization.h"
 #import <AppKit/AppKit.h>
 #import <QuartzCore/QuartzCore.h>
 #import <objc/runtime.h>

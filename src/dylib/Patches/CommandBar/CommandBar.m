@@ -1,3 +1,4 @@
+#import "Localization/Localization.h"
 #import "StdPatch/StdPatch.h"
 #import "Patches/CommandBar/Tabs.h"
 #import "Patches/CompactCommandBar/CompactCommandBar.h"
@@ -43,7 +44,7 @@ static double DPTuned(NSString *key) {
 
 static NSMenuItem *DPMenuItemTitled(NSMenu *menu, NSString *title) {
     for (NSMenuItem *item in menu.itemArray) {
-        NSMenuItem *found = [item.title isEqual:title] ? item : DPMenuItemTitled(item.submenu, title);
+        NSMenuItem *found = DPTextMatches(item.title, title) ? item : DPMenuItemTitled(item.submenu, title);
         if (found) return found;
     }
     return nil;
@@ -762,7 +763,7 @@ static void DPInstallCommandBar(void) {
 @end
 
 static DPCommandBarTuneRow *DPTuneRow(NSString *title, NSString *key, double scale, NSView *control) {
-    NSTextField *label = [NSTextField labelWithString:title];
+    NSTextField *label = [NSTextField labelWithString:DPLocalize(title, @"tweaks")];
     [label setContentHuggingPriority:NSLayoutPriorityDefaultLow forOrientation:NSLayoutConstraintOrientationHorizontal];
     DPCommandBarTuneRow *row = [DPCommandBarTuneRow stackViewWithViews:@[ label, control ]];
     row.key = key;

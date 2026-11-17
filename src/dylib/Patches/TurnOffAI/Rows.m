@@ -21,6 +21,7 @@ static BOOL DPIsAIRowView(NSTableView *table, NSView *row) {
         // Suggestion text can start with "Chat with" too: only the icon says it's chat.
         if (suggestions) return NO;
         NSString *text = [view isKindOfClass:NSTextField.class] ? [(NSTextField *)view stringValue] : view.accessibilityLabel;
+        text = DPOriginalText(view, [view isKindOfClass:NSTextField.class] ? @"stringValue" : @"accessibilityLabel", text);
         if (sidebar) return [text isEqual:@"Apps"] || [text isEqual:@"Skills"];
         return DPIsAITitle(text);
     }) != nil;

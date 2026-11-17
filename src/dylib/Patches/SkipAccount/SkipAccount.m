@@ -1,3 +1,4 @@
+#import "Localization/Localization.h"
 #import "Startup.h"
 #import "Updates/Updates.h"
 
@@ -25,7 +26,7 @@ static void DPWaitForBrowser(void) {
         // The File item carries the default profile even before any windows have been opened.
         NSMenu *file = [NSApp.mainMenu itemWithTitle:@"File"].submenu;
         for (NSMenuItem *item in file.itemArray) {
-            if (![item.title hasPrefix:@"New Window"]) continue;
+            if (![DPOriginalText(item, @"title", item.title) hasPrefix:@"New Window"]) continue;
             [NSApp sendAction:item.action to:item.target from:item];
             break;
         }
@@ -60,16 +61,16 @@ static void DPInstallSkipAccount(void) {
 static void DPApplySkipAccount(DPPatch *patch) {
     if (patch->on == gSkipping || patch->on != DPSavedOn(patch) || DPSkipAccountProblem(patch)) return;
     NSAlert *alert = [NSAlert new];
-    alert.messageText = patch->on ? @"Relaunch Dia to skip account sign-in" : @"Relaunch Dia to use account sign-in";
-    [alert addButtonWithTitle:@"Relaunch"];
-    [alert addButtonWithTitle:@"Later"];
+    alert.messageText = patch->on ? DPLocalized(@"native.relaunch.dia.to.skip.account.sign.in", @"Relaunch Dia to skip account sign-in") : DPLocalized(@"native.relaunch.dia.to.use.account.sign.in", @"Relaunch Dia to use account sign-in");
+    [alert addButtonWithTitle:DPLocalized(@"language.relaunch", @"Relaunch")];
+    [alert addButtonWithTitle:DPLocalized(@"language.later", @"Later")];
     if ([alert runModal] == NSAlertFirstButtonReturn) DPHandOffAndQuit(@[ @"apply" ]);
 }
 
 static NSString *DPVerifySkipAccount(DPPatch *patch) {
     if (!gSkipping || !patch->on) return nil;  // Startup changes need separate launches, not the self-test's unsaved toggles.
     for (NSMenuItem *item in NSApp.mainMenu.itemArray.firstObject.submenu.itemArray)
-        if ([item.title hasPrefix:@"Sign In"] && !item.hidden) return @"sign-in menu item is visible";
+        if ([DPOriginalText(item, @"title", item.title) hasPrefix:@"Sign In"] && !item.hidden) return @"sign-in menu item is visible";
     NSString *settings = DPSkipVerifyAccountSettings();
     if (settings) return settings;
     return DPFindViews(DPDiaContentPane).count ? nil : @"no browser page opened after skipping sign-in";

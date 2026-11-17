@@ -1,3 +1,4 @@
+#import "Localization/Localization.h"
 #import "StdPatch/StdPatch.h"
 #import <os/log.h>
 
@@ -40,7 +41,7 @@ BOOL DPIsFloatingChat(NSView *popover) {
 }
 
 BOOL DPHasLabel(NSView *view, NSString *accessibilityLabel) {
-    return [view.accessibilityLabel isEqualToString:accessibilityLabel];
+    return DPTextMatches(view.accessibilityLabel, accessibilityLabel);
 }
 
 void DPRelayoutViews(NSHashTable<NSView *> *views) {

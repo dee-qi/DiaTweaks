@@ -1,3 +1,4 @@
+#import "Localization/Localization.h"
 #import "Patches/EdgeToEdge/EdgeToEdge.h"
 #import <objc/message.h>
 
@@ -242,11 +243,11 @@ static NSArray<NSView *> *DPWindowCornersRows(void) {
     row.field.action = @selector(tune:);
     [row.field.widthAnchor constraintEqualToConstant:44].active = YES;
     [row.slider setContentHuggingPriority:NSLayoutPriorityDefaultLow forOrientation:NSLayoutConstraintOrientationHorizontal];
-    NSTextField *hint = [NSTextField wrappingLabelWithString:@"26 pt is macOS 26, 10 pt is macOS 11 to 15, and 0 is square."];
+    NSTextField *hint = [NSTextField wrappingLabelWithString:DPLocalize(@"26 pt is macOS 26, 10 pt is macOS 11 to 15, and 0 is square.", @"tweaks")];
     hint.font = [NSFont systemFontOfSize:NSFont.smallSystemFontSize];
     hint.textColor = NSColor.secondaryLabelColor;
     NSStackView *controls = [NSStackView stackViewWithViews:@[ row.slider, row.field, [NSTextField labelWithString:@"pt"] ]];
-    [row setViews:@[ [NSTextField labelWithString:@"Radius"], controls, hint ] inGravity:NSStackViewGravityTop];
+    [row setViews:@[ [NSTextField labelWithString:DPLocalize(@"Radius", @"tweaks")], controls, hint ] inGravity:NSStackViewGravityTop];
     row.orientation = NSUserInterfaceLayoutOrientationVertical;
     row.alignment = NSLayoutAttributeLeading;
     [controls.widthAnchor constraintEqualToAnchor:row.widthAnchor].active = YES;

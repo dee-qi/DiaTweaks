@@ -1,3 +1,4 @@
+#import "Localization/Localization.h"
 #import "StdPatch/StdPatch.h"
 #import "Patches/CommandBar/Tabs.h"
 #import "Commands/GroupTabs/GroupTabs.h"
@@ -142,7 +143,7 @@ static BOOL DPOpenNextToCurrent(NSWindow *window) {
 static NSMenuItem *DPNewTabItem(void) {
     for (NSMenuItem *top in NSApp.mainMenu.itemArray)
         for (NSMenuItem *item in top.submenu.itemArray)
-            if ([item.title isEqualToString:@"New Tab"] && item.keyEquivalent.length) return item;
+            if (DPTextMatches(item.title, @"New Tab") && item.keyEquivalent.length) return item;
     return nil;
 }
 

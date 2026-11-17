@@ -88,7 +88,7 @@ static NSArray<NSString *> *DPShortcutClashes(DPPatch *patch) {
     NSMutableArray<NSString *> *names = [NSMutableArray new];
     DPMenuClashes(NSApp.mainMenu, shortcut, patch->sharesShortcutWith, names);
     for (NSUInteger i = 0; i < DPPatchCount; i++)
-        if (DPPatches[i] != patch && DPPatches[i]->shortcut && DPSameShortcut(DPPatchShortcut(DPPatches[i]), shortcut)) [names addObject:DPPatches[i]->title];
+        if (DPPatches[i] != patch && DPPatches[i]->shortcut && DPSameShortcut(DPPatchShortcut(DPPatches[i]), shortcut)) [names addObject:DPLocalize(DPPatches[i]->title, @"tweaks")];
     return names;
 }
 
@@ -138,7 +138,7 @@ static NSArray<NSString *> *DPShortcutClashes(DPPatch *patch) {
     _clear.hidden = !text || !_hovered;
     NSArray<NSString *> *clashes = DPShortcutClashes(_patch);
     NSFont *font = [NSFont systemFontOfSize:11];
-    NSMutableAttributedString *warning = [[NSMutableAttributedString alloc] initWithString:@"This shortcut conflicts with another shortcut:\n"
+    NSMutableAttributedString *warning = [[NSMutableAttributedString alloc] initWithString:DPLocalized(@"shortcut.conflict", @"This shortcut conflicts with another shortcut:\n")
                                                                                 attributes:@{ NSFontAttributeName : font, NSForegroundColorAttributeName : NSColor.secondaryLabelColor }];
     [warning appendAttributedString:[[NSAttributedString alloc] initWithString:[clashes componentsJoinedByString:@", "]
                                                                     attributes:@{ NSFontAttributeName : font, NSForegroundColorAttributeName : NSColor.systemRedColor }]];

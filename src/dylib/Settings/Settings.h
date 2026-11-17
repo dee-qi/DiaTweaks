@@ -1,3 +1,4 @@
+#import "Localization/Localization.h"
 #import "StdPatch/StdPatch.h"
 #import "Updates/Updates.h"
 #import "SafeMode/SafeMode.h"

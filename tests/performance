@@ -10,13 +10,15 @@ for variant in before after; do
     source="$PWD/src/dylib"
     define="-DDP_OPTIMIZED"
     if [ "$variant" = before ]; then source="$baseline/src/dylib"; define=""; fi
-    clang -fobjc-arc -O2 -Wall -Wextra -Wno-unused-parameter $define -I"$source" \
+    localization=""
+    if [ -f "$source/Localization/Catalog.m" ]; then make -s build/Catalog.inc; localization="$source/Localization/Catalog.m"; fi
+    clang -fobjc-arc -O2 -Wall -Wextra -Wno-unused-parameter $define -I"$source" -Ibuild ${localization:+"$localization"} \
         -framework AppKit -framework QuartzCore tests/toolbar-performance.m \
         "$source/Patches/HideToolbar/Layout.m" "$source/Patches/HideToolbar/Hover.m" \
         "$source/StdPatch/Views.m" -o "build/toolbar-$variant"
     echo "$variant ($base baseline)"
     "build/toolbar-$variant"
-    clang -fobjc-arc -O2 -Wall -Wextra -Wno-unused-parameter $define -I"$source" \
+    clang -fobjc-arc -O2 -Wall -Wextra -Wno-unused-parameter $define -I"$source" -Ibuild ${localization:+"$localization"} \
         -framework AppKit -framework QuartzCore tests/restyle-coalescing.m \
         "$source/StdPatch/Views.m" "$source/StdPatch/Hook.m" -o "build/restyle-$variant"
     "build/restyle-$variant"

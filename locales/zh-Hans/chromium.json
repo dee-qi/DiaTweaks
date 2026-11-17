@@ -1,0 +1,30 @@
+{
+  "chromium.brand.0": {
+    "en": "About &$AppName$",
+    "zh-Hans": "关于 &$AppName$",
+    "contexts": [
+      "chromium-resource"
+    ]
+  },
+  "chromium.brand.1": {
+    "en": "About $AppName$",
+    "zh-Hans": "关于 $AppName$",
+    "contexts": [
+      "chromium-resource"
+    ]
+  },
+  "chromium.brand.2": {
+    "en": "Go to About $AppName$ page",
+    "zh-Hans": "前往关于 $AppName$ 页面",
+    "contexts": [
+      "chromium-resource"
+    ]
+  },
+  "chromium.brand.3": {
+    "en": "Dia needs to close $1 to import your cookies so you can stay signed in to your sites.",
+    "zh-Hans": "Dia 需要关闭 $1 才能导入 Cookie，以保留你在网站上的登录状态。",
+    "contexts": [
+      "chromium-resource"
+    ]
+  }
+}

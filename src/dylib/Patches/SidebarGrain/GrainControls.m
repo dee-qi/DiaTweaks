@@ -1,3 +1,4 @@
+#import "Localization/Localization.h"
 #import "GrainSettings.h"
 
 static const DPGrainSetting *const DPGrainSettings[] = { &DPGrainAmountSetting, &DPGrainSoftnessSetting, &DPGrainScaleSetting };
@@ -54,7 +55,7 @@ static NSView *DPGrainSliderRowFor(const DPGrainSetting *setting) {
     row.field.action = @selector(tune:);
     [row.field.widthAnchor constraintEqualToConstant:44].active = YES;
     NSStackView *controls = [NSStackView stackViewWithViews:@[ row.slider, row.field, [NSTextField labelWithString:@"%"] ]];
-    [row setViews:@[ [NSTextField labelWithString:setting->title], controls ] inGravity:NSStackViewGravityTop];
+    [row setViews:@[ [NSTextField labelWithString:DPLocalize(setting->title, @"tweaks")], controls ] inGravity:NSStackViewGravityTop];
     row.orientation = NSUserInterfaceLayoutOrientationVertical;
     row.alignment = NSLayoutAttributeLeading;
     [controls.widthAnchor constraintEqualToAnchor:row.widthAnchor].active = YES;
@@ -73,7 +74,7 @@ static NSView *DPGrainSliderRowFor(const DPGrainSetting *setting) {
 @implementation DPGrainResetRow
 - (void)setSpace:(NSString *)space {
     _space = space;
-    self.label.stringValue = space ? @"Reset this profile to the defaults" : @"Reset Grain, Softness and Scale";
+    self.label.stringValue = DPLocalize(space ? @"Reset this profile to the defaults" : @"Reset Grain, Softness and Scale", @"tweaks");
 }
 
 - (void)reset:(NSButton *)button {
@@ -87,11 +88,11 @@ static NSView *DPGrainSliderRowFor(const DPGrainSetting *setting) {
 
 NSArray<NSView *> *DPGrainRows(void) {
     DPGrainResetRow *reset = [DPGrainResetRow new];
-    NSButton *button = [NSButton buttonWithTitle:@"Reset" target:reset action:@selector(reset:)];
+    NSButton *button = [NSButton buttonWithTitle:DPLocalized(@"ui.reset", @"Reset") target:reset action:@selector(reset:)];
     button.controlSize = NSControlSizeSmall;
     [button setContentHuggingPriority:NSLayoutPriorityRequired forOrientation:NSLayoutConstraintOrientationHorizontal];
     button.accessibilityLabel = @"Reset grain settings";
-    reset.label = [NSTextField labelWithString:@"Reset Grain, Softness and Scale"];
+    reset.label = [NSTextField labelWithString:DPLocalize(@"Reset Grain, Softness and Scale", @"tweaks")];
     [reset.label setContentHuggingPriority:NSLayoutPriorityDefaultLow forOrientation:NSLayoutConstraintOrientationHorizontal];
     reset.distribution = NSStackViewDistributionFill;
     [reset setViews:@[ reset.label, button ] inGravity:NSStackViewGravityLeading];

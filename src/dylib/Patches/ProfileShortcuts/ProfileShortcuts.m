@@ -1,3 +1,4 @@
+#import "Localization/Localization.h"
 #import "StdPatch/StdPatch.h"
 
 extern DPPatch DPProfileShortcuts;
@@ -100,10 +101,10 @@ static void DPInstallProfileShortcuts(void) {
 }
 
 static NSString *DPVerifyProfileShortcuts(DPPatch *patch) {
-    NSMenuItem *item = DPFindItem(NSApp.mainMenu, ^BOOL(NSMenuItem *candidate) { return [candidate.title isEqualToString:@"Go to Sidebar Item 1"]; });
+    NSMenuItem *item = DPFindItem(NSApp.mainMenu, ^BOOL(NSMenuItem *candidate) { return DPTextMatches(candidate.title, @"Go to Sidebar Item 1"); });
     if (item && !DPIsDigitShortcut(item, patch->on ? NSEventModifierFlagControl : NSEventModifierFlagCommand))
         return patch->on ? @"the sidebar items keep ⌘ and a number" : @"the sidebar items didn't get ⌘ back";
-    if (patch->on && !DPFindItem(NSApp.mainMenu, ^BOOL(NSMenuItem *candidate) { return DPIsDigitShortcut(candidate, NSEventModifierFlagCommand) && ![candidate.title hasPrefix:@"Go to Sidebar Item"]; }))
+    if (patch->on && !DPFindItem(NSApp.mainMenu, ^BOOL(NSMenuItem *candidate) { return DPIsDigitShortcut(candidate, NSEventModifierFlagCommand) && ![DPOriginalText(candidate, @"title", candidate.title) hasPrefix:@"Go to Sidebar Item"]; }))
         return @"no profile has ⌘ and a number";
     return nil;
 }

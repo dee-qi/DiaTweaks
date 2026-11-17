@@ -1,0 +1,6000 @@
+{
+  "ui.file": {
+    "en": "File",
+    "zh-Hans": "文件",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.edit": {
+    "en": "Edit",
+    "zh-Hans": "编辑",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.view": {
+    "en": "View",
+    "zh-Hans": "显示",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.tabs": {
+    "en": "Tabs",
+    "zh-Hans": "标签页",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.bookmarks": {
+    "en": "Bookmarks",
+    "zh-Hans": "书签",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.history": {
+    "en": "History",
+    "zh-Hans": "历史记录",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.extensions": {
+    "en": "Extensions",
+    "zh-Hans": "扩展程序",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.window": {
+    "en": "Window",
+    "zh-Hans": "窗口",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.help": {
+    "en": "Help",
+    "zh-Hans": "帮助",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.settings": {
+    "en": "Settings…",
+    "zh-Hans": "设置…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "ui.settings10": {
+    "en": "Settings",
+    "zh-Hans": "设置",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.about.dia": {
+    "en": "About Dia",
+    "zh-Hans": "关于 Dia",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.check.for.updates": {
+    "en": "Check for Updates…",
+    "zh-Hans": "检查更新…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.services": {
+    "en": "Services",
+    "zh-Hans": "服务",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.hide.dia": {
+    "en": "Hide Dia",
+    "zh-Hans": "隐藏 Dia",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.hide.others": {
+    "en": "Hide Others",
+    "zh-Hans": "隐藏其他",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.show.all": {
+    "en": "Show All",
+    "zh-Hans": "显示全部",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.quit.dia": {
+    "en": "Quit Dia",
+    "zh-Hans": "退出 Dia",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.new.tab": {
+    "en": "New Tab",
+    "zh-Hans": "新建标签页",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "ui.new.window": {
+    "en": "New Window",
+    "zh-Hans": "新建窗口",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "ui.new.incognito.window": {
+    "en": "New Incognito Window",
+    "zh-Hans": "新建无痕窗口",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "ui.open.location": {
+    "en": "Open Location…",
+    "zh-Hans": "打开地址…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.open.file": {
+    "en": "Open File…",
+    "zh-Hans": "打开文件…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.close.tab": {
+    "en": "Close Tab",
+    "zh-Hans": "关闭标签页",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "ui.close.window": {
+    "en": "Close Window",
+    "zh-Hans": "关闭窗口",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "ui.close": {
+    "en": "Close",
+    "zh-Hans": "关闭",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "tooltip"
+    ]
+  },
+  "ui.save.page.as": {
+    "en": "Save Page As…",
+    "zh-Hans": "网页另存为…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.print": {
+    "en": "Print…",
+    "zh-Hans": "打印…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "ui.share": {
+    "en": "Share",
+    "zh-Hans": "共享",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.undo": {
+    "en": "Undo",
+    "zh-Hans": "撤销",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.redo": {
+    "en": "Redo",
+    "zh-Hans": "重做",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.cut": {
+    "en": "Cut",
+    "zh-Hans": "剪切",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.copy": {
+    "en": "Copy",
+    "zh-Hans": "复制",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.paste": {
+    "en": "Paste",
+    "zh-Hans": "粘贴",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.paste.and.match.style": {
+    "en": "Paste and Match Style",
+    "zh-Hans": "粘贴并匹配样式",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.select.all": {
+    "en": "Select All",
+    "zh-Hans": "全选",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.find": {
+    "en": "Find",
+    "zh-Hans": "查找",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.find37": {
+    "en": "Find…",
+    "zh-Hans": "查找…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "ui.find.in.page": {
+    "en": "Find in Page…",
+    "zh-Hans": "在页面中查找…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.find.next": {
+    "en": "Find Next",
+    "zh-Hans": "查找下一个",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "ui.find.previous": {
+    "en": "Find Previous",
+    "zh-Hans": "查找上一个",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "ui.spelling.and.grammar": {
+    "en": "Spelling and Grammar",
+    "zh-Hans": "拼写和语法",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.substitutions": {
+    "en": "Substitutions",
+    "zh-Hans": "替换",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.transformations": {
+    "en": "Transformations",
+    "zh-Hans": "转换",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.speech": {
+    "en": "Speech",
+    "zh-Hans": "语音",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.start.dictation": {
+    "en": "Start Dictation…",
+    "zh-Hans": "开始听写…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.emoji.symbols": {
+    "en": "Emoji & Symbols",
+    "zh-Hans": "表情与符号",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.reload": {
+    "en": "Reload",
+    "zh-Hans": "重新加载",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "tooltip"
+    ]
+  },
+  "ui.reload.this.page": {
+    "en": "Reload This Page",
+    "zh-Hans": "重新加载此页面",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.force.reload.this.page": {
+    "en": "Force Reload This Page",
+    "zh-Hans": "强制重新加载此页面",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.stop": {
+    "en": "Stop",
+    "zh-Hans": "停止",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.actual.size": {
+    "en": "Actual Size",
+    "zh-Hans": "实际大小",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.zoom.in": {
+    "en": "Zoom In",
+    "zh-Hans": "放大",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "ui.zoom.out": {
+    "en": "Zoom Out",
+    "zh-Hans": "缩小",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "ui.enter.full.screen": {
+    "en": "Enter Full Screen",
+    "zh-Hans": "进入全屏幕",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.exit.full.screen": {
+    "en": "Exit Full Screen",
+    "zh-Hans": "退出全屏幕",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.show.sidebar": {
+    "en": "Show Sidebar",
+    "zh-Hans": "显示侧边栏",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.hide.sidebar": {
+    "en": "Hide Sidebar",
+    "zh-Hans": "隐藏侧边栏",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.show.toolbar": {
+    "en": "Show Toolbar",
+    "zh-Hans": "显示工具栏",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.hide.toolbar": {
+    "en": "Hide Toolbar",
+    "zh-Hans": "隐藏工具栏",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.show.bookmarks.bar": {
+    "en": "Show Bookmarks Bar",
+    "zh-Hans": "显示书签栏",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.hide.bookmarks.bar": {
+    "en": "Hide Bookmarks Bar",
+    "zh-Hans": "隐藏书签栏",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.developer": {
+    "en": "Developer",
+    "zh-Hans": "开发者",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.developer.tools": {
+    "en": "Developer Tools",
+    "zh-Hans": "开发者工具",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "ui.view.source": {
+    "en": "View Source",
+    "zh-Hans": "查看源代码",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.inspect": {
+    "en": "Inspect",
+    "zh-Hans": "检查",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.inspect.element": {
+    "en": "Inspect Element",
+    "zh-Hans": "检查元素",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.back": {
+    "en": "Back",
+    "zh-Hans": "后退",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "tooltip"
+    ]
+  },
+  "ui.forward": {
+    "en": "Forward",
+    "zh-Hans": "前进",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "tooltip"
+    ]
+  },
+  "ui.home": {
+    "en": "Home",
+    "zh-Hans": "主页",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.patches": {
+    "en": "Patches",
+    "zh-Hans": "补丁",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.general": {
+    "en": "General",
+    "zh-Hans": "通用",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.privacy": {
+    "en": "Privacy",
+    "zh-Hans": "隐私",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.profiles": {
+    "en": "Profiles",
+    "zh-Hans": "个人资料",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.shortcuts": {
+    "en": "Shortcuts",
+    "zh-Hans": "快捷键",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.keyboard.shortcuts": {
+    "en": "Keyboard Shortcuts",
+    "zh-Hans": "键盘快捷键",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.advanced": {
+    "en": "Advanced",
+    "zh-Hans": "高级",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.account": {
+    "en": "Account",
+    "zh-Hans": "账户",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.account.name": {
+    "en": "Account Name",
+    "zh-Hans": "账户名称",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.email": {
+    "en": "Email",
+    "zh-Hans": "电子邮件",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.sync": {
+    "en": "Sync",
+    "zh-Hans": "同步",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.sync.your.profiles.bookmarks.pinned.tabs.groups.and.settings.across.devices.all.data.is.end.to.end.encrypted": {
+    "en": "Sync your Profiles, Bookmarks, Pinned Tabs, Groups, and Settings across devices. All data is end-to-end encrypted.",
+    "zh-Hans": "在设备之间同步个人资料、书签、固定标签页、分组和设置。所有数据均采用端到端加密。",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.more.account.options": {
+    "en": "More account options",
+    "zh-Hans": "更多账户选项",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.sign.out": {
+    "en": "Sign Out",
+    "zh-Hans": "退出登录",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.sign.out84": {
+    "en": "Sign Out…",
+    "zh-Hans": "退出登录…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.delete.account": {
+    "en": "Delete Account",
+    "zh-Hans": "删除账户",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.delete.account86": {
+    "en": "Delete Account…",
+    "zh-Hans": "删除账户…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.automatically.update.dia": {
+    "en": "Automatically update Dia",
+    "zh-Hans": "自动更新 Dia",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.haptic.feedback": {
+    "en": "Haptic feedback",
+    "zh-Hans": "触觉反馈",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.warn.before.closing.last.tab.in.a.profile": {
+    "en": "Warn before closing last tab in a Profile",
+    "zh-Hans": "关闭个人资料中的最后一个标签页前提醒",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.chat": {
+    "en": "Chat",
+    "zh-Hans": "聊天",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.address.bar.routing": {
+    "en": "Address bar routing",
+    "zh-Hans": "地址栏跳转方式",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.automatic": {
+    "en": "Automatic",
+    "zh-Hans": "自动",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.prefer.search.engine": {
+    "en": "Prefer Search Engine",
+    "zh-Hans": "优先使用搜索引擎",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.prefer.chat": {
+    "en": "Prefer Chat",
+    "zh-Hans": "优先使用聊天",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.play.chat.sounds": {
+    "en": "Play chat sounds",
+    "zh-Hans": "播放聊天声音",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.play.daily.report.sounds": {
+    "en": "Play daily report sounds",
+    "zh-Hans": "播放每日报告声音",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.quitting.dia": {
+    "en": "Quitting Dia",
+    "zh-Hans": "退出 Dia",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.warn.before.quitting": {
+    "en": "Warn before quitting",
+    "zh-Hans": "退出前提醒",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.when.quitting": {
+    "en": "When quitting…",
+    "zh-Hans": "退出时…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.preserve.tabs.and.windows": {
+    "en": "Preserve Tabs and Windows",
+    "zh-Hans": "保留标签页和窗口",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.close.all.tabs.and.windows": {
+    "en": "Close All Tabs and Windows",
+    "zh-Hans": "关闭所有标签页和窗口",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.cancel": {
+    "en": "Cancel",
+    "zh-Hans": "取消",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.ok": {
+    "en": "OK",
+    "zh-Hans": "好",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.done": {
+    "en": "Done",
+    "zh-Hans": "完成",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.save": {
+    "en": "Save",
+    "zh-Hans": "保存",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.delete": {
+    "en": "Delete",
+    "zh-Hans": "删除",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.remove": {
+    "en": "Remove",
+    "zh-Hans": "移除",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.reset": {
+    "en": "Reset",
+    "zh-Hans": "重置",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.default": {
+    "en": "Default",
+    "zh-Hans": "默认",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.none": {
+    "en": "None",
+    "zh-Hans": "无",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.off": {
+    "en": "Off",
+    "zh-Hans": "关闭",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.on": {
+    "en": "On",
+    "zh-Hans": "开启",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.always": {
+    "en": "Always",
+    "zh-Hans": "始终",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "ui.never": {
+    "en": "Never",
+    "zh-Hans": "从不",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.open": {
+    "en": "Open",
+    "zh-Hans": "打开",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.add": {
+    "en": "Add",
+    "zh-Hans": "添加",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.search": {
+    "en": "Search",
+    "zh-Hans": "搜索",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.search118": {
+    "en": "Search…",
+    "zh-Hans": "搜索…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.learn.more": {
+    "en": "Learn More",
+    "zh-Hans": "了解更多",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.learn.more120": {
+    "en": "Learn more",
+    "zh-Hans": "了解更多",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.learn.more121": {
+    "en": "Learn More…",
+    "zh-Hans": "了解更多…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.rename": {
+    "en": "Rename…",
+    "zh-Hans": "重命名…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.change.icon": {
+    "en": "Change Icon…",
+    "zh-Hans": "更改图标…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.duplicate": {
+    "en": "Duplicate",
+    "zh-Hans": "复制标签页",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.pin": {
+    "en": "Pin",
+    "zh-Hans": "固定",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.unpin": {
+    "en": "Unpin",
+    "zh-Hans": "取消固定",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.pin.as.tab": {
+    "en": "Pin as Tab",
+    "zh-Hans": "固定为标签页",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.chat.with.this.tab": {
+    "en": "Chat With This Tab",
+    "zh-Hans": "与此标签页聊天",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.open.as.split": {
+    "en": "Open as Split",
+    "zh-Hans": "以分屏打开",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.new.group.with.tab": {
+    "en": "New Group with Tab",
+    "zh-Hans": "使用此标签页新建分组",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.add.to.bookmarks": {
+    "en": "Add to Bookmarks…",
+    "zh-Hans": "添加到书签…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "ui.copy.link": {
+    "en": "Copy Link",
+    "zh-Hans": "复制链接",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.copy.link.as.markdown": {
+    "en": "Copy Link as Markdown",
+    "zh-Hans": "复制 Markdown 链接",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.mute.site": {
+    "en": "Mute Site",
+    "zh-Hans": "将网站静音",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.unmute.site": {
+    "en": "Unmute Site",
+    "zh-Hans": "取消网站静音",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.close.other.tabs": {
+    "en": "Close Other Tabs",
+    "zh-Hans": "关闭其他标签页",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.close.tabs.to.the.right": {
+    "en": "Close Tabs to the Right",
+    "zh-Hans": "关闭右侧标签页",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.reopen.closed.tab": {
+    "en": "Reopen Closed Tab",
+    "zh-Hans": "重新打开关闭的标签页",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "ui.move.tab.to.new.window": {
+    "en": "Move Tab to New Window",
+    "zh-Hans": "将标签页移至新窗口",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.move.to.profile": {
+    "en": "Move to Profile",
+    "zh-Hans": "移至个人资料",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.unload.tab": {
+    "en": "Unload Tab",
+    "zh-Hans": "卸载标签页",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.open.link.in.new.tab": {
+    "en": "Open Link in New Tab",
+    "zh-Hans": "在新标签页中打开链接",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.open.link.in.new.window": {
+    "en": "Open Link in New Window",
+    "zh-Hans": "在新窗口中打开链接",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.open.link.in.incognito.window": {
+    "en": "Open Link in Incognito Window",
+    "zh-Hans": "在无痕窗口中打开链接",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.copy.link.address": {
+    "en": "Copy Link Address",
+    "zh-Hans": "复制链接地址",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.save.link.as": {
+    "en": "Save Link As…",
+    "zh-Hans": "链接另存为…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.open.image.in.new.tab": {
+    "en": "Open Image in New Tab",
+    "zh-Hans": "在新标签页中打开图片",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.save.image.as": {
+    "en": "Save Image As…",
+    "zh-Hans": "图片另存为…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.copy.image": {
+    "en": "Copy Image",
+    "zh-Hans": "复制图片",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.copy.image.address": {
+    "en": "Copy Image Address",
+    "zh-Hans": "复制图片地址",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.search.image.with.google": {
+    "en": "Search Image with Google",
+    "zh-Hans": "使用 Google 搜索图片",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.open.link.in.little.dia": {
+    "en": "Open Link in Little Dia",
+    "zh-Hans": "在 Little Dia 中打开链接",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.open.in.dia": {
+    "en": "Open in Dia",
+    "zh-Hans": "在 Dia 中打开",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.minimize": {
+    "en": "Minimize",
+    "zh-Hans": "最小化",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.zoom": {
+    "en": "Zoom",
+    "zh-Hans": "缩放",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.bring.all.to.front": {
+    "en": "Bring All to Front",
+    "zh-Hans": "前置全部窗口",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.downloads": {
+    "en": "Downloads",
+    "zh-Hans": "下载内容",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "ui.show.all.history": {
+    "en": "Show All History",
+    "zh-Hans": "显示所有历史记录",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.clear.browsing.data": {
+    "en": "Clear Browsing Data…",
+    "zh-Hans": "清除浏览数据…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.manage.extensions": {
+    "en": "Manage Extensions",
+    "zh-Hans": "管理扩展程序",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.manage.extensions161": {
+    "en": "Manage Extensions…",
+    "zh-Hans": "管理扩展程序…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.chrome.web.store": {
+    "en": "Chrome Web Store",
+    "zh-Hans": "Chrome 应用商店",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.recent.tabs": {
+    "en": "Recent tabs",
+    "zh-Hans": "最近的标签页",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.go.back": {
+    "en": "Go back",
+    "zh-Hans": "后退",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "tooltip"
+    ]
+  },
+  "ui.go.forward": {
+    "en": "Go forward",
+    "zh-Hans": "前进",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "tooltip"
+    ]
+  },
+  "ui.reload.this.page166": {
+    "en": "Reload this page",
+    "zh-Hans": "重新加载此页面",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "tooltip"
+    ]
+  },
+  "ui.software.update": {
+    "en": "Software Update",
+    "zh-Hans": "软件更新",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.ready.to.install": {
+    "en": "Ready to install",
+    "zh-Hans": "可以安装",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.checking": {
+    "en": "Checking…",
+    "zh-Hans": "正在检查…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.couldn.t.check": {
+    "en": "Couldn’t check",
+    "zh-Hans": "无法检查更新",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.up.to.date": {
+    "en": "Up to date",
+    "zh-Hans": "已是最新版本",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.development.build": {
+    "en": "Development build",
+    "zh-Hans": "开发版本",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.restore.the.original.dia.without.patches": {
+    "en": "Restore the original Dia without patches.",
+    "zh-Hans": "恢复未安装补丁的原版 Dia。",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.restore": {
+    "en": "Restore…",
+    "zh-Hans": "恢复…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.diatweaks.is.unofficial.and.not.affiliated.with.the.browser.company": {
+    "en": "DiaTweaks is unofficial and not affiliated with The Browser Company.",
+    "zh-Hans": "DiaTweaks 是非官方项目，与 The Browser Company 无关联。",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.wiki": {
+    "en": "Wiki",
+    "zh-Hans": "使用文档",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.report.a.bug": {
+    "en": "Report a Bug",
+    "zh-Hans": "报告问题",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.restore.the.original.dia": {
+    "en": "Restore the original Dia?",
+    "zh-Hans": "恢复原版 Dia？",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.dia.will.relaunch.without.patches.and.its.own.updater.takes.over.again.run.the.installer.to.patch.it.again.later": {
+    "en": "Dia will relaunch without patches, and its own updater takes over again. Run the installer to patch it again later.",
+    "zh-Hans": "Dia 将以无补丁状态重新启动，并恢复其内置更新功能。以后可以再次运行安装程序来安装补丁。",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.restore.and.relaunch": {
+    "en": "Restore and Relaunch",
+    "zh-Hans": "恢复并重新启动",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.options": {
+    "en": "Options",
+    "zh-Hans": "选项",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.not.available.in.this.version": {
+    "en": "Not Available in This Version",
+    "zh-Hans": "此版本不支持",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.read.more.on.the.wiki": {
+    "en": "Read more on the wiki",
+    "zh-Hans": "在文档中了解更多",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.turn.on.from.terminal": {
+    "en": "Turn on from Terminal",
+    "zh-Hans": "从终端开启",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.unavailable.on.this.dia.version": {
+    "en": "Unavailable on this Dia version.",
+    "zh-Hans": "此 Dia 版本不支持。",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.no.results": {
+    "en": "No Results",
+    "zh-Hans": "没有结果",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.no.results187": {
+    "en": "No results",
+    "zh-Hans": "没有结果",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.page": {
+    "en": "Page",
+    "zh-Hans": "页面",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.toolbar": {
+    "en": "Toolbar",
+    "zh-Hans": "工具栏",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.sidebar.tab.bar": {
+    "en": "Sidebar & Tab Bar",
+    "zh-Hans": "侧边栏与标签栏",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.command.bar": {
+    "en": "Command Bar",
+    "zh-Hans": "命令栏",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.new.tab.page": {
+    "en": "New Tab Page",
+    "zh-Hans": "新标签页",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.ai": {
+    "en": "AI",
+    "zh-Hans": "人工智能",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.passwords": {
+    "en": "Passwords",
+    "zh-Hans": "密码",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.links": {
+    "en": "Links",
+    "zh-Hans": "链接",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.other": {
+    "en": "Other",
+    "zh-Hans": "其他",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.language": {
+    "en": "Language",
+    "zh-Hans": "语言",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.appearance": {
+    "en": "Appearance",
+    "zh-Hans": "外观",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.automatic.updates": {
+    "en": "Automatic Updates",
+    "zh-Hans": "自动更新",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.check.for.updates200": {
+    "en": "Check for Updates",
+    "zh-Hans": "检查更新",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.update.now": {
+    "en": "Update Now",
+    "zh-Hans": "立即更新",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "language.relaunch": {
+    "en": "Relaunch",
+    "zh-Hans": "重新启动",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "language.later": {
+    "en": "Later",
+    "zh-Hans": "稍后",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.release.notes": {
+    "en": "Release Notes",
+    "zh-Hans": "发行说明",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.download": {
+    "en": "Download",
+    "zh-Hans": "下载",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.downloading": {
+    "en": "Downloading…",
+    "zh-Hans": "正在下载…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.install": {
+    "en": "Install",
+    "zh-Hans": "安装",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.install.now": {
+    "en": "Install Now",
+    "zh-Hans": "立即安装",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.installs.when.you.quit": {
+    "en": "Installs when you quit",
+    "zh-Hans": "退出时安装",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.download.and.install.on.quit": {
+    "en": "Download and install on quit",
+    "zh-Hans": "下载并在退出时安装",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.download.updates": {
+    "en": "Download updates",
+    "zh-Hans": "下载更新",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "ui.show.updates": {
+    "en": "Show updates",
+    "zh-Hans": "显示更新",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "language.system": {
+    "en": "Follow System",
+    "zh-Hans": "跟随系统",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "language.title": {
+    "en": "Interface Language",
+    "zh-Hans": "界面语言",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "language.restart": {
+    "en": "Relaunch Dia to change the language",
+    "zh-Hans": "重新启动 Dia 以更改语言",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "language.restartDetail": {
+    "en": "The interface and preferred website language will change the next time Dia opens.",
+    "zh-Hans": "下次打开 Dia 时，界面语言和网站首选语言将随之更改。",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "updates.preparing": {
+    "en": "Preparing…",
+    "zh-Hans": "正在准备…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "updates.couldn.t.check.for.updates": {
+    "en": "Couldn’t check for updates",
+    "zh-Hans": "无法检查更新",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "updates.checking.for.updates": {
+    "en": "Checking for updates…",
+    "zh-Hans": "正在检查更新…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "updates.try.again": {
+    "en": "Try Again",
+    "zh-Hans": "重试",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "updates.everything.is.up.to.date": {
+    "en": "Everything is up to date",
+    "zh-Hans": "所有软件均为最新版本",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "updates.check.now": {
+    "en": "Check Now",
+    "zh-Hans": "立即检查",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "updates.update.both": {
+    "en": "Update Both",
+    "zh-Hans": "更新两项",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "updates.dia.and.diatweaks.both.have.updates": {
+    "en": "Dia and DiaTweaks both have updates",
+    "zh-Hans": "Dia 和 DiaTweaks 均有可用更新",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "updates.also.available": {
+    "en": "Also Available",
+    "zh-Hans": "其他可用更新",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "updates.installed": {
+    "en": "Installed",
+    "zh-Hans": "已安装",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "updates.show.in.software.update": {
+    "en": "Show in Software Update",
+    "zh-Hans": "在软件更新中显示",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "updates.only.checks.when.you.open.this.page": {
+    "en": "Only checks when you open this page",
+    "zh-Hans": "仅在打开此页面时检查",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "updates.checks.when.dia.opens.and.lists.it.here": {
+    "en": "Checks when Dia opens and lists it here",
+    "zh-Hans": "打开 Dia 时检查并在此列出",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "updates.downloads.it.then.you.choose.when.to.install": {
+    "en": "Downloads it, then you choose when to install",
+    "zh-Hans": "下载后由你选择安装时间",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "updates.downloads.it.and.installs.when.you.quit.dia": {
+    "en": "Downloads it and installs when you quit Dia",
+    "zh-Hans": "下载并在退出 Dia 时安装",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "updates.download.failed": {
+    "en": "Download failed",
+    "zh-Hans": "下载失败",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "updates.safe.mode": {
+    "en": "Safe Mode",
+    "zh-Hans": "安全模式",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "updates.patches.are.off.because.dia.quit.unexpectedly.right.after.opening": {
+    "en": "Patches are off because Dia quit unexpectedly right after opening.",
+    "zh-Hans": "Dia 启动后意外退出，补丁已被关闭。",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "updates.turn.patches.back.on": {
+    "en": "Turn Patches Back On",
+    "zh-Hans": "重新开启补丁",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "updates.downloading.0f": {
+    "en": "Downloading… %.0f%%",
+    "zh-Hans": "正在下载… %.0f%%",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "updates.needs": {
+    "en": "Needs %@.",
+    "zh-Hans": "需要先启用%@。",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "updates.hides.this.too": {
+    "en": "%@ hides this too.",
+    "zh-Hans": "%@也会隐藏此项。",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "updates.hidden.while.is.on": {
+    "en": "Hidden while %@ is on",
+    "zh-Hans": "开启%@时隐藏",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "updates.version": {
+    "en": "Version %@",
+    "zh-Hans": "版本 %@",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "updates.lu.updates": {
+    "en": "%lu updates",
+    "zh-Hans": "%lu 项更新",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.name": {
+    "en": "Name",
+    "zh-Hans": "名称",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.tab.layout": {
+    "en": "Tab layout",
+    "zh-Hans": "标签页布局",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.top.bar": {
+    "en": "Top bar",
+    "zh-Hans": "顶部标签栏",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.sidebar": {
+    "en": "Sidebar",
+    "zh-Hans": "侧边栏",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.toggle.layouts": {
+    "en": "Toggle layouts",
+    "zh-Hans": "切换布局",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.extend.website.color.into.tab.bar": {
+    "en": "Extend website color into tab bar",
+    "zh-Hans": "将网站颜色延伸至标签栏",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.add.new.tabs.to.the.top": {
+    "en": "Add new tabs to the top",
+    "zh-Hans": "将新标签页添加到顶部",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.tab.groups": {
+    "en": "Tab groups",
+    "zh-Hans": "标签组",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.clicking.links.creates.tab.groups": {
+    "en": "⌘-clicking links creates tab groups",
+    "zh-Hans": "按住 ⌘ 点击链接时创建标签组",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.click.opens.tab.in.group": {
+    "en": "⌥⇧-click opens tab in group",
+    "zh-Hans": "按住 ⌥⇧ 点击时在组内打开标签",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.automatically.group.tabs.for.meetings": {
+    "en": "Automatically group tabs for meetings",
+    "zh-Hans": "自动为会议标签分组",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.add.emoji.to.new.tab.groups": {
+    "en": "Add emoji to new tab groups",
+    "zh-Hans": "为新标签组添加表情",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.tab.cleanup": {
+    "en": "Tab cleanup",
+    "zh-Hans": "标签清理",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.automatically.clean.up.tabs.i.haven.t.used": {
+    "en": "Automatically clean up tabs I haven’t used",
+    "zh-Hans": "自动清理闲置标签页",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.12.hours": {
+    "en": "12 hours",
+    "zh-Hans": "12 小时",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.24.hours": {
+    "en": "24 hours",
+    "zh-Hans": "24 小时",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.3.days": {
+    "en": "3 days",
+    "zh-Hans": "3 天",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.7.days": {
+    "en": "7 days",
+    "zh-Hans": "7 天",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.content.blocking": {
+    "en": "Content blocking",
+    "zh-Hans": "内容拦截",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.block.ads": {
+    "en": "Block ads",
+    "zh-Hans": "拦截广告",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.block.cookie.banners": {
+    "en": "Block cookie banners",
+    "zh-Hans": "拦截 Cookie 横幅",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.block.trackers": {
+    "en": "Block trackers",
+    "zh-Hans": "拦截跟踪器",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.advanced.settings": {
+    "en": "Advanced Settings",
+    "zh-Hans": "高级设置",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.data": {
+    "en": "Data",
+    "zh-Hans": "数据",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.share.content.data.to.help.improve.dia": {
+    "en": "Share content data to help improve Dia",
+    "zh-Hans": "共享内容数据以帮助改进 Dia",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.this.data.will.not.be.tied.to.your.profile": {
+    "en": "This data will not be tied to your profile",
+    "zh-Hans": "这些数据不会与你的个人资料关联",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.profiles.keep.your.browsing.organized.keep.history.logins.cookies.and.extensions.separate.per.profile.or.share.them.across.selected.profiles.with.a.toggle": {
+    "en": "Profiles keep your browsing organized — keep history, logins, cookies, and extensions separate per profile, or share them across selected profiles with a toggle.",
+    "zh-Hans": "个人资料可让浏览井然有序：分别管理历史记录、登录状态、Cookie 和扩展，也可开启共享，让选定的个人资料共用这些数据。",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.windows.links": {
+    "en": "Windows & Links",
+    "zh-Hans": "窗口与链接",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.new.windows.open.with": {
+    "en": "New windows open with",
+    "zh-Hans": "新窗口使用",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.link.rules": {
+    "en": "Link Rules…",
+    "zh-Hans": "链接规则…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.create.profile": {
+    "en": "Create Profile…",
+    "zh-Hans": "创建个人资料…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.profile.name": {
+    "en": "Profile Name",
+    "zh-Hans": "个人资料名称",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.theme.color": {
+    "en": "Theme Color",
+    "zh-Hans": "主题颜色",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.adjust.theme.intensity": {
+    "en": "Adjust theme intensity",
+    "zh-Hans": "调整主题浓度",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.emoji": {
+    "en": "Emoji",
+    "zh-Hans": "表情图标",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.privacy.and.security": {
+    "en": "Privacy and Security",
+    "zh-Hans": "隐私与安全",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.credit.cards": {
+    "en": "Credit Cards",
+    "zh-Hans": "信用卡",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.notifications": {
+    "en": "Notifications",
+    "zh-Hans": "通知",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.clear.data": {
+    "en": "Clear Data…",
+    "zh-Hans": "清除数据…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.delete.profile": {
+    "en": "Delete Profile…",
+    "zh-Hans": "删除个人资料…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.edit.profile": {
+    "en": "Edit Profile",
+    "zh-Hans": "编辑个人资料",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.new.tab.in.group": {
+    "en": "New Tab in Group",
+    "zh-Hans": "在组内新建标签页",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "native.open.command.bar": {
+    "en": "Open Command Bar",
+    "zh-Hans": "打开命令栏",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "native.close.all.tabs": {
+    "en": "Close All Tabs",
+    "zh-Hans": "关闭所有标签页",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "native.clean.up.tabs": {
+    "en": "Clean Up Tabs",
+    "zh-Hans": "清理标签页",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "native.share": {
+    "en": "Share…",
+    "zh-Hans": "共享…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "native.copy.url": {
+    "en": "Copy URL",
+    "zh-Hans": "复制网址",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.copy.url.as.markdown": {
+    "en": "Copy URL as Markdown",
+    "zh-Hans": "复制 Markdown 网址",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "native.use.selection.for.find": {
+    "en": "Use Selection for Find",
+    "zh-Hans": "使用所选内容查找",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "native.refresh": {
+    "en": "Refresh",
+    "zh-Hans": "刷新",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "tooltip"
+    ]
+  },
+  "native.force.refresh.the.page": {
+    "en": "Force Refresh the Page",
+    "zh-Hans": "强制刷新页面",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "native.show.tabs.in.sidebar": {
+    "en": "Show Tabs in Sidebar",
+    "zh-Hans": "在侧边栏显示标签页",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "native.show.tabs.at.top": {
+    "en": "Show Tabs at Top",
+    "zh-Hans": "在顶部显示标签页",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.show.tabs.in.top.bar": {
+    "en": "Show Tabs in Top Bar",
+    "zh-Hans": "在顶部标签栏显示标签页",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.auto.hide.tabs": {
+    "en": "Auto-Hide Tabs",
+    "zh-Hans": "自动隐藏标签页",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "native.open.split.pane": {
+    "en": "Open Split Pane",
+    "zh-Hans": "打开分屏窗格",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "native.focus.next.split.pane": {
+    "en": "Focus Next Split Pane",
+    "zh-Hans": "聚焦下一个分屏窗格",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "native.focus.previous.split.pane": {
+    "en": "Focus Previous Split Pane",
+    "zh-Hans": "聚焦上一个分屏窗格",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "native.toggle.bookmarks.bar": {
+    "en": "Toggle Bookmarks Bar",
+    "zh-Hans": "切换书签栏显示",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "native.zoom.to.actual.size": {
+    "en": "Zoom to Actual Size",
+    "zh-Hans": "缩放至实际大小",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "native.inspect.elements": {
+    "en": "Inspect Elements",
+    "zh-Hans": "检查元素",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "native.javascript.console": {
+    "en": "JavaScript Console",
+    "zh-Hans": "JavaScript 控制台",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "native.go.back": {
+    "en": "Go Back",
+    "zh-Hans": "后退",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "native.go.forward": {
+    "en": "Go Forward",
+    "zh-Hans": "前进",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "native.next.tab": {
+    "en": "Next Tab",
+    "zh-Hans": "下一个标签页",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "native.previous.tab": {
+    "en": "Previous Tab",
+    "zh-Hans": "上一个标签页",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "native.previous.profile": {
+    "en": "Previous Profile",
+    "zh-Hans": "上一个个人资料",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "native.next.profile": {
+    "en": "Next Profile",
+    "zh-Hans": "下一个个人资料",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "native.search.tabs": {
+    "en": "Search Tabs…",
+    "zh-Hans": "搜索标签页…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "native.pin.unpin.tab": {
+    "en": "Pin/Unpin Tab",
+    "zh-Hans": "固定或取消固定标签页",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "native.duplicate.tab": {
+    "en": "Duplicate Tab",
+    "zh-Hans": "复制标签页",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "native.reset.pinned.tab.to.base.url": {
+    "en": "Reset Pinned Tab to Base URL",
+    "zh-Hans": "将固定标签重置为原始网址",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "native.new.group.with.tabs": {
+    "en": "New Group with Tabs",
+    "zh-Hans": "用标签页新建分组",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "native.tab.switcher.forward": {
+    "en": "Tab Switcher (forward)",
+    "zh-Hans": "标签切换器（向前）",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "native.tab.switcher.backward": {
+    "en": "Tab Switcher (backward)",
+    "zh-Hans": "标签切换器（向后）",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "native.manage.bookmarks": {
+    "en": "Manage Bookmarks",
+    "zh-Hans": "管理书签",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "native.show.history": {
+    "en": "Show History…",
+    "zh-Hans": "显示历史记录…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "native.open.profile.switcher": {
+    "en": "Open Profile Switcher",
+    "zh-Hans": "打开个人资料切换器",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "native.merge.all.windows": {
+    "en": "Merge All Windows",
+    "zh-Hans": "合并所有窗口",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "native.copy.diagnostics": {
+    "en": "Copy Diagnostics",
+    "zh-Hans": "复制诊断信息",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "shortcut"
+    ]
+  },
+  "native.filter": {
+    "en": "Filter",
+    "zh-Hans": "筛选",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.more": {
+    "en": "More",
+    "zh-Hans": "更多",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.quit": {
+    "en": "Quit",
+    "zh-Hans": "退出",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.always.quit": {
+    "en": "Always quit",
+    "zh-Hans": "始终退出",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.are.you.sure.you.want.to.quit.dia": {
+    "en": "Are you sure you want to quit Dia?",
+    "zh-Hans": "确定要退出 Dia 吗？",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.you.may.lose.unsaved.work.in.your.tabs": {
+    "en": "You may lose unsaved work in your tabs.",
+    "zh-Hans": "标签页中未保存的内容可能会丢失。",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.close.tabs.above": {
+    "en": "Close Tabs Above",
+    "zh-Hans": "关闭上方标签页",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.close.tabs.below": {
+    "en": "Close Tabs Below",
+    "zh-Hans": "关闭下方标签页",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.grain": {
+    "en": "Grain",
+    "zh-Hans": "颗粒",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.sand": {
+    "en": "Sand",
+    "zh-Hans": "砂粒",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.tweed": {
+    "en": "Tweed",
+    "zh-Hans": "粗花呢",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.denim": {
+    "en": "Denim",
+    "zh-Hans": "牛仔布",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.matte": {
+    "en": "Matte",
+    "zh-Hans": "哑光",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.fine": {
+    "en": "Fine",
+    "zh-Hans": "细腻",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.texture": {
+    "en": "Texture",
+    "zh-Hans": "纹理",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.show.grain.in.this.profile": {
+    "en": "Show grain in this profile",
+    "zh-Hans": "在此个人资料中显示纹理",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.all.profiles": {
+    "en": "All Profiles",
+    "zh-Hans": "所有个人资料",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.this.profile": {
+    "en": "This Profile",
+    "zh-Hans": "此个人资料",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.apply.to": {
+    "en": "Apply to",
+    "zh-Hans": "应用于",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.edit.sidebar.grain": {
+    "en": "Edit Sidebar Grain…",
+    "zh-Hans": "编辑侧边栏纹理…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.softness": {
+    "en": "Softness",
+    "zh-Hans": "柔和度",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.scale": {
+    "en": "Scale",
+    "zh-Hans": "缩放",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.reset.this.profile.to.the.defaults": {
+    "en": "Reset this profile to the defaults",
+    "zh-Hans": "将此个人资料恢复为默认设置",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.reset.grain.softness.and.scale": {
+    "en": "Reset Grain, Softness and Scale",
+    "zh-Hans": "重置颗粒、柔和度和缩放",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.reset.grain.settings": {
+    "en": "Reset grain settings",
+    "zh-Hans": "重置纹理设置",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.under.window.background": {
+    "en": "Under Window Background",
+    "zh-Hans": "窗口背景下方",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.header": {
+    "en": "Header",
+    "zh-Hans": "页眉",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.titlebar": {
+    "en": "Titlebar",
+    "zh-Hans": "标题栏",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.menu": {
+    "en": "Menu",
+    "zh-Hans": "菜单",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.popover": {
+    "en": "Popover",
+    "zh-Hans": "弹出面板",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.full.screen.ui": {
+    "en": "Full Screen UI",
+    "zh-Hans": "全屏界面",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.tooltip": {
+    "en": "Tooltip",
+    "zh-Hans": "工具提示",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.regular": {
+    "en": "Regular",
+    "zh-Hans": "标准",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.clear": {
+    "en": "Clear",
+    "zh-Hans": "清除",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.dock": {
+    "en": "Dock",
+    "zh-Hans": "程序坞",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.app.icons": {
+    "en": "App Icons",
+    "zh-Hans": "应用图标",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.widgets": {
+    "en": "Widgets",
+    "zh-Hans": "小组件",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.text": {
+    "en": "Text",
+    "zh-Hans": "文本",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.control.center": {
+    "en": "Control Center",
+    "zh-Hans": "控制中心",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.notification.center": {
+    "en": "Notification Center",
+    "zh-Hans": "通知中心",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.monogram": {
+    "en": "Monogram",
+    "zh-Hans": "字母图案",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.bubbles": {
+    "en": "Bubbles",
+    "zh-Hans": "气泡",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.identity": {
+    "en": "Identity",
+    "zh-Hans": "身份",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.focus.border": {
+    "en": "Focus Border",
+    "zh-Hans": "焦点边框",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.focus.platter": {
+    "en": "Focus Platter",
+    "zh-Hans": "焦点底板",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.keyboard": {
+    "en": "Keyboard",
+    "zh-Hans": "键盘",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.abutted.sidebar": {
+    "en": "Abutted Sidebar",
+    "zh-Hans": "相邻侧边栏",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.inspector": {
+    "en": "Inspector",
+    "zh-Hans": "检查器",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.control": {
+    "en": "Control",
+    "zh-Hans": "控件",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.loupe": {
+    "en": "Loupe",
+    "zh-Hans": "放大镜",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.slider": {
+    "en": "Slider",
+    "zh-Hans": "滑块",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.camera": {
+    "en": "Camera",
+    "zh-Hans": "相机",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.cartouche.popover": {
+    "en": "Cartouche Popover",
+    "zh-Hans": "框式弹出面板",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.material": {
+    "en": "Material",
+    "zh-Hans": "材质",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.materials": {
+    "en": "Materials",
+    "zh-Hans": "材质",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.liquid.glass": {
+    "en": "Liquid Glass",
+    "zh-Hans": "液态玻璃",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.radius": {
+    "en": "Radius",
+    "zh-Hans": "半径",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.couldn.t.change.the.morning.brief.s.language": {
+    "en": "Couldn’t change the Morning Brief’s language",
+    "zh-Hans": "无法更改晨间简报语言",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.dia.keeps.writing.it.as.it.does.now": {
+    "en": "Dia keeps writing it as it does now.",
+    "zh-Hans": "Dia 将继续使用当前语言撰写简报。",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.dia.keeps.writing.it.as.it.does.nowx": {
+    "en": "Dia keeps writing it as it does now: %@.",
+    "zh-Hans": "Dia 将继续使用当前语言撰写简报：%@。",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.relaunch.dia.to.change.the.morning.brief.s.language": {
+    "en": "Relaunch Dia to change the Morning Brief’s language",
+    "zh-Hans": "重新启动 Dia 以更改晨间简报语言",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.until.then.dia.keeps.writing.it.as.it.does.now.the.next.brief.dia.writes.uses.the.new.language": {
+    "en": "Until then, Dia keeps writing it as it does now. The next brief Dia writes uses the new language.",
+    "zh-Hans": "重启前仍使用当前语言。下一份简报将使用新语言。",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.space": {
+    "en": "Space",
+    "zh-Hans": "空格",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.type.shortcut": {
+    "en": "Type shortcut…",
+    "zh-Hans": "输入快捷键…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.add.new": {
+    "en": "Add new…",
+    "zh-Hans": "添加…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.shortcut": {
+    "en": "Shortcut",
+    "zh-Hans": "快捷键",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.perform.common.actions.in.dia.faster.and.from.anywhere": {
+    "en": "Perform common actions in Dia faster and from anywhere.",
+    "zh-Hans": "随时快速执行 Dia 中的常用操作。",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.select.an.action.to.customize.its.keyboard.shortcut": {
+    "en": "Select an action to customize its keyboard shortcut.",
+    "zh-Hans": "选择操作以自定义键盘快捷键。",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.all": {
+    "en": "All",
+    "zh-Hans": "全部",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.customized": {
+    "en": "Customized",
+    "zh-Hans": "已自定义",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.conflicts": {
+    "en": "Conflicts",
+    "zh-Hans": "冲突",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.reset.all.shortcuts": {
+    "en": "Reset All Shortcuts…",
+    "zh-Hans": "重置所有快捷键…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.reset.to.default": {
+    "en": "Reset to Default",
+    "zh-Hans": "恢复默认",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.merge.subdomains": {
+    "en": "Merge Subdomains",
+    "zh-Hans": "合并子域名",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.group.tabs.from.the.same.site.together.so.gist.github.com.joins.github.com": {
+    "en": "Group tabs from the same site together, so gist.github.com joins github.com.",
+    "zh-Hans": "将同一网站的标签页归为一组，例如将 gist.github.com 与 github.com 合并。",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.group.tabs.by.domain": {
+    "en": "Group Tabs by Domain",
+    "zh-Hans": "按域名分组标签页",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.groups.a.window.s.tabs.by.site.from.the.tabs.menu.a.tab.s.right.click.menu.or.a.shortcut": {
+    "en": "Groups a window’s tabs by site, from the Tabs menu, a tab’s right-click menu or a shortcut.",
+    "zh-Hans": "通过标签页菜单、右键菜单或快捷键，将窗口中的标签页按网站分组。",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.no.extensions": {
+    "en": "No Extensions",
+    "zh-Hans": "没有扩展程序",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.relaunch.dia.to.skip.account.sign.in": {
+    "en": "Relaunch Dia to skip account sign-in",
+    "zh-Hans": "重新启动 Dia 以跳过账户登录",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.relaunch.dia.to.use.account.sign.in": {
+    "en": "Relaunch Dia to use account sign-in",
+    "zh-Hans": "重新启动 Dia 以启用账户登录",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.relaunch.dia.to.cut.off.its.ai.servers": {
+    "en": "Relaunch Dia to cut off its AI servers",
+    "zh-Hans": "重新启动 Dia 以断开 AI 服务器连接",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.relaunch.dia.to.reconnect.its.ai.servers": {
+    "en": "Relaunch Dia to reconnect its AI servers",
+    "zh-Hans": "重新启动 Dia 以恢复 AI 服务器连接",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.until.then.ai.is.hidden.but.dia.can.still.reach.its.ai.servers": {
+    "en": "Until then, AI is hidden, but Dia can still reach its AI servers.",
+    "zh-Hans": "重启前 AI 界面已隐藏，但 Dia 仍可连接 AI 服务器。",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.until.then.chat.can.t.reach.them": {
+    "en": "Until then, chat can’t reach them.",
+    "zh-Hans": "重启前聊天仍无法连接服务器。",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.sign.in.to.dia.once.for.passkeys": {
+    "en": "Sign in to Dia once for passkeys",
+    "zh-Hans": "使用通行密钥前请先登录一次 Dia",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.passkeys.open.in.a.second.copy.of.dia.which.needs.you.to.sign.in.with.your.dia.email.once.your.passkey.carries.on.after": {
+    "en": "Passkeys open in a second copy of Dia, which needs you to sign in with your Dia email once. Your passkey carries on after.",
+    "zh-Hans": "通行密钥将在另一份 Dia 中打开。请使用 Dia 账户邮箱登录一次，随后将继续通行密钥操作。",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.relaunch.dia.to.allow.icloud.passkeys": {
+    "en": "Relaunch Dia to allow iCloud passkeys",
+    "zh-Hans": "重新启动 Dia 以允许 iCloud 通行密钥",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.relaunch.dia.to.stop.using.icloud.passkeys": {
+    "en": "Relaunch Dia to stop using iCloud passkeys",
+    "zh-Hans": "重新启动 Dia 以停用 iCloud 通行密钥",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.match.dia": {
+    "en": "Match Dia",
+    "zh-Hans": "与 Dia 一致",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.couldn.t.change.dia.s.icon": {
+    "en": "Couldn’t change Dia’s icon",
+    "zh-Hans": "无法更改 Dia 图标",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.dia.keeps.its.current.icon": {
+    "en": "Dia keeps its current icon.",
+    "zh-Hans": "Dia 将保留当前图标。",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.couldn.t.set.up.icon.switching": {
+    "en": "Couldn’t set up icon switching",
+    "zh-Hans": "无法设置图标切换",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.relaunch.dia.to.change.its.icon": {
+    "en": "Relaunch Dia to change its icon",
+    "zh-Hans": "重新启动 Dia 以更改图标",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.until.then.dia.keeps.its.current.icon": {
+    "en": "Until then, Dia keeps its current icon.",
+    "zh-Hans": "重启前 Dia 将保留当前图标。",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.relaunch.dia.to.use.little.dia": {
+    "en": "Relaunch Dia to use Little Dia",
+    "zh-Hans": "重新启动 Dia 以使用 Little Dia",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.until.then.links.from.other.apps.keep.opening.in.a.tab": {
+    "en": "Until then, links from other apps keep opening in a tab.",
+    "zh-Hans": "重启前，其他应用的链接仍在标签页中打开。",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.relaunch.dia.to.split.clienthellos": {
+    "en": "Relaunch Dia to split ClientHellos",
+    "zh-Hans": "重新启动 Dia 以拆分 ClientHello",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.relaunch.dia.to.sandbox.its.network.service.again": {
+    "en": "Relaunch Dia to sandbox its network service again",
+    "zh-Hans": "重新启动 Dia 以恢复网络服务沙盒",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.until.then.dia.sends.them.whole.after.its.network.code.runs.outside.its.sandbox": {
+    "en": "Until then, Dia sends them whole. After, its network code runs outside its sandbox.",
+    "zh-Hans": "重启前仍发送完整消息；重启后网络代码将在沙盒之外运行。",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.until.then.its.network.code.keeps.running.outside.its.sandbox": {
+    "en": "Until then, its network code keeps running outside its sandbox.",
+    "zh-Hans": "重启前网络代码仍在沙盒之外运行。",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.tip.right.after.dia.starts.open.or.switch.to.any.tab.once.to.start.peek": {
+    "en": "Tip: right after Dia starts, open or switch to any tab once to start Peek.",
+    "zh-Hans": "提示：Dia 启动后，打开或切换一次标签页即可启动速览。",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.dia.and.diatweaks.are.up.to.date": {
+    "en": "Dia and DiaTweaks are up to date",
+    "zh-Hans": "Dia 和 DiaTweaks 均为最新版本",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.dia.relaunches.to.install.them.once.they.re.downloaded": {
+    "en": "Dia relaunches to install them once they’re downloaded.",
+    "zh-Hans": "下载完成后，Dia 将重新启动以安装更新。",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.update.and.relaunch": {
+    "en": "Update and Relaunch",
+    "zh-Hans": "更新并重新启动",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.showing.the.toolbar": {
+    "en": "Showing the Toolbar",
+    "zh-Hans": "显示工具栏",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.while.it.s.hidden": {
+    "en": "While It's Hidden",
+    "zh-Hans": "隐藏时",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.blur": {
+    "en": "Blur",
+    "zh-Hans": "模糊",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.darken": {
+    "en": "Darken",
+    "zh-Hans": "调暗",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.shadow": {
+    "en": "Shadow",
+    "zh-Hans": "阴影",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.interaction": {
+    "en": "Interaction",
+    "zh-Hans": "交互",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.typing": {
+    "en": "Typing",
+    "zh-Hans": "输入",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.network": {
+    "en": "Network",
+    "zh-Hans": "网络",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.stop.loading.this.page": {
+    "en": "Stop loading this page",
+    "zh-Hans": "停止加载此页面",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "tooltip"
+    ]
+  },
+  "native.close.tab": {
+    "en": "Close tab",
+    "zh-Hans": "关闭标签页",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.hold.to.view.history": {
+    "en": "Hold to view history",
+    "zh-Hans": "按住查看历史记录",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "tooltip"
+    ]
+  },
+  "native.new.tab": {
+    "en": "New tab",
+    "zh-Hans": "新建标签页",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.go": {
+    "en": "Go",
+    "zh-Hans": "前往",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.think.more": {
+    "en": "Think more",
+    "zh-Hans": "深入思考",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.generate": {
+    "en": "Generate",
+    "zh-Hans": "生成",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.fast": {
+    "en": "Fast",
+    "zh-Hans": "快速",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.speak.to.type.hold": {
+    "en": "Speak to type - Hold",
+    "zh-Hans": "按住说话以输入",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.group.selected.tabs.by.domain": {
+    "en": "Group Selected Tabs by Domain",
+    "zh-Hans": "按域名分组选中标签页",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.expand.all.tab.groups": {
+    "en": "Expand All Tab Groups",
+    "zh-Hans": "展开所有标签组",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.collapse.all.tab.groups": {
+    "en": "Collapse All Tab Groups",
+    "zh-Hans": "折叠所有标签组",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.ungroup.this.domain": {
+    "en": "Ungroup This Domain",
+    "zh-Hans": "取消此域名分组",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.ungroup.all.domains": {
+    "en": "Ungroup All Domains",
+    "zh-Hans": "取消所有域名分组",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.chats": {
+    "en": "Chats",
+    "zh-Hans": "聊天记录",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.files": {
+    "en": "Files",
+    "zh-Hans": "文件",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.chats.with.tabs": {
+    "en": "Chats with Tabs",
+    "zh-Hans": "与标签页的聊天",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.yesterday": {
+    "en": "Yesterday",
+    "zh-Hans": "昨天",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.today": {
+    "en": "Today",
+    "zh-Hans": "今天",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.this.week": {
+    "en": "This Week",
+    "zh-Hans": "本周",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.last.week": {
+    "en": "Last Week",
+    "zh-Hans": "上周",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.this.month": {
+    "en": "This Month",
+    "zh-Hans": "本月",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.earlier": {
+    "en": "Earlier",
+    "zh-Hans": "更早",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.open.tabs": {
+    "en": "Open Tabs",
+    "zh-Hans": "已打开的标签页",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.recently.closed": {
+    "en": "Recently Closed",
+    "zh-Hans": "最近关闭",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.add.to.bookmarks.bar": {
+    "en": "Add to Bookmarks Bar",
+    "zh-Hans": "添加到书签栏",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.bookmarks.bar": {
+    "en": "Bookmarks Bar",
+    "zh-Hans": "书签栏",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.other.bookmarks": {
+    "en": "Other Bookmarks",
+    "zh-Hans": "其他书签",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.move.to.window": {
+    "en": "Move to Window",
+    "zh-Hans": "移至窗口",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.add.bookmark.to.folder": {
+    "en": "Add Bookmark to Folder",
+    "zh-Hans": "添加书签到文件夹",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.new.folder": {
+    "en": "New Folder...",
+    "zh-Hans": "新建文件夹…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.new.folderx": {
+    "en": "New Folder…",
+    "zh-Hans": "新建文件夹…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.open.in.new.window": {
+    "en": "Open in New Window",
+    "zh-Hans": "在新窗口中打开",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.edit.pinned.page": {
+    "en": "Edit Pinned Page",
+    "zh-Hans": "编辑固定页面",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.replace.pinned.url.with.current": {
+    "en": "Replace Pinned URL with Current",
+    "zh-Hans": "用当前网址替换固定网址",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.edit": {
+    "en": "Edit...",
+    "zh-Hans": "编辑…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.editx": {
+    "en": "Edit…",
+    "zh-Hans": "编辑…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.add.extension": {
+    "en": "Add Extension...",
+    "zh-Hans": "添加扩展程序…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.add.extensionx": {
+    "en": "Add Extension…",
+    "zh-Hans": "添加扩展程序…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.pin.extensions": {
+    "en": "Pin Extensions...",
+    "zh-Hans": "固定扩展程序…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.pin.extensionsx": {
+    "en": "Pin Extensions…",
+    "zh-Hans": "固定扩展程序…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.search.or.enter.address": {
+    "en": "Search or enter address",
+    "zh-Hans": "搜索或输入网址",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "newtab"
+    ]
+  },
+  "native.no.chats.yet": {
+    "en": "No chats yet",
+    "zh-Hans": "尚无聊天记录",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.no.results.found": {
+    "en": "No results found",
+    "zh-Hans": "未找到结果",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.sort.by": {
+    "en": "Sort by",
+    "zh-Hans": "排序方式",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.newest.first": {
+    "en": "Newest first",
+    "zh-Hans": "最新优先",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.oldest.first": {
+    "en": "Oldest first",
+    "zh-Hans": "最早优先",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "material.clear": {
+    "en": "Clear",
+    "zh-Hans": "清透",
+    "contexts": [
+      "material"
+    ]
+  },
+  "shortcut.conflict": {
+    "en": "This shortcut conflicts with another shortcut:\n",
+    "zh-Hans": "此快捷键与其他快捷键冲突：\n",
+    "contexts": [
+      "tweaks",
+      "settings"
+    ]
+  },
+  "shortcut.help": {
+    "en": "Perform common actions in Dia faster and from anywhere.\n\nSelect an action to customize its keyboard shortcut.",
+    "zh-Hans": "随时快速执行 Dia 中的常用操作。\n\n选择操作以自定义键盘快捷键。",
+    "contexts": [
+      "settings"
+    ]
+  },
+  "native.new.profile": {
+    "en": "New Profile…",
+    "zh-Hans": "新建个人资料…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.new.profilex": {
+    "en": "New Profile...",
+    "zh-Hans": "新建个人资料…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.apps": {
+    "en": "Apps",
+    "zh-Hans": "应用",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.skills": {
+    "en": "Skills",
+    "zh-Hans": "技能",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.morning.brief": {
+    "en": "Morning Brief",
+    "zh-Hans": "每日简报",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.receive.a.daily.personalized.summary": {
+    "en": "Receive a daily personalized summary",
+    "zh-Hans": "接收每日个性化摘要",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.automatically.connect.my.logged.in.apps": {
+    "en": "Automatically connect my logged-in apps",
+    "zh-Hans": "自动连接我已登录的应用",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.all.apps": {
+    "en": "All apps",
+    "zh-Hans": "全部应用",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.connected": {
+    "en": "Connected",
+    "zh-Hans": "已连接",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "newtab"
+    ]
+  },
+  "native.more.actions": {
+    "en": "More actions",
+    "zh-Hans": "更多操作",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.connect": {
+    "en": "Connect",
+    "zh-Hans": "连接",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome",
+      "newtab"
+    ]
+  },
+  "native.add.skill": {
+    "en": "Add Skill",
+    "zh-Hans": "添加技能",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.remove.skill": {
+    "en": "Remove Skill",
+    "zh-Hans": "移除技能",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.edit.skill": {
+    "en": "Edit Skill",
+    "zh-Hans": "编辑技能",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.namex": {
+    "en": "Name:",
+    "zh-Hans": "名称：",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.prompt": {
+    "en": "Prompt:",
+    "zh-Hans": "提示词：",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.show.calendar.preview": {
+    "en": "Show Calendar Preview",
+    "zh-Hans": "显示日历预览",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.show.time.to.next.meeting": {
+    "en": "Show Time to Next Meeting",
+    "zh-Hans": "显示距离下次会议的时间",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.show.next.meeting.alert": {
+    "en": "Show Next Meeting Alert",
+    "zh-Hans": "显示下次会议提醒",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.at.meeting.start": {
+    "en": "At Meeting Start",
+    "zh-Hans": "会议开始时",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.one.minute.before": {
+    "en": "One Minute Before",
+    "zh-Hans": "提前一分钟",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.three.minutes.before": {
+    "en": "Three Minutes Before",
+    "zh-Hans": "提前三分钟",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.only.when.app.is.active": {
+    "en": "Only When App is Active",
+    "zh-Hans": "仅在应用活跃时",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.active.calendars": {
+    "en": "Active Calendars",
+    "zh-Hans": "启用的日历",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.my.calendars": {
+    "en": "My Calendars",
+    "zh-Hans": "我的日历",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.other.calendars": {
+    "en": "Other Calendars",
+    "zh-Hans": "其他日历",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.add.left.split": {
+    "en": "Add left split",
+    "zh-Hans": "添加左侧分屏",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.add.right.split": {
+    "en": "Add right split",
+    "zh-Hans": "添加右侧分屏",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.new.folderxx": {
+    "en": "New Folder",
+    "zh-Hans": "新建文件夹",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.website": {
+    "en": "Website",
+    "zh-Hans": "网站",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.address": {
+    "en": "Address",
+    "zh-Hans": "地址",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.recently.visited": {
+    "en": "Recently Visited",
+    "zh-Hans": "最近访问",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.bookmark.this.page": {
+    "en": "Bookmark This Page",
+    "zh-Hans": "将此页面加入书签",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.invite.to.dia": {
+    "en": "Invite to Dia...",
+    "zh-Hans": "邀请使用 Dia…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.invite.to.diax": {
+    "en": "Invite to Dia…",
+    "zh-Hans": "邀请使用 Dia…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.import.from.another.browser": {
+    "en": "Import from Another Browser...",
+    "zh-Hans": "从其他浏览器导入…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.import.from.another.browserx": {
+    "en": "Import from Another Browser…",
+    "zh-Hans": "从其他浏览器导入…",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.change.name": {
+    "en": "Change Name",
+    "zh-Hans": "更改名称",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.change.email": {
+    "en": "Change Email",
+    "zh-Hans": "更改电子邮件",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.change.password": {
+    "en": "Change Password",
+    "zh-Hans": "更改密码",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.advanced.ad.block.settings": {
+    "en": "Advanced Ad Block Settings",
+    "zh-Hans": "高级广告拦截设置",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.block.common.components.found.across.the.web.by.using.additional.rules.and.filters": {
+    "en": "Block common components found across the web by using additional rules and filters.",
+    "zh-Hans": "使用额外的规则和过滤器，拦截网页中常见的内容。",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.ad.blockers": {
+    "en": "Ad Blockers",
+    "zh-Hans": "广告拦截",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.trackers": {
+    "en": "Trackers",
+    "zh-Hans": "跟踪器",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.cookie.banners": {
+    "en": "Cookie Banners",
+    "zh-Hans": "Cookie 横幅",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.regional": {
+    "en": "Regional",
+    "zh-Hans": "地区规则",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.ublock.ads": {
+    "en": "uBlock - Ads",
+    "zh-Hans": "uBlock - 广告",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.ublock.unbreak": {
+    "en": "uBlock - Unbreak",
+    "zh-Hans": "uBlock - 网站兼容性修复",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.ublock.privacy": {
+    "en": "uBlock - Privacy",
+    "zh-Hans": "uBlock - 隐私",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.easylist.cookie.notices": {
+    "en": "EasyList - Cookie Notices",
+    "zh-Hans": "EasyList - Cookie 提示",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.ublock.cookie.notices": {
+    "en": "uBlock – Cookie Notices",
+    "zh-Hans": "uBlock - Cookie 提示",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.bookmark.added": {
+    "en": "Bookmark added",
+    "zh-Hans": "已添加书签",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.folder": {
+    "en": "Folder",
+    "zh-Hans": "文件夹",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "bookmarks.itemCount": {
+    "en": "%@ items",
+    "zh-Hans": "%@ 项",
+    "contexts": [
+      "bookmark-count"
+    ]
+  },
+  "native.easylist.polska.lista": {
+    "en": "EasyList - Polska lista",
+    "zh-Hans": "EasyList - 波兰语规则",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.ru.adlist": {
+    "en": "RU AdList",
+    "zh-Hans": "RU AdList（俄语）",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.adblock.list.for.albania": {
+    "en": "Adblock List for Albania",
+    "zh-Hans": "阿尔巴尼亚广告拦截规则",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.adblock.list.for.bulgaria": {
+    "en": "Adblock List for Bulgaria",
+    "zh-Hans": "保加利亚广告拦截规则",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.adguard.chinese": {
+    "en": "AdGuard Chinese (中文)",
+    "zh-Hans": "AdGuard 中文",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.easylist.czech.and.slovak": {
+    "en": "EasyList Czech and Slovak",
+    "zh-Hans": "EasyList 捷克语和斯洛伐克语",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.easylist.germany": {
+    "en": "EasyList Germany",
+    "zh-Hans": "EasyList 德语",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.eesti.saitidele.kohandatud.filter.estonian": {
+    "en": "Eesti saitidele kohandatud filter (Estonian)",
+    "zh-Hans": "爱沙尼亚语过滤规则",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.adguard.spanish.portuguese": {
+    "en": "AdGuard Spanish/Portuguese",
+    "zh-Hans": "AdGuard 西班牙语／葡萄牙语",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.easylist.spanish": {
+    "en": "EasyList Spanish",
+    "zh-Hans": "EasyList 西班牙语",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.adblock.list.for.finland": {
+    "en": "Adblock List for Finland",
+    "zh-Hans": "芬兰广告拦截规则",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.adguard.fran.ais": {
+    "en": "AdGuard Français",
+    "zh-Hans": "AdGuard 法语",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.greek.adblock.filter": {
+    "en": "Greek AdBlock Filter",
+    "zh-Hans": "希腊语广告拦截规则",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.dandelion.sprout.s.serbo.croatian.filters": {
+    "en": "Dandelion Sprout's Serbo-Croatian filters",
+    "zh-Hans": "Dandelion Sprout 塞尔维亚语／克罗地亚语规则",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.hufilter.hungarian": {
+    "en": "hufilter (Hungarian)",
+    "zh-Hans": "hufilter（匈牙利语）",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.abpindo.indonesia.malaysia": {
+    "en": "ABPindo (Indonesia/Malaysia)",
+    "zh-Hans": "ABPindo（印度尼西亚／马来西亚）",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.easylist.hebrew": {
+    "en": "EasyList Hebrew",
+    "zh-Hans": "EasyList 希伯来语",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.indianlist": {
+    "en": "IndianList",
+    "zh-Hans": "IndianList（印度）",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.persianblocker": {
+    "en": "PersianBlocker",
+    "zh-Hans": "PersianBlocker（波斯语）",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.icelandic.abp.list": {
+    "en": "Icelandic ABP List",
+    "zh-Hans": "冰岛语 ABP 规则",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.easylist.italy": {
+    "en": "EasyList Italy",
+    "zh-Hans": "EasyList 意大利语",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.adguard.japanese": {
+    "en": "AdGuard Japanese",
+    "zh-Hans": "AdGuard 日语",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.list.kr.korean": {
+    "en": "List-KR (Korean)",
+    "zh-Hans": "List-KR（韩语）",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.easylist.lithuania": {
+    "en": "EasyList Lithuania",
+    "zh-Hans": "EasyList 立陶宛语",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.latvian.list": {
+    "en": "Latvian List",
+    "zh-Hans": "拉脱维亚语规则",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.macedonian.adblock.filters": {
+    "en": "Macedonian adBlock Filters",
+    "zh-Hans": "马其顿语广告拦截规则",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.adguard.dutch": {
+    "en": "AdGuard Dutch",
+    "zh-Hans": "AdGuard 荷兰语",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.dandelion.sprouts.nordiske.filtre.norway.denmark.iceland": {
+    "en": "Dandelion Sprouts nordiske filtre (Norway/Denmark/Iceland)",
+    "zh-Hans": "Dandelion Sprout 北欧规则（挪威／丹麦／冰岛）",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.romanian.ad.road.block.list.light": {
+    "en": "Romanian Ad (ROad) Block List Light",
+    "zh-Hans": "ROad 罗马尼亚语广告拦截精简规则",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.frellwit.s.swedish.filter": {
+    "en": "Frellwit's Swedish Filter",
+    "zh-Hans": "Frellwit 瑞典语规则",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.slovenian.list": {
+    "en": "Slovenian List",
+    "zh-Hans": "斯洛文尼亚语规则",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.easylist.thailand": {
+    "en": "EasyList Thailand",
+    "zh-Hans": "EasyList 泰语",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.adguard.turkish": {
+    "en": "AdGuard Turkish",
+    "zh-Hans": "AdGuard 土耳其语",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.abpvn.list.vietnamese": {
+    "en": "ABPVN List (Vietnamese)",
+    "zh-Hans": "ABPVN（越南语）",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.bcny.blocklists": {
+    "en": "BCNY Blocklists",
+    "zh-Hans": "BCNY 拦截规则",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.empty": {
+    "en": "Empty",
+    "zh-Hans": "空",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.close.tabs.and.windows": {
+    "en": "Close Tabs and Windows",
+    "zh-Hans": "关闭标签页和窗口",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "native.use.system.setting": {
+    "en": "Use System Setting",
+    "zh-Hans": "使用系统设置",
+    "contexts": [
+      "menu",
+      "settings",
+      "tweaks",
+      "chrome"
+    ]
+  },
+  "language.patchTitle": {
+    "en": "Language Patch",
+    "zh-Hans": "语言补丁",
+    "contexts": [
+      "tweaks",
+      "settings"
+    ]
+  },
+  "navigation.toggle_sidebar": {
+    "en": "Toggle sidebar",
+    "zh-Hans": "切换侧边栏",
+    "contexts": [
+      "menu",
+      "settings",
+      "tooltip"
+    ]
+  },
+  "navigation.bookmark_this_page": {
+    "en": "Bookmark this page",
+    "zh-Hans": "将此页面加入书签",
+    "contexts": [
+      "menu",
+      "settings",
+      "tooltip"
+    ]
+  },
+  "navigation.split_tabs": {
+    "en": "Split tabs",
+    "zh-Hans": "分屏标签页",
+    "contexts": [
+      "menu",
+      "settings",
+      "tooltip"
+    ]
+  },
+  "navigation.site_menu": {
+    "en": "Site menu",
+    "zh-Hans": "网站菜单",
+    "contexts": [
+      "menu",
+      "settings",
+      "tooltip"
+    ]
+  },
+  "navigation.automatic_picture_in_picture": {
+    "en": "Automatic Picture-In-Picture",
+    "zh-Hans": "自动画中画",
+    "contexts": [
+      "menu",
+      "settings"
+    ]
+  },
+  "navigation.site_settings": {
+    "en": "Site Settings",
+    "zh-Hans": "网站设置",
+    "contexts": [
+      "menu",
+      "settings"
+    ]
+  },
+  "navigation.connection_is_secure": {
+    "en": "Connection is secure",
+    "zh-Hans": "连接安全",
+    "contexts": [
+      "menu",
+      "settings"
+    ]
+  },
+  "navigation.connection_is_not_secure": {
+    "en": "Connection is not secure",
+    "zh-Hans": "连接不安全",
+    "contexts": [
+      "menu",
+      "settings"
+    ]
+  },
+  "navigation.reload_page": {
+    "en": "Reload page",
+    "zh-Hans": "重新加载页面",
+    "contexts": [
+      "menu",
+      "settings",
+      "tooltip"
+    ]
+  },
+  "tooltip.constructor.0": {
+    "en": "Click to go back",
+    "zh-Hans": "点按后退",
+    "contexts": [
+      "tooltip"
+    ]
+  },
+  "tooltip.constructor.1": {
+    "en": "Click to go forward",
+    "zh-Hans": "点按前进",
+    "contexts": [
+      "tooltip"
+    ]
+  },
+  "tooltip.constructor.2": {
+    "en": "Toggle Sidebar",
+    "zh-Hans": "切换侧边栏",
+    "contexts": [
+      "tooltip"
+    ]
+  },
+  "tooltip.constructor.4": {
+    "en": "Included in AI history search",
+    "zh-Hans": "已纳入 AI 历史记录搜索",
+    "contexts": [
+      "tooltip"
+    ]
+  },
+  "tooltip.constructor.5": {
+    "en": "Excluded from AI history search",
+    "zh-Hans": "已从 AI 历史记录搜索中排除",
+    "contexts": [
+      "tooltip"
+    ]
+  },
+  "newtab.headline": {
+    "en": "Prep for meetings. Draft replies. Catch up on threads. Generate reports.",
+    "zh-Hans": "准备会议，起草回复。\n跟进讨论，生成报告。",
+    "contexts": [
+      "newtab",
+      "settings"
+    ]
+  },
+  "newtab.subtitle": {
+    "en": "Connect Slack and Google to get started.",
+    "zh-Hans": "连接 Slack 和 Google，开始使用。",
+    "contexts": [
+      "newtab",
+      "settings"
+    ]
+  },
+  "newtab.tomorrow": {
+    "en": "Look for your first Morning Brief tomorrow morning.",
+    "zh-Hans": "明早即可查看你的第一份每日简报。",
+    "contexts": [
+      "newtab",
+      "settings"
+    ]
+  },
+  "newtab.checked": {
+    "en": "✓ Connected",
+    "zh-Hans": "✓ 已连接",
+    "contexts": [
+      "newtab",
+      "settings"
+    ]
+  },
+  "newtab.others": {
+    "en": "Connect others",
+    "zh-Hans": "连接更多",
+    "contexts": [
+      "newtab",
+      "settings"
+    ]
+  },
+  "newtab.dismiss": {
+    "en": "dismiss",
+    "zh-Hans": "关闭",
+    "contexts": [
+      "newtab",
+      "settings"
+    ]
+  },
+  "newtab.leading": {
+    "en": "Use other apps?",
+    "zh-Hans": "其他应用？",
+    "contexts": [
+      "newtab",
+      "settings"
+    ]
+  },
+  "newtab.or": {
+    "en": "or",
+    "zh-Hans": "或",
+    "contexts": [
+      "newtab",
+      "settings"
+    ]
+  }
+}

@@ -1,3 +1,4 @@
+#import "Localization/Localization.h"
 #import "StdPatch/StdPatch.h"
 
 void DPOnLaunch(void (^block)(void)) {
@@ -64,5 +65,5 @@ NSMenuItem *DPAddMenuItem(NSString *menu, NSString *title, void (^action)(void))
 
 void DPOnMenuItem(NSString *menu, NSString *titlePrefix, void (^action)(void)) {
     for (NSMenuItem *item in DPMenuTitled(menu).itemArray)
-        if ([item.title hasPrefix:titlePrefix]) DPSetAction(item, action);
+        if ([DPOriginalText(item, @"title", item.title) hasPrefix:titlePrefix]) DPSetAction(item, action);
 }

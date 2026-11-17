@@ -82,7 +82,7 @@ static void DPPlaceGroupItem(NSMenu *menu) {
     for (NSInteger i = 0; i < menu.numberOfItems; i++) {
         NSMenuItem *item = [menu itemAtIndex:i];
         if (item.tag == DPGroupMenuTag) existing = i;
-        else if (DPIsNewGroupTitle(item.title)) {
+        else if (DPIsNewGroupTitle(DPOriginalText(item, @"title", item.title))) {
             if (!item.hidden && visible == NSNotFound) visible = i;
             if (anchor == NSNotFound) anchor = i;
         }
@@ -115,23 +115,24 @@ static void DPPlaceGroupItem(NSMenu *menu) {
 static void DPInstallMenuBarItem(void) {
     NSMenu *tabMenu = nil, *commandMenu = nil, *windowMenu = nil, *fileMenu = nil;
     for (NSMenuItem *top in NSApp.mainMenu.itemArray) {
-        NSString *title = top.title ?: @"";
+        NSString *title = DPOriginalText(top, @"title", top.title) ?: @"";
         if ([title isEqualToString:@"Tab"] || [title isEqualToString:@"Tabs"]) tabMenu = top.submenu;
         if ([title isEqualToString:@"Window"]) windowMenu = top.submenu;
         if ([title isEqualToString:@"File"]) fileMenu = top.submenu;
         for (NSMenuItem *item in top.submenu.itemArray)
-            if (DPIsNewGroupTitle(item.title) || [item.title isEqualToString:@"New Tab"] || [item.title isEqualToString:@"Close Tab"]
-                || [item.title isEqualToString:@"Select Next Tab"] || [item.title isEqualToString:@"Reopen Closed Tab"])
+            if (DPIsNewGroupTitle(DPOriginalText(item, @"title", item.title)) || DPTextMatches(item.title, @"New Tab") || DPTextMatches(item.title, @"Close Tab")
+                || DPTextMatches(item.title, @"Select Next Tab") || DPTextMatches(item.title, @"Reopen Closed Tab"))
                 commandMenu = top.submenu;
     }
     NSMenu *menu = tabMenu ?: commandMenu ?: windowMenu ?: fileMenu;
     if (!menu) return;
     if ([menu itemWithTag:DPGroupMenuTag]) return DPPlaceFollowerItems(menu);
     for (NSMenuItem *item in menu.itemArray)
-        if (DPIsNewGroupTitle(item.title)) return DPPlaceGroupItem(menu);
+        if (DPIsNewGroupTitle(DPOriginalText(item, @"title", item.title))) return DPPlaceGroupItem(menu);
     NSInteger index = menu.numberOfItems;
     for (NSInteger i = 0; i < menu.numberOfItems; i++) {
-        NSString *title = [menu itemAtIndex:i].title;
+        NSMenuItem *candidate = [menu itemAtIndex:i];
+        NSString *title = DPOriginalText(candidate, @"title", candidate.title);
         if (DPIsNewGroupTitle(title) || [title isEqualToString:@"New Tab"]) index = i + 1;
     }
     DPInserting = YES;
@@ -141,7 +142,7 @@ static void DPInstallMenuBarItem(void) {
 }
 
 static void DPMenuAdded(NSMenu *menu, NSMenuItem *item) {
-    if (!DPInserting && (DPIsNewGroupTitle(item.title) || [menu itemWithTag:DPGroupMenuTag] || DPHasFollower(menu))) DPPlaceGroupItem(menu);
+    if (!DPInserting && (DPIsNewGroupTitle(DPOriginalText(item, @"title", item.title)) || [menu itemWithTag:DPGroupMenuTag] || DPHasFollower(menu))) DPPlaceGroupItem(menu);
 }
 
 static void DPMenu_addItem(NSMenu *self, SEL _cmd, NSMenuItem *item) {

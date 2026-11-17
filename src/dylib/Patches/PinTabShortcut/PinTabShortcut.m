@@ -1,3 +1,4 @@
+#import "Localization/Localization.h"
 #import "StdPatch/StdPatch.h"
 
 extern DPPatch DPPinTabShortcut;
@@ -36,7 +37,7 @@ static NSMenuItem *DPPinItem(NSMenu *menu) {
 static NSMenuItem *DPFindShownItem(NSMenu *menu, NSString *title) {
     for (NSMenuItem *item in menu.itemArray) {
         if (item.hidden) continue;
-        NSMenuItem *found = [item.title isEqualToString:title] ? DPShownItem(item) : DPFindShownItem(item.submenu, title);
+        NSMenuItem *found = DPTextMatches(item.title, title) ? DPShownItem(item) : DPFindShownItem(item.submenu, title);
         if (found) return found;
     }
     return nil;
@@ -91,7 +92,7 @@ static void DPInstallPinTabShortcut(void) {
         NSMenuItem *item = DPPinItem(menu);
         if (!item) return event;
         if (event.isARepeat) return nil;
-        BOOL pinning = [item.title isEqualToString:@"Pin as Tab"];
+        BOOL pinning = DPTextMatches(item.title, @"Pin as Tab");
         NSURL *url = DPTabURL(tab);
         DPRunItem(item);
         if (pinning && url) DPPinCurrentURL(event.window, url, 20);

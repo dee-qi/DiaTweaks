@@ -19,10 +19,10 @@ static void DPApplyLittleDia(DPPatch *patch) {
     if (patch->on && !gLoadedOn) DPWriteLittleDiaExtension(YES);
     if (!patch->on || gLoadedOn || patch->on != DPSavedOn(patch) || DPLittleDiaExtensionProblem()) return;  // the self-test flips patches without saving
     NSAlert *alert = [NSAlert new];
-    alert.messageText = @"Relaunch Dia to use Little Dia";
-    alert.informativeText = @"Until then, links from other apps keep opening in a tab.";
-    [alert addButtonWithTitle:@"Relaunch"];
-    [alert addButtonWithTitle:@"Later"];
+    alert.messageText = DPLocalized(@"native.relaunch.dia.to.use.little.dia", @"Relaunch Dia to use Little Dia");
+    alert.informativeText = DPLocalized(@"native.until.then.links.from.other.apps.keep.opening.in.a.tab", @"Until then, links from other apps keep opening in a tab.");
+    [alert addButtonWithTitle:DPLocalized(@"language.relaunch", @"Relaunch")];
+    [alert addButtonWithTitle:DPLocalized(@"language.later", @"Later")];
     if ([alert runModal] == NSAlertFirstButtonReturn) DPHandOffAndQuit(@[ @"apply" ]);
 }
 

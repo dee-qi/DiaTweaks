@@ -31,7 +31,7 @@ static NSHashTable<NSView *> *DPMorningBriefs;
 static void DPSettingsHeader_layout(NSView *self, SEL _cmd) {
     DPCallOriginal(DPSettingsHeader_layout, self);
     NSTextField *title = (NSTextField *)DPFindView(self, ^BOOL(NSView *view) { return [view isKindOfClass:NSTextField.class]; });
-    if (![title.stringValue isEqual:@"Morning Brief"] || !self.superview) return;
+    if (!DPTextMatches(title.stringValue, @"Morning Brief") || !self.superview) return;
     [DPMorningBriefs addObject:self.superview];
     if (DPTurnOffAI.on) self.superview.hidden = YES;
 }
@@ -57,7 +57,7 @@ static NSAttributedString *DPPlaceholder_get(NSTextView *self, SEL _cmd) {
     [DPPlaceholderViews addObject:self];
     if (!DPTurnOffAI.on || ![dia.string.lowercaseString hasPrefix:@"ask "]) return dia;
     NSMutableAttributedString *ours = [dia mutableCopy];
-    [ours replaceCharactersInRange:NSMakeRange(0, ours.length) withString:@"Search or enter address"];
+    [ours replaceCharactersInRange:NSMakeRange(0, ours.length) withString:DPLocalize(@"Search or enter address", @"settings")];
     return ours;
 }
 
@@ -71,7 +71,7 @@ static void DPItem_setHidden(NSMenuItem *self, SEL _cmd, BOOL hidden) {
 }
 
 static void DPTrack(NSMenuItem *item) {
-    if (!DPIsAITitle(item.title)) return;
+    if (!DPIsAITitle(DPOriginalText(item, @"title", item.title))) return;
     if (![DPAIItems containsObject:item]) {
         DPSet(item, &DPDiaHiddenKey, @(item.hidden));
         [DPAIItems addObject:item];
@@ -123,10 +123,10 @@ static void DPCutOffAIServers(void) {
 static void DPOfferRelaunch(DPPatch *patch) {
     if (patch->on == gCutOff || patch->on != DPSavedOn(patch)) return;  // the self-test flips patches without saving
     NSAlert *alert = [NSAlert new];
-    alert.messageText = patch->on ? @"Relaunch Dia to cut off its AI servers" : @"Relaunch Dia to reconnect its AI servers";
-    alert.informativeText = patch->on ? @"Until then, AI is hidden, but Dia can still reach its AI servers." : @"Until then, chat can’t reach them.";
-    [alert addButtonWithTitle:@"Relaunch"];
-    [alert addButtonWithTitle:@"Later"];
+    alert.messageText = patch->on ? DPLocalized(@"native.relaunch.dia.to.cut.off.its.ai.servers", @"Relaunch Dia to cut off its AI servers") : DPLocalized(@"native.relaunch.dia.to.reconnect.its.ai.servers", @"Relaunch Dia to reconnect its AI servers");
+    alert.informativeText = patch->on ? DPLocalized(@"native.until.then.ai.is.hidden.but.dia.can.still.reach.its.ai.servers", @"Until then, AI is hidden, but Dia can still reach its AI servers.") : DPLocalized(@"native.until.then.chat.can.t.reach.them", @"Until then, chat can’t reach them.");
+    [alert addButtonWithTitle:DPLocalized(@"language.relaunch", @"Relaunch")];
+    [alert addButtonWithTitle:DPLocalized(@"language.later", @"Later")];
     if ([alert runModal] == NSAlertFirstButtonReturn) DPHandOffAndQuit(@[ @"apply" ]);
 }
 

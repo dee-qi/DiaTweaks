@@ -34,8 +34,8 @@ static NSString *DPKeptReason(NSString *output) {
 
 static void DPAlert(NSString *message, NSString *detail) {
     NSAlert *alert = [NSAlert new];
-    alert.messageText = message;
-    alert.informativeText = detail;
+    alert.messageText = DPLocalize(message, @"tweaks");
+    alert.informativeText = DPLocalize(detail, @"tweaks");
     [alert runModal];
 }
 
@@ -53,10 +53,10 @@ static void DPRebuild(void) {
         if (kept) return DPAlert(@"Couldn’t change the Morning Brief’s language", [NSString stringWithFormat:@"Dia keeps writing it as it does now: %@.", kept]);
         if (DPSame(DPWantedLanguage(), DPInstalledLanguage())) return;
         NSAlert *alert = [NSAlert new];
-        alert.messageText = @"Relaunch Dia to change the Morning Brief’s language";
-        alert.informativeText = @"Until then, Dia keeps writing it as it does now. The next brief Dia writes uses the new language.";
-        [alert addButtonWithTitle:@"Relaunch"];
-        [alert addButtonWithTitle:@"Later"];
+        alert.messageText = DPLocalized(@"native.relaunch.dia.to.change.the.morning.brief.s.language", @"Relaunch Dia to change the Morning Brief’s language");
+        alert.informativeText = DPLocalized(@"native.until.then.dia.keeps.writing.it.as.it.does.now.the.next.brief.dia.writes.uses.the.new.language", @"Until then, Dia keeps writing it as it does now. The next brief Dia writes uses the new language.");
+        [alert addButtonWithTitle:DPLocalized(@"language.relaunch", @"Relaunch")];
+        [alert addButtonWithTitle:DPLocalized(@"language.later", @"Later")];
         if ([alert runModal] == NSAlertFirstButtonReturn) DPHandOffAndQuit(@[ @"apply" ]);
     });
 }

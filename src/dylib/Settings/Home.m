@@ -33,7 +33,7 @@ static NSView *DPWebRow(NSString *title, NSString *path) {
         weakSelf.open(@"Software Update", [DPSoftwareUpdateView new]);
     });
     NSView *restoreRow = DPRow(DPLabel(@"Restore the original Dia without patches.", 13, NSFontWeightRegular, NSColor.labelColor),
-                               [NSButton buttonWithTitle:@"Restore…" target:self action:@selector(restore:)]);
+                               [NSButton buttonWithTitle:DPLocalized(@"ui.restore", @"Restore…") target:self action:@selector(restore:)]);
 
     NSTextField *notice = DPLabel(@"DiaTweaks is unofficial and not affiliated with The Browser Company.", 11, NSFontWeightRegular, NSColor.tertiaryLabelColor);
     NSView *help = DPGroup(@[DPWebRow(@"Wiki", @"/wiki"), DPWebRow(@"Report a Bug", @"/issues/new/choose"), DPWebRow(@"GitHub", @"")]);
@@ -52,13 +52,13 @@ static NSView *DPWebRow(NSString *title, NSString *path) {
         staged += [updates staged:part];
     }
     _updateSummary.stringValue = staged ? @"Ready to install"
-        : available ? [NSString stringWithFormat:@"%lu update%@", available, available == 1 ? @"" : @"s"]
+        : available ? [NSString stringWithFormat:DPLocalize(@"%lu updates", @"tweaks"), available]
         : updates.checking ? @"Checking…"
         : updates.checkProblem ? @"Couldn’t check"
         : updates.found ? @"Up to date" : @"";
 
     id installed = updates.found[DPTweaks][@"installed"];
-    _version.stringValue = [installed isKindOfClass:NSString.class] ? [@"Version " stringByAppendingString:[installed stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"v"]]]
+    _version.stringValue = [installed isKindOfClass:NSString.class] ? [NSString stringWithFormat:DPLocalize(@"Version %@", @"tweaks"), [installed stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"v"]]]
         : updates.found ? @"Development build" : @"";
     _version.hidden = !_version.stringValue.length;
 }
@@ -70,10 +70,10 @@ static NSView *DPWebRow(NSString *title, NSString *path) {
 
 - (void)restore:(id)sender {
     NSAlert *alert = [NSAlert new];
-    alert.messageText = @"Restore the original Dia?";
-    alert.informativeText = @"Dia will relaunch without patches, and its own updater takes over again. Run the installer to patch it again later.";
-    [alert addButtonWithTitle:@"Restore and Relaunch"];
-    [alert addButtonWithTitle:@"Cancel"];
+    alert.messageText = DPLocalized(@"ui.restore.the.original.dia", @"Restore the original Dia?");
+    alert.informativeText = DPLocalized(@"ui.dia.will.relaunch.without.patches.and.its.own.updater.takes.over.again.run.the.installer.to.patch.it.again.later", @"Dia will relaunch without patches, and its own updater takes over again. Run the installer to patch it again later.");
+    [alert addButtonWithTitle:DPLocalized(@"ui.restore.and.relaunch", @"Restore and Relaunch")];
+    [alert addButtonWithTitle:DPLocalized(@"ui.cancel", @"Cancel")];
     [alert beginSheetModalForWindow:self.window completionHandler:^(NSModalResponse response) {
         if (response == NSAlertFirstButtonReturn) DPHandOffAndQuit(@[@"uninstall"]);
     }];

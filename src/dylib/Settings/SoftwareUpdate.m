@@ -9,7 +9,7 @@ static NSView *DPPartIcon(NSString *part) {
 }
 
 static NSTextField *DPLine(NSString *text, CGFloat size, NSColor *color) {
-    NSTextField *label = [NSTextField labelWithString:text];
+    NSTextField *label = [NSTextField labelWithString:DPLocalize(text, @"tweaks")];
     label.font = [NSFont systemFontOfSize:size];
     label.textColor = color;
     label.lineBreakMode = NSLineBreakByTruncatingTail;
@@ -70,7 +70,7 @@ static NSButton *DPButton(NSString *title, id target, SEL action, NSString *part
         if (progress < 0) [bar startAnimation:nil];
         else bar.doubleValue = progress;
         [_details objectForKey:part].stringValue = progress < 0 ? @"Preparing…"
-            : [NSString stringWithFormat:@"Downloading… %.0f%%", progress * 100];
+            : [NSString stringWithFormat:DPLocalize(@"Downloading… %.0f%%", @"tweaks"), progress * 100];
     }
 }
 
@@ -91,14 +91,14 @@ static NSButton *DPButton(NSString *title, id target, SEL action, NSString *part
         [views addObject:DPGroup(@[DPRow(DPLine(@"Checking for updates…", 13, NSColor.labelColor), spinner)])];
     } else if (unchecked) {
         [views addObject:DPGroup(@[DPRow(DPLine(unchecked, 13, NSColor.labelColor),
-                                         [NSButton buttonWithTitle:@"Try Again" target:self action:@selector(checkAgain:)])])];
+                                         [NSButton buttonWithTitle:DPLocalized(@"updates.try.again", @"Try Again") target:self action:@selector(checkAgain:)])])];
     } else if (!shown.count) {
         [views addObject:DPGroup(@[DPRow(DPLine(@"Everything is up to date", 13, NSColor.labelColor),
-                                         [NSButton buttonWithTitle:@"Check Now" target:self action:@selector(checkAgain:)])])];
+                                         [NSButton buttonWithTitle:DPLocalized(@"updates.check.now", @"Check Now") target:self action:@selector(checkAgain:)])])];
     }
 
     if (shown.count > 1) {
-        NSButton *both = [NSButton buttonWithTitle:@"Update Both" target:self action:@selector(updateAll:)];
+        NSButton *both = [NSButton buttonWithTitle:DPLocalized(@"updates.update.both", @"Update Both") target:self action:@selector(updateAll:)];
         both.enabled = ![updates downloading:DPDia] && ![updates downloading:DPTweaks];
         [views addObject:DPGroup(@[DPRow(DPLine(@"Dia and DiaTweaks both have updates", 13, NSColor.labelColor), both)])];
     }

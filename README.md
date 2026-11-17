@@ -53,6 +53,12 @@ Run `diatweaks` on its own for a menu, or:
 
 Tweak names work as keys or titles, like `hideToolbar` or `"Hide Toolbar"`, and `enable` and `disable` take several at once. Add `-y` to skip the questions.
 
+## Interface language
+
+Choose **Settings → Home → Interface Language**: Follow System (default), 简体中文, or English. Restart Dia to apply it to native menus, settings, supported dialogs and Chromium pages. Website language preferences follow the choice; ordinary page content is not translated. In Chinese, the setting is **设置 → 主页 → 界面语言**.
+
+Language packs and adapter maintenance are documented in [docs/localization.md](docs/localization.md).
+
 ## Updating
 
 Dia's own updater is switched off. **Settings → Home → Software Update** checks for a new Dia and a new DiaTweaks release, downloads either one, and relaunches Dia to install it, like macOS's Software Update. Under **Automatic Updates**, pick for each of Dia and DiaTweaks: off, just show updates, download them, or download and install them when you quit (the default). A DiaTweaks you built from source with `install.sh` is never downloaded or replaced automatically: **Update Now** or `diatweaks update` installs the latest release, and automatic updates apply from then on.

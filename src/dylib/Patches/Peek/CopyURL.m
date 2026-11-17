@@ -1,9 +1,10 @@
+#import "Localization/Localization.h"
 #import "Patches/Peek/Peek.h"
 #import "Patches/HideToolbar/HideToolbar.h"
 
 static NSMenuItem *DPPeekMenuItem(NSMenu *menu, NSString *title) {
     for (NSMenuItem *item in menu.itemArray) {
-        NSMenuItem *found = [item.title isEqual:title] ? item : DPPeekMenuItem(item.submenu, title);
+        NSMenuItem *found = DPTextMatches(item.title, title) ? item : DPPeekMenuItem(item.submenu, title);
         if (found) return found;
     }
     return nil;

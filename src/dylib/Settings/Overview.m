@@ -28,6 +28,11 @@
         }
         [rows[title] addObject:row];
     };
+    NSView *languageRow = DPLanguageRow();
+    add(DPLocalized(@"ui.language", @"Language"), languageRow);
+    [self.searchText setObject:[NSString stringWithFormat:@"Language Language Patch Follow System English 简体中文 %@ %@ %@",
+        DPLocalized(@"ui.language", @"Language"), DPLocalized(@"language.patchTitle", @"Language Patch"),
+        DPLocalized(@"language.system", @"Follow System")] forKey:languageRow];
     if (DPSafeMode) add(@"Safe Mode", [self makeSafeModeRow]);
     for (NSUInteger i = 0; i < DPPatchCount; i++) {
         DPPatch *patch = DPPatches[i];
@@ -61,7 +66,7 @@
 
 - (NSView *)makeSafeModeRow {
     NSView *row = DPRow(DPLabel(@"Patches are off because Dia quit unexpectedly right after opening.", 13, NSFontWeightRegular, NSColor.labelColor),
-                        [NSButton buttonWithTitle:@"Turn Patches Back On" target:self action:@selector(leaveSafeMode:)]);
+                        [NSButton buttonWithTitle:DPLocalized(@"updates.turn.patches.back.on", @"Turn Patches Back On") target:self action:@selector(leaveSafeMode:)]);
     [self.searchText setObject:@"Safe mode patches off crashed quit unexpectedly turn back on" forKey:row];
     return row;
 }
@@ -89,6 +94,8 @@
 
     __weak DPOverviewView *weakSelf = self;
     NSView *row = DPLinkRow(DPRow(leading, trailing), patch->title, ^{ weakSelf.open(patch->title, [[DPPageView alloc] initWithPatch:patch]); });
+    [search appendFormat:@" %@ %@", DPLocalize(patch->title, @"tweaks"), DPLocalize(patch->detail, @"tweaks")];
+    DPForEachOption(patch, ^(DPPatch *option) { [search appendFormat:@" %@ %@", DPLocalize(option->title, @"tweaks"), DPLocalize(option->detail, @"tweaks")]; });
     [self.searchText setObject:search forKey:row];
     return row;
 }
@@ -102,7 +109,7 @@
         [toggle sync];
         if (self.sectionEyes[toggle.patch->section ?: @"Other"]) toggle.hiddenIcon.hidden = YES;
         NSMutableArray<NSString *> *options = [NSMutableArray new];
-        if (toggle.patch->on) DPForEachOption(toggle.patch, ^(DPPatch *option) { if (option->on) [options addObject:option->title]; });
+        if (toggle.patch->on) DPForEachOption(toggle.patch, ^(DPPatch *option) { if (option->on) [options addObject:DPLocalize(option->title, @"tweaks")]; });
         NSTextField *note = [self.notes objectForKey:toggle];
         note.stringValue = DPWhyDisabled(toggle.patch) ?: [options componentsJoinedByString:@" · "];
         note.hidden = !note.stringValue.length;

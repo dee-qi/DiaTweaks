@@ -1,0 +1,57 @@
+{
+  "dynamic.profile": {
+    "en": "Switch to Profile %1$@ — %2$@",
+    "zh-Hans": "切换至个人资料 %1$@ — %2$@",
+    "contexts": [
+      "menu",
+      "settings",
+      "chrome"
+    ],
+    "pattern": "^Switch to Profile ([0-9]+) — (.+)$",
+    "prefix": "Switch to Profile "
+  },
+  "dynamic.sidebar": {
+    "en": "Go to Sidebar Item %1$@",
+    "zh-Hans": "前往侧边栏第 %1$@ 项",
+    "contexts": [
+      "menu",
+      "settings",
+      "chrome"
+    ],
+    "pattern": "^Go to Sidebar Item ([0-9]+)$",
+    "prefix": "Go to Sidebar Item "
+  },
+  "dynamic.group": {
+    "en": "New Group with %1$@ Tabs",
+    "zh-Hans": "用 %1$@ 个标签页新建分组",
+    "contexts": [
+      "menu",
+      "settings",
+      "chrome"
+    ],
+    "pattern": "^New Group with ([0-9]+) Tabs$",
+    "prefix": "New Group with "
+  },
+  "dynamic.yesterday": {
+    "en": "Yesterday at %1$@",
+    "zh-Hans": "昨天 %1$@",
+    "contexts": [
+      "menu",
+      "settings",
+      "chrome"
+    ],
+    "pattern": "^Yesterday at ([0-9: APMapm]+)$",
+    "prefix": "Yesterday at "
+  },
+  "dynamic.today": {
+    "en": "Today at %1$@",
+    "zh-Hans": "今天 %1$@",
+    "contexts": [
+      "menu",
+      "settings",
+      "chrome"
+    ],
+    "pattern": "^Today at ([0-9: APMapm]+)$",
+    "prefix": "Today at "
+  }
+}

@@ -5,8 +5,8 @@ static NSUInteger DPSwitches;
 
 static void DPAlertIconFailed(void) {
     NSAlert *alert = [NSAlert new];
-    alert.messageText = @"Couldn’t change Dia’s icon";
-    alert.informativeText = @"Dia keeps its current icon.";
+    alert.messageText = DPLocalized(@"native.couldn.t.change.dia.s.icon", @"Couldn’t change Dia’s icon");
+    alert.informativeText = DPLocalized(@"native.dia.keeps.its.current.icon", @"Dia keeps its current icon.");
     [alert runModal];
 }
 
@@ -23,7 +23,7 @@ static NSString *DPUnlinkable;
 
 static void DPAlertUnlinkable(void) {
     NSAlert *alert = [NSAlert new];
-    alert.messageText = @"Couldn’t set up icon switching";
+    alert.messageText = DPLocalized(@"native.couldn.t.set.up.icon.switching", @"Couldn’t set up icon switching");
     alert.informativeText = [NSString stringWithFormat:@"DiaTweaks couldn’t prepare this version of Dia: %@. Dia keeps its current icon, "
                                                        @"and relaunching won’t change that. Updating or reinstalling DiaTweaks may fix it.", DPUnlinkable];
     [alert runModal];
@@ -35,10 +35,10 @@ static void DPLinkCatalog(void) {
         if (!output) return DPAlertIconFailed();
         if ((DPUnlinkable = DPLinkProblem(output))) return DPAlertUnlinkable();
         NSAlert *alert = [NSAlert new];
-        alert.messageText = @"Relaunch Dia to change its icon";
-        alert.informativeText = @"Until then, Dia keeps its current icon.";
-        [alert addButtonWithTitle:@"Relaunch"];
-        [alert addButtonWithTitle:@"Later"];
+        alert.messageText = DPLocalized(@"native.relaunch.dia.to.change.its.icon", @"Relaunch Dia to change its icon");
+        alert.informativeText = DPLocalized(@"native.until.then.dia.keeps.its.current.icon", @"Until then, Dia keeps its current icon.");
+        [alert addButtonWithTitle:DPLocalized(@"language.relaunch", @"Relaunch")];
+        [alert addButtonWithTitle:DPLocalized(@"language.later", @"Later")];
         if ([alert runModal] == NSAlertFirstButtonReturn) DPHandOffAndQuit(@[ @"apply" ]);
     });
 }

@@ -2,16 +2,16 @@
 
 static BOOL DPIsSignIn(NSMenuItem *item) {
     return item.menu && item.menu == NSApp.mainMenu.itemArray.firstObject.submenu
-        && [@[ @"Sign In…", @"Sign In..." ] containsObject:item.title];
+        && [@[ @"Sign In…", @"Sign In..." ] containsObject:DPOriginalText(item, @"title", item.title)];
 }
 
 static BOOL DPIsLocalAction(NSMenuItem *item) {
     if (!item.menu) return NO;
     NSMenu *bar = NSApp.mainMenu;
     if (item.menu == bar.itemArray.firstObject.submenu)
-        return [@[ @"Settings…", @"Settings...", @"Set as Default Browser", @"Import from Another Browser…" ] containsObject:item.title];
+        return [@[ @"Settings…", @"Settings...", @"Set as Default Browser", @"Import from Another Browser…" ] containsObject:DPOriginalText(item, @"title", item.title)];
     return item.menu && item.menu == [bar itemWithTitle:@"File"].submenu
-        && [@[ @"New Window", @"New Incognito Window" ] containsObject:item.title];
+        && [@[ @"New Window", @"New Incognito Window" ] containsObject:DPOriginalText(item, @"title", item.title)];
 }
 
 static void DPItem_setEnabled(NSMenuItem *self, SEL _cmd, BOOL enabled) {

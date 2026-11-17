@@ -6,17 +6,17 @@ void DPForEachOption(DPPatch *patch, void (^body)(DPPatch *option)) {
 }
 
 NSString *DPWhyDisabled(DPPatch *patch) {
-    if (patch->unavailable) return @"Unavailable on this Dia version.";
+    if (patch->unavailable) return DPLocalize(@"Unavailable on this Dia version.", @"tweaks");
     DPPatch *required = DPRequired(patch), *cover = DPPatchNamed(patch->coveredBy);
-    if (required && !required->on) return [NSString stringWithFormat:@"Needs %@.", required->title];
-    return cover && cover->on ? [NSString stringWithFormat:@"%@ hides this too.", cover->title] : nil;
+    if (required && !required->on) return [NSString stringWithFormat:DPLocalize(@"Needs %@.", @"tweaks"), DPLocalize(required->title, @"tweaks")];
+    return cover && cover->on ? [NSString stringWithFormat:DPLocalize(@"%@ hides this too.", @"tweaks"), DPLocalize(cover->title, @"tweaks")] : nil;
 }
 
 NSString *DPWhyHiddenBy(DPPatch *disabler) {
     if (!disabler || !disabler->on) return nil;
     __block BOOL shownSometimes = NO;
     DPForEachOption(disabler, ^(DPPatch *option) { shownSometimes |= option->on; });
-    return shownSometimes ? nil : [NSString stringWithFormat:@"Hidden while %@ is on", disabler->title];
+    return shownSometimes ? nil : [NSString stringWithFormat:DPLocalize(@"Hidden while %@ is on", @"tweaks"), DPLocalize(disabler->title, @"tweaks")];
 }
 
 NSString *DPWhyHidden(DPPatch *patch) { return patch->on ? DPWhyHiddenBy(DPPatchNamed(patch->disabledBy)) : nil; }
@@ -33,7 +33,7 @@ NSURL *DPWikiURL(DPPatch *patch) {
     _patch = patch;
     _hiddenIcon = DPSymbol(@"eye.slash", 12, NSColor.secondaryLabelColor);
     self.controlSize = NSControlSizeSmall;
-    self.accessibilityLabel = patch->title;
+    self.accessibilityLabel = DPLocalize(patch->title, @"tweaks");
     self.target = self;
     self.action = @selector(flip);
     [self sync];

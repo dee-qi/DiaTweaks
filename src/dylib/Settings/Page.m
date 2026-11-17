@@ -118,6 +118,8 @@ static NSView *DPWideRow(NSView *view) {
 - (NSView *)choiceRowFor:(DPPatch *)patch {
     NSMenu *menu = patch->choices();
     NSPopUpButton *picker = [NSPopUpButton new];
+    // Localize only display titles; representedObject remains the stable preference value.
+    for (NSMenuItem *item in menu.itemArray) item.title = DPLocalize(item.title, @"tweaks");
     picker.menu = menu;
     picker.controlSize = NSControlSizeSmall;
     picker.target = self;

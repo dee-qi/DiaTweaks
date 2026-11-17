@@ -1,0 +1,104 @@
+Dia 1.57.1 (90935) — 本机本地化验证记录
+日期：2026-11-17
+
+安装
+- 使用项目安装流程完成构建、签名及安装；后续菜单修复已替换本机 dylib。
+- 最终安装 dylib 与 build/DiaPatches.dylib 的 SHA-256 一致：
+  2a1c1e0db5db9f020f84246fe376beb4dfd680fe20fd8019abd8086f0e509648
+- 最终偏好：跟随系统（中文），侧栏布局；恢复原有 turnOffAI=true。
+- 安装前备份位于 ~/Library/Application Support/DiaPatches/backups/pre-localization/。
+
+自动检查
+- make 成功；make check 成功；git diff --check 成功。
+- 675 条语言资源通过校验，80 项补丁元数据完整。
+- 原文查找、动态菜单标题、快捷键保持、下拉项数量、选项值、可编辑内容保护、富文本占位符样式测试通过。
+- 侧栏：114 个场景，0 个问题（build/proof/sidebar-final.json）。
+- 顶部：114 个场景，0 个问题（build/proof/top-final.json，layout=horizontal）。
+- 曾发现分组菜单依赖英文标题导致失败，修复后回归通过。
+- 早期名为 top-pass 的报告实际是侧栏，不作为顶部布局证据。
+
+Computer Use 已确认
+- Chats 入口、文件/聊天记录/与标签页的聊天筛选、昨天分组、搜索占位符。
+- 最近标签浮层：搜索、已打开的标签页、最近关闭、历史记录、书签。
+- 标签右键：移至窗口、添加书签到文件夹、新建文件夹。
+- 固定标签右键：编辑固定页面、用当前网址替换固定网址、编辑。
+- 顶部菜单：标签页；扩展程序里的添加、管理、固定扩展程序。
+- 英文重启后菜单和设置恢复英文；显式简体中文重启生效；最终跟随系统显示中文。
+- DiaTweaks 主页、语言选择器、重启提示；原生标签设置；Chrome 语言设置和应用商店。
+- 验证期间临时添加的应用商店书签已移除。
+
+覆盖限制（不计为 UI 验证通过）
+- 自定义书签浮层的横向二级菜单受到截图裁切和无障碍节点限制，未取得其全部项目的独立可见证据；对应原文已加入语言包。
+- “Open in New Window”已补入语言包，本次当前固定标签菜单未出现该条件项。
+- 此记录不是全部 Dia 条件界面零英文的证明。书签编辑弹窗、聊天记录内的相对时间及其他未逐项触发的界面仍需后续覆盖。
+
+本地截图：build/proof/chats-zh.png、recent-tabs-zh.png、top-layout-zh.jpg、settings-system-zh.png。
+架构及语言扩展说明：docs/localization.md。
+
+第二轮截图补齐（2026-11-17）
+- 语言包扩充至 739 条。
+- 分屏浮层的左右提示已通过实际原生无障碍树确认；调用 Open as Split 时发生拖放等待，用户按 Esc，测试脚本重启后恢复。未创建新的分屏。
+- 书签管理页：标题、可见标签标题、新建文件夹、搜索、网站/地址列、数字计数均已确认中文。
+- Dia 菜单：邀请使用 Dia、从其他浏览器导入均已确认。
+- 书签菜单：将此页面加入书签已确认。
+- 账户菜单：更改名称、更改电子邮件、更改密码已确认，仅查看菜单，未执行账户修改。
+- 高级广告拦截：标题、说明、链接、分类及滚动加载的地区规则已确认；未更改任何复选框。EasyList、EasyPrivacy、BCNY 等品牌/规则专名保留。
+- 最近访问分组已加入词库， attributed menu title 测试通过；本次菜单未返回该分组，不能算作已取得实际 UI 证据。
+- 构建、make check、git diff --check 通过；新增测试覆盖左右分屏、计数、用户书签标题保护、富文本链接属性、attributed 菜单。
+- 截图保存于 build/proof/round2/。
+
+第二轮最终结果
+- 侧栏：114 个场景，0 个问题，round2/sidebar.json。
+- 顶部：114 个场景，0 个问题，round2/top.json（horizontal）。
+- 两种布局回归之后只增加了 Close Tabs and Windows / Use System Setting 两条词条；重新构建、语言校验和 locale-pack 测试通过。
+- 最新“退出时”菜单三项均经 Computer Use 确认为中文；保持“保留标签页和窗口”选中，未修改退出行为。截图：round2/quit-options.png。
+- 最终语言包 741 条；恢复侧栏布局，保持跟随系统语言。
+- 最终安装 dylib SHA-256：f3e1c045c55834aa8dd298af582f3885008d5797839f87c96a1fd1bbc512172f
+
+绘制时机与性能修正（2026-11-17）
+- 首版同步整树扫描出现用户报告的快速切页卡顿，已撤除 addSubview / NSWindow display 扫描。其侧栏首测有 1 项隐藏窗口按钮对齐失败，保留于 prepaint/sidebar-first.json；随后一次运行被主动中止，不计通过。
+- 最终采用 scoped setter + viewWillDraw 当前控件处理，无窗口更新通知，无生产递归遍历。原文匹配兼容 Turn Off AI 设置行。
+- 原生测试检查：单个控件绘制前已中文、赋值立即翻译、附加子树不遍历、兄弟控件不被扫描、编辑内容不变。
+- Computer Use 连续切换快捷键/高级/主页/补丁，另执行 8 次快速点击，无超时或持续卡死。此验证不等于逐帧高速录屏证明。
+- 侧栏 114 场景 0 问题（predraw-first.json）；该测试在随后仅移动语言设置入口之前完成。
+- 语言入口移至补丁第一组：Language / 语言；Language Patch / 语言补丁。保留三个选项、偏好 key 和重启行为，中英文均可搜索。
+- 最终 make、make check、git diff --check 通过，语言包 742 条。
+- 顶部布局最终版本 114 场景 0 问题，报告 predraw-top.json（horizontal）。
+- Computer Use 确认补丁首组“语言 / 语言补丁”、三个选项、主页入口移除；已恢复侧栏并保留跟随系统。
+- 最终安装 dylib SHA-256：3d668c0fefc9fa5c22f7ed3feb6afc5b2efeb406d84ed79fb1d9fd3e0835b7ae。
+
+浅色侧栏选中文字颜色修正（2026-11-17）
+- 根因：普通 NSTextField 的 attributedStringValue 会合成当前颜色；汉化写回富文本后固定了选中时的白色。
+- 修复：根据 objectValue 区分普通/富文本，只对真实富文本保留属性；普通标签使用 stringValue，由 Dia/AppKit 管理选中颜色。
+- 新增普通标签保持普通文本、白色切回 labelColor 回归测试；make、make check、git diff --check 通过。
+- 已安装并重启；Computer Use 在浅色模式从通用切到隐私，截图确认通用恢复黑色、隐私保持选中高亮。
+
+地址栏悬停提示（2026-11-17）
+- 新增导航栏悬停词条和网站菜单：侧栏、书签、分屏、网站菜单、自动画中画、网站设置、连接安全等。
+- 适配已识别的 DiaTooltip/ArcTooltip/TooltipRequest 容器；SwiftUI 提示通过主 bundle 的 tooltip 精确词条资源入口翻译。
+- make、make check、原生容器/资源回退/网站菜单词条测试通过；已安装并重启。
+- Computer Use 确认后退/前进/重新加载此页面的实际按钮描述为中文；纯悬停工具能力不足，已请求用户保持悬停或展开网站菜单，其他浮层实际显示待确认。
+- 用户随后确认实际悬停仍为英文，上一轮不得视为浮层验证通过。已核对加载路径、文件哈希，排除未安装。
+- 追加 NSBundle 富文本和指定 localizations 的查询适配及测试；make check 通过，正常退出后重新启动加载。最终哈希 684fbca2c4bb26f2e820c5180c10efd145f2d4ea66e3f42da3be21a98e3d57d8。实际悬停显示尚未确认。
+
+2026-11-17 — Replace tooltip overlay with Text import adapter
+User reported first-hover translation followed by English after moving between icons; the subsequent pre-draw overlay revision also failed user verification. Both are failures, not completed coverage.
+Replaced overlay with UUID-gated arm64 Text initializer import rebinding for build 90935. Runtime log at 23:38:46 confirms "Tooltip Text import: installed". Installed SHA256 fb1b9ea338548b981ca4c0c396f674ce1cb102d9e02d028449aea20ddacd309a matches build.
+make and make check passed. Actual SwiftUI ABI test passed 14,000 translations, interleaved excluded calls, original caller storage preservation, unknown text and non-String fallback.
+Physical hover reuse / keycaps: user confirmed after repeated movement across sidebar, navigation, bookmark, split and site-menu icons: "持续中文，快捷键正常". Computer Use verified restart; physical hover verification is user-reported because it has no mouse-move-only API.
+Additional validation: AddressSanitizer SwiftUI ABI stress run passed; executable UUID mismatch fails closed.
+
+2026-11-17 — New-tab placeholder and welcome UI
+Built, signed and installed updated dylib; backup: backups/pre-newtab-localization.
+make check passed, including linked-run destination preservation and scoped welcome-view translation.
+Computer Use observed Chinese search placeholder, two-line welcome headline, subtitle, Connect/Connected states and both footnote links without clipping. Typed "Search or enter address" remained unchanged as user input; cleared test input afterward. "连接更多" opened Apps settings correctly; closed settings and returned to original new tab. No connection or dismissal action submitted. Promotional card illustrations retain original baked-in English text.
+
+2026-11-18 — Shortcut descriptions and conflict menu
+55 currently reachable shortcut entries individually clicked and recorded before translation; all 55 individually clicked after installation and Chinese descriptions matched the catalog. Long descriptions wrapped normally. Existing shortcut display matched original after correction described below.
+Conflict menu observed via Computer Use: 快捷键冲突时 / 优先用于网站 / 用于网站后显示提示 / 优先用于 Dia. No policy selection changed.
+Verification incident: quitting while the recorder had focus temporarily assigned Cmd-Q to Zoom In; a tool attempt to restore Cmd-plus produced Shift-Cmd-equals. User restored the original Cmd-plus, then Computer Use independently verified it before installation and again in the 55-item verification. No reset-all action was performed. Future verification must leave the shortcut pane before any application shortcut.
+make and make check passed for the initial description build; subsequent resource additions and assertions passed check-localization-native and check-localization. Catalog: 833 messages. Current installation matches the signed build. Backup: backups/pre-shortcut-descriptions.
+
+2026-11-18 — Custom patch controls
+Root cause: metadata validation did not cover custom row labels; direct AppKit constructors bypassed DPLabel. Added explicit tweaks-context translation at row creation, and centralized patch choice display-title localization without changing representedObject. Added catalogs for command-bar positioning/tuning, Peek options, Little Dia dimensions and choice labels; fixed grain, radius and emoji controls to use existing translations. Added source factory-argument validation for custom tuning rows.
+make and make check passed, including 324 grain renders and localization/tooltip checks. Signed and installed dylib; backup: backups/pre-tweak-controls-localization. Computer Use confirmed Command Bar position, spacing, blur radius, sidebar blur, darkness, shadow intensity and all three position choices in Chinese; original values unchanged. Other corrected pages were source/build checked, not individually opened in this verification pass.

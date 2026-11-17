@@ -1,3 +1,4 @@
+#import "Localization/Localization.h"
 #import "StdPatch/StdPatch.h"
 
 extern DPPatch DPProfileEmoji;
@@ -130,7 +131,7 @@ static void DPAddEmojiRow(NSViewController *pane) {
     NSString *spaceID = [DPSwiftValue(pane, @"spaceID") description];
     if (!rows || !title || !spaceID || DPGet(pane, &DPRowKey)) return;
 
-    NSTextField *label = [NSTextField labelWithString:@"Emoji"];
+    NSTextField *label = [NSTextField labelWithString:DPLocalize(@"Emoji", @"tweaks")];
     label.font = title.font;
     label.textColor = title.textColor;
     DPEmojiField *field = [DPEmojiField textFieldWithString:[DPEmojiDefaults dictionaryForKey:DPEmojisKey][spaceID] ?: @""];
@@ -138,7 +139,7 @@ static void DPAddEmojiRow(NSViewController *pane) {
     field.delegate = field;
     field.alignment = NSTextAlignmentCenter;
     field.bezelStyle = NSTextFieldRoundedBezel;
-    field.placeholderString = @"None";
+    field.placeholderString = DPLocalize(@"None", @"tweaks");
     NSView *row = [NSView new];
     for (NSView *view in @[ label, field ]) {
         view.translatesAutoresizingMaskIntoConstraints = NO;

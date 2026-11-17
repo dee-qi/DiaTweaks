@@ -59,8 +59,8 @@ static void DPShowHelper(NSNotification *note) {
     void (^show)(void) = ^{ [helper activateFromApplication:NSRunningApplication.currentApplication options:NSApplicationActivateAllWindows]; };
     if (![note.name hasSuffix:@"signIn"]) return show();
     NSAlert *alert = [NSAlert new];
-    alert.messageText = @"Sign in to Dia once for passkeys";
-    alert.informativeText = @"Passkeys open in a second copy of Dia, which needs you to sign in with your Dia email once. Your passkey carries on after.";
+    alert.messageText = DPLocalized(@"native.sign.in.to.dia.once.for.passkeys", @"Sign in to Dia once for passkeys");
+    alert.informativeText = DPLocalized(@"native.passkeys.open.in.a.second.copy.of.dia.which.needs.you.to.sign.in.with.your.dia.email.once.your.passkey.carries.on.after", @"Passkeys open in a second copy of Dia, which needs you to sign in with your Dia email once. Your passkey carries on after.");
     NSUInteger browser = [NSApp.orderedWindows indexOfObjectPassingTest:^BOOL(NSWindow *window, NSUInteger i, BOOL *stop) { return window.visible && window.canBecomeMainWindow; }];
     if (browser == NSNotFound) return (void)([alert runModal], show());
     [alert beginSheetModalForWindow:NSApp.orderedWindows[browser] completionHandler:^(NSModalResponse _) { show(); }];
@@ -84,9 +84,9 @@ static void DPApplyPasskeys(DPPatch *patch) {
     if (patch->on) DPSetUpPasskeys();
     if (patch->on == gExtensionLoaded || patch->on != DPSavedOn(patch) || (patch->on && DPPasskeysProblem(patch))) return;  // The self-test flips patches without saving.
     NSAlert *alert = [NSAlert new];
-    alert.messageText = patch->on ? @"Relaunch Dia to allow iCloud passkeys" : @"Relaunch Dia to stop using iCloud passkeys";
-    [alert addButtonWithTitle:@"Relaunch"];
-    [alert addButtonWithTitle:@"Later"];
+    alert.messageText = patch->on ? DPLocalized(@"native.relaunch.dia.to.allow.icloud.passkeys", @"Relaunch Dia to allow iCloud passkeys") : DPLocalized(@"native.relaunch.dia.to.stop.using.icloud.passkeys", @"Relaunch Dia to stop using iCloud passkeys");
+    [alert addButtonWithTitle:DPLocalized(@"language.relaunch", @"Relaunch")];
+    [alert addButtonWithTitle:DPLocalized(@"language.later", @"Later")];
     if ([alert runModal] == NSAlertFirstButtonReturn) DPHandOffAndQuit(@[ @"apply" ]);
 }
 

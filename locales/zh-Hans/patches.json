@@ -1,0 +1,1406 @@
+{
+  "patch.narrowerSidebar.title": {
+    "en": "Narrower Sidebar",
+    "zh-Hans": "缩窄侧边栏",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.narrowerSidebar.detail": {
+    "en": "Let the sidebar shrink to 164 points, so favorites sit two to a row.",
+    "zh-Hans": "允许侧边栏缩窄至 164 点，让收藏标签每行显示两个。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.openSidebarInstantly.title": {
+    "en": "Open Sidebar Instantly",
+    "zh-Hans": "立即打开侧边栏",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.openSidebarInstantly.detail": {
+    "en": "With the sidebar hidden, open it the moment the pointer reaches the left edge instead of after Dia's short wait. A hidden tab bar at the top shows sooner too. Dia's animation and how it closes stay as they are. May need an update after some Dia releases.",
+    "zh-Hans": "隐藏侧边栏时，指针到达左侧边缘即打开，不再等待。顶部隐藏标签栏也会更快显示。保留原有动画和关闭方式。部分 Dia 更新后可能需要适配。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.briefLanguage.title": {
+    "en": "Morning Brief Language",
+    "zh-Hans": "晨间简报语言",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.briefLanguage.detail": {
+    "en": "Choose the language Dia writes your Morning Brief in, whatever language your messages and documents are in. Dia is rebuilt with that language added to its Morning Brief prompt, then relaunches. The next brief uses it. Experimental.",
+    "zh-Hans": "选择 Dia 晨间简报使用的语言，不受消息和文档语言影响。此设置会重新构建 Dia，将语言要求加入提示词，并在重启后用于下一份简报。实验性功能。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.dragWindowFromPage.title": {
+    "en": "Drag Window from Page",
+    "zh-Hans": "从页面拖动窗口",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.dragWindowFromPage.detail": {
+    "en": "Drag an empty spot near the top of a page to move the window, like a title bar. Handy with the toolbar and sidebar hidden.",
+    "zh-Hans": "像拖动标题栏一样，拖动页面顶部附近的空白处来移动窗口。适合隐藏工具栏和侧边栏时使用。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.tidyTabs.title": {
+    "en": "Tidy Tabs",
+    "zh-Hans": "整理标签页",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.tidyTabs.detail": {
+    "en": "Adds a broom to the line above your tabs. Click it to group your tabs by what they’re for, using Apple Intelligence on your Mac; Dia names the groups. Shows with more than 5 tabs.",
+    "zh-Hans": "在标签页上方添加扫帚按钮。点击后使用 Mac 上的 Apple 智能按用途分组，由 Dia 命名。超过 5 个标签页时显示。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.compactCommandBarWithChat.title": {
+    "en": "Compact with Chat Usage Too",
+    "zh-Hans": "有聊天用量时也精简",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.compactCommandBarWithChat.detail": {
+    "en": "Also hide Add tabs or files and dictation when you have chat usage. You can’t use them from the command bar while this is on.",
+    "zh-Hans": "有聊天用量时也隐藏添加标签页或文件及听写功能。开启后无法从命令栏使用这些功能。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.compactCommandBar.title": {
+    "en": "Compact Command Bar",
+    "zh-Hans": "精简命令栏",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.compactCommandBar.detail": {
+    "en": "Without chat usage, hide Add tabs or files and dictation so the command bar fits on one line.",
+    "zh-Hans": "没有聊天用量时，隐藏添加标签页或文件及听写功能，让命令栏保持单行。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.hideHistorySuggestions.title": {
+    "en": "Hide History Suggestions",
+    "zh-Hans": "隐藏历史记录建议",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.hideHistorySuggestions.detail": {
+    "en": "Leave pages you've visited out of the suggestions in the address field and command bar. Searches and open tabs still show.",
+    "zh-Hans": "地址栏和命令栏建议不再显示访问过的页面，仍显示搜索和已打开标签页。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.extensionsShortcut.title": {
+    "en": "Extensions Shortcut",
+    "zh-Hans": "扩展程序快捷键",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.extensionsShortcut.detail": {
+    "en": "Press a shortcut, ⇧⌘X unless you set another, for a menu of your extensions. Choosing one opens it as its toolbar button would.",
+    "zh-Hans": "按快捷键（默认为 ⇧⌘X）打开扩展程序菜单，选择项目即可像点击工具栏按钮一样打开扩展。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.skipAccount.title": {
+    "en": "Skip Account",
+    "zh-Hans": "跳过账户登录",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.skipAccount.detail": {
+    "en": "Use Dia without signing in. Relaunch to apply. Hides Sign In and the Account, Morning Brief and Sync settings. Only works on a Dia that has never signed in. Chat needs an account, so pair it with Turn Off AI. Experimental.",
+    "zh-Hans": "无需登录即可使用 Dia，重启生效。隐藏登录、账户、晨间简报和同步设置。仅适用于从未登录的 Dia。聊天需要账户，建议配合关闭 AI 使用。实验性功能。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.turnOffAI.title": {
+    "en": "Turn Off AI",
+    "zh-Hans": "关闭 AI",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.turnOffAI.detail": {
+    "en": "Turn off every AI feature in Dia: chat and its buttons, menus and shortcuts, Skills, Ask Dia, Morning Brief, and Settings' Apps and Skills. After a relaunch, Dia can't reach its AI servers either. To send questions to search, set Address Bar to Prefer Search Engine in Advanced.",
+    "zh-Hans": "关闭 Dia 的所有 AI 功能，包括聊天及其按钮、菜单、快捷键、技能、询问 Dia、晨间简报和相关设置。重启后也会阻止访问 AI 服务器。要将问题交给搜索，请在高级设置中将地址栏设为优先使用搜索引擎。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.closeFromTabSwitcher.title": {
+    "en": "Close Tabs from Tab Switcher",
+    "zh-Hans": "在标签切换器中关闭标签",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.closeFromTabSwitcher.detail": {
+    "en": "Press W or ⌘W while the tab switcher (⌃⇥) is open to close the highlighted tab and keep switching.",
+    "zh-Hans": "打开标签切换器（⌃⇥）后，按 W 或 ⌘W 关闭选中的标签页并继续切换。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.icloudPasswords.title": {
+    "en": "Allow iCloud Passwords",
+    "zh-Hans": "允许 iCloud 密码",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.icloudPasswords.detail": {
+    "en": "AutoFill passwords from Apple Passwords with the iCloud Passwords, Better Passwords or Open Passwords extension. A patched Dia can’t start Apple’s helper, so each time one connects, the original Dia that DiaTweaks keeps opens briefly, without windows, to start it. Experimental.",
+    "zh-Hans": "使用 iCloud 密码、Better Passwords 或 Open Passwords 扩展自动填充 Apple 密码。由于补丁版无法启动 Apple 助手，每次连接时会短暂启动保留的原版 Dia，不显示窗口。实验性功能。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.pinnedTabMinusButton.title": {
+    "en": "Minus Button on Open Pinned Tabs",
+    "zh-Hans": "固定标签页显示减号",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.pinnedTabMinusButton.detail": {
+    "en": "Show a minus button instead on pinned tabs with a page open, in or out of a folder, as in Arc. It closes the page and keeps the tab pinned.",
+    "zh-Hans": "对已打开页面的固定标签页显示减号按钮，包括文件夹内的标签页，类似 Arc。点击后关闭页面，但保留固定标签。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.pinnedTabCloseButton.title": {
+    "en": "Close Button on Pinned Tabs",
+    "zh-Hans": "固定标签页显示关闭按钮",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.pinnedTabCloseButton.detail": {
+    "en": "Show the close button when you point at a pinned tab outside a folder, as Dia does for tabs in a pinned folder.",
+    "zh-Hans": "指针悬停时，文件夹外的固定标签页也显示关闭按钮，与文件夹内标签页保持一致。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.dockClickWindow.title": {
+    "en": "Dock Click Shows Existing Window",
+    "zh-Hans": "点击程序坞显示已有窗口",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.dockClickWindow.detail": {
+    "en": "Clicking Dia’s Dock icon from another Desktop takes you to the window Dia already has, instead of opening a new one. Needs “When switching to an application, switch to a Space with open windows” in Desktop & Dock.",
+    "zh-Hans": "从其他桌面点击 Dia 程序坞图标时，切换到已有窗口而不新建窗口。需要在桌面与程序坞设置中开启切换到应用时转到其窗口所在空间。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.hideSkillsSuggestions.title": {
+    "en": "Hide Skills Suggestions",
+    "zh-Hans": "隐藏技能建议",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.hideSkillsSuggestions.detail": {
+    "en": "Hide the Skills and Learn Skills buttons under the search field on new tab pages.",
+    "zh-Hans": "隐藏新标签页搜索框下的技能和学习技能按钮。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.compactSidebarHeader.title": {
+    "en": "Compact Sidebar Header",
+    "zh-Hans": "精简侧边栏顶部",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.compactSidebarHeader.detail": {
+    "en": "Move the pinned tabs up into the empty space under the window buttons.",
+    "zh-Hans": "将固定标签页上移至窗口按钮下方的空白区域。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.collapsePinned.title": {
+    "en": "Collapse Pinned Tabs",
+    "zh-Hans": "折叠固定标签页",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.collapsePinned.detail": {
+    "en": "Add a Pinned line above your pinned tabs and folders in the sidebar. Click it to fold them away, like in Arc, and again to bring them back. Each profile remembers which way you left it.",
+    "zh-Hans": "在侧边栏固定标签页和文件夹上方添加固定标签栏，点击折叠，再次点击展开，类似 Arc。每份个人资料分别记住折叠状态。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.translucentSidebar.title": {
+    "en": "Translucent Sidebar",
+    "zh-Hans": "半透明侧边栏",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.translucentSidebar.detail": {
+    "en": "Show the page through the sidebar when it floats over it, in the window’s material or the one chosen in Window material.",
+    "zh-Hans": "侧边栏浮于页面上方时透出页面内容，使用窗口材质或所选材质。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.hideTrafficLights.title": {
+    "en": "Hide Window Controls",
+    "zh-Hans": "隐藏窗口控制按钮",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.hideTrafficLights.detail": {
+    "en": "Hide the close, minimize and zoom buttons. ⌘W, ⌘M and the Window menu still work.",
+    "zh-Hans": "隐藏关闭、最小化和缩放按钮。仍可使用 ⌘W、⌘M 和窗口菜单。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.pullRequestRepo.title": {
+    "en": "Show Repo on Pull Requests",
+    "zh-Hans": "显示拉取请求仓库",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.pullRequestRepo.detail": {
+    "en": "In GitHub live folders, show each pull request's repository, number and state under its title instead of the author, with the review status on a line below (beside it with tabs at the top).",
+    "zh-Hans": "在 GitHub 实时文件夹中，用仓库、编号和状态替代作者信息。审核状态显示在下方；顶部标签布局下显示在旁边。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.hidePinnedTabBorder.title": {
+    "en": "Hide Pinned Tab Border",
+    "zh-Hans": "隐藏固定标签边框",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.hidePinnedTabBorder.detail": {
+    "en": "Remove the colored border around the selected pinned tab.",
+    "zh-Hans": "移除选中固定标签页周围的彩色边框。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.savePageAs.title": {
+    "en": "Save Page As",
+    "zh-Hans": "网页另存为",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.savePageAs.detail": {
+    "en": "Add Save Page As… to the File menu, with a shortcut, ⌥⌘S unless you set another.",
+    "zh-Hans": "在文件菜单中添加网页另存为，默认快捷键为 ⌥⌘S，可自行修改。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.onePassword.title": {
+    "en": "Allow 1Password",
+    "zh-Hans": "允许 1Password",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.onePassword.detail": {
+    "en": "Connect the 1Password extension to the 1Password app. The app turns away a patched Dia, so each time the extension connects, the original Dia runs hidden for a moment to start the app’s helper, then quits. Experimental.",
+    "zh-Hans": "连接 1Password 扩展与应用。由于应用拒绝补丁版 Dia，每次扩展连接时会短暂在后台运行原版 Dia 来启动助手，然后退出。实验性功能。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.sidebarGrain.title": {
+    "en": "Sidebar Grain",
+    "zh-Hans": "侧边栏纹理",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.sidebarGrain.detail": {
+    "en": "Add texture behind sidebar or horizontal tabs. Adjust the grain, softness and scale, for all profiles or for one.",
+    "zh-Hans": "为侧边栏或顶部标签栏添加纹理。可为全部或单个个人资料调整颗粒、柔和度和缩放。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.hidePersonalizeButton.title": {
+    "en": "Hide Personalize Button",
+    "zh-Hans": "隐藏个性化按钮",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.hidePersonalizeButton.detail": {
+    "en": "Hide the Personalization button at the top right of new tab pages.",
+    "zh-Hans": "隐藏新标签页右上角的个性化按钮。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.pinTabShortcut.title": {
+    "en": "Pin Tab Shortcut",
+    "zh-Hans": "固定标签页快捷键",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.pinTabShortcut.detail": {
+    "en": "Press a shortcut, ⌘D unless you set another, to move the tab you’re on to the bottom of your pinned tabs, as in Arc. Press it on a pinned tab to unpin it.",
+    "zh-Hans": "按快捷键（默认为 ⌘D）将当前标签页移至固定标签底部，类似 Arc。对固定标签页使用则取消固定。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.hidePinnedTabCard.title": {
+    "en": "Hide Pinned Tab Card",
+    "zh-Hans": "隐藏固定标签卡片",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.hidePinnedTabCard.detail": {
+    "en": "Stop the card with a pinned tab's title and buttons from showing when you point at the tab.",
+    "zh-Hans": "指针悬停于固定标签时，不显示包含标题和按钮的卡片。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.hideChatButton.title": {
+    "en": "Hide Chat Button",
+    "zh-Hans": "隐藏聊天按钮",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.hideChatButton.detail": {
+    "en": "Hide the Chat button at the top right of the toolbar.",
+    "zh-Hans": "隐藏工具栏右上角的聊天按钮。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.profileEmoji.title": {
+    "en": "Profile Emoji",
+    "zh-Hans": "个人资料表情图标",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.profileEmoji.detail": {
+    "en": "Show an emoji in place of each profile’s dot in the profile switcher. Choose them in Settings › Profiles.",
+    "zh-Hans": "用表情替代个人资料切换器中的圆点。可在设置的个人资料页面选择。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.hideLinkAddress.title": {
+    "en": "Hide Link Address",
+    "zh-Hans": "隐藏链接地址",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.hideLinkAddress.detail": {
+    "en": "Hide the address that shows at the bottom of the page when you point at a link.",
+    "zh-Hans": "指针悬停于链接时，不在页面底部显示地址。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.passkeys.title": {
+    "en": "Allow iCloud Passkeys",
+    "zh-Hans": "允许 iCloud 通行密钥",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.passkeys.detail": {
+    "en": "Sign in to sites with passkeys saved in Apple Passwords. A patched Dia can’t reach them, so the original Dia that DiaTweaks keeps opens behind the Touch ID prompt, then quits. Experimental.",
+    "zh-Hans": "使用 Apple 密码中保存的通行密钥登录网站。由于补丁版无法访问，保留的原版 Dia 会在触控 ID 提示后方启动，完成后退出。实验性功能。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.keepFoldersOpen.title": {
+    "en": "Keep Folders Open",
+    "zh-Hans": "保持文件夹展开",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.keepFoldersOpen.detail": {
+    "en": "Stop folders collapsing on their own when they empty, in the sidebar or at the top, so new tabs and live folder items show up.",
+    "zh-Hans": "侧边栏或顶部标签的文件夹变空时不自动折叠，让新标签页和实时文件夹项目保持可见。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.undoCloseTab.title": {
+    "en": "Undo Closing a Tab",
+    "zh-Hans": "撤销关闭标签页",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.undoCloseTab.detail": {
+    "en": "Press a shortcut, ⌘Z unless you set another, right after closing a tab to bring it back, as long as you haven’t typed or clicked since.",
+    "zh-Hans": "关闭标签页后，在尚未输入或点击其他内容时，按快捷键（默认为 ⌘Z）重新打开。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.unloadTab.title": {
+    "en": "Unload Tabs",
+    "zh-Hans": "卸载标签页",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.unloadTab.detail": {
+    "en": "Right-click a tab and choose Unload Tab to free its memory. It stays in the sidebar and loads again when you open it. Unloading the tab you’re on takes you back to the one you were on before. A pinned tab goes back to its pinned page.",
+    "zh-Hans": "右键选择卸载标签页以释放内存。标签仍保留，再次打开时重新加载。卸载当前标签会返回上一个标签；固定标签则回到其固定页面。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.hideUpgradeBanner.title": {
+    "en": "Hide Upgrade Banner",
+    "zh-Hans": "隐藏升级横幅",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.hideUpgradeBanner.detail": {
+    "en": "Hide the “Looking for chat?” upgrade banner under the command bar.",
+    "zh-Hans": "隐藏命令栏下方提示升级聊天功能的横幅。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.hideToolbar.title": {
+    "en": "Hide Toolbar",
+    "zh-Hans": "隐藏工具栏",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.hideToolbar.detail": {
+    "en": "Hide the bar with the address field, navigation buttons and extensions. Experimental.",
+    "zh-Hans": "隐藏包含地址栏、导航按钮和扩展程序的工具栏。实验性功能。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.revealToolbarOnHover.title": {
+    "en": "Show Toolbar on Hover",
+    "zh-Hans": "悬停时显示工具栏",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.revealToolbarOnHover.detail": {
+    "en": "Show the toolbar when you move the pointer to the top of the page.",
+    "zh-Hans": "指针移至页面顶部时显示工具栏。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.showToolbarWithSidebar.title": {
+    "en": "Show Toolbar with Sidebar",
+    "zh-Hans": "随侧边栏显示工具栏",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.showToolbarWithSidebar.detail": {
+    "en": "Show the toolbar while the sidebar is open.",
+    "zh-Hans": "侧边栏打开时显示工具栏。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.toggleToolbarVisibility.title": {
+    "en": "Toggle toolbar visibility",
+    "zh-Hans": "切换工具栏显示",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.toggleToolbarVisibility.detail": {
+    "en": "Hide or show the toolbar with a keyboard shortcut, ⌃D unless you set another.",
+    "zh-Hans": "使用键盘快捷键隐藏或显示工具栏，默认为 ⌃D。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.showLoadingProgress.title": {
+    "en": "Show Loading Progress",
+    "zh-Hans": "显示加载进度",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.showLoadingProgress.detail": {
+    "en": "Show Dia's loading glow along the top of the page while it loads, where the hidden toolbar would show it.",
+    "zh-Hans": "工具栏隐藏时，在页面顶部显示 Dia 的加载光效。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.plainSelectedTab.title": {
+    "en": "Hide Site Color in Tab Bar",
+    "zh-Hans": "隐藏标签栏网站颜色",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.plainSelectedTab.detail": {
+    "en": "While the toolbar is hidden, show the selected tab in the page color instead of the site's.",
+    "zh-Hans": "工具栏隐藏时，选中标签使用页面颜色而非网站颜色。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.showToolbarWithTopTabs.title": {
+    "en": "Show Toolbar with Tabs at the Top",
+    "zh-Hans": "顶部标签布局显示工具栏",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.showToolbarWithTopTabs.detail": {
+    "en": "Show the toolbar while tabs are at the top of the window, and hide it again with tabs in the sidebar.",
+    "zh-Hans": "标签页位于窗口顶部时显示工具栏，切回侧边栏后再次隐藏。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.showToolbarOnNewTab.title": {
+    "en": "Show Toolbar on New Tabs",
+    "zh-Hans": "新标签页显示工具栏",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.showToolbarOnNewTab.detail": {
+    "en": "Show the toolbar and bookmarks bar on new tab pages, and hide them once a site opens.",
+    "zh-Hans": "新标签页显示工具栏和书签栏，打开网站后隐藏。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.showAddressField.title": {
+    "en": "Always Show Address Field",
+    "zh-Hans": "始终显示地址栏",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.showAddressField.detail": {
+    "en": "Show the address field’s background and its bookmark, split view and site buttons without pointing at it.",
+    "zh-Hans": "无需悬停即可显示地址栏背景及书签、分屏和网站按钮。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.windowMaterial.title": {
+    "en": "Window Material",
+    "zh-Hans": "窗口材质",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.windowMaterial.detail": {
+    "en": "Show a material or Liquid Glass behind the tabs and sidebar, still tinted with the profile’s color.",
+    "zh-Hans": "在标签栏和侧边栏后显示材质或液态玻璃，保留个人资料的主题色。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.hideVerticalTabGlow.title": {
+    "en": "Hide Vertical Tab Glow",
+    "zh-Hans": "隐藏竖向标签光效",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.hideVerticalTabGlow.detail": {
+    "en": "Remove the selected sidebar tab's glow and glass highlights, with a uniform border.",
+    "zh-Hans": "移除选中侧边栏标签的发光和玻璃高光，使用统一边框。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.hideNewTabLogo.title": {
+    "en": "Hide New Tab Logo",
+    "zh-Hans": "隐藏新标签页标志",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.hideNewTabLogo.detail": {
+    "en": "Hide the Dia logo above the search field on new tab pages.",
+    "zh-Hans": "隐藏新标签页搜索框上方的 Dia 标志。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.hideChatsButton.title": {
+    "en": "Hide Chats Button",
+    "zh-Hans": "隐藏聊天列表按钮",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.hideChatsButton.detail": {
+    "en": "Hide the Chats button in the tab bar or sidebar.",
+    "zh-Hans": "隐藏标签栏或侧边栏中的聊天列表按钮。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.windowCorners.title": {
+    "en": "Window Corners",
+    "zh-Hans": "窗口圆角",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.windowCorners.detail": {
+    "en": "Round Dia’s windows like other apps on macOS 26, or pick a smaller radius down to square, with the page’s corners to match.",
+    "zh-Hans": "使用类似 macOS 26 应用的窗口圆角，或选择更小半径直至直角，页面圆角也会随之调整。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.commandBar.title": {
+    "en": "Open New Tabs in Command Bar",
+    "zh-Hans": "用命令栏打开新标签页",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.commandBar.detail": {
+    "en": "Open new tabs as Dia’s command bar over the current page, like Arc. Choose a result to open it in a new tab, or press Escape to go back.",
+    "zh-Hans": "像 Arc 一样，在当前页面上方以命令栏打开新标签页。选择结果后在新标签打开，按 Escape 返回。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.commandBarBlur.title": {
+    "en": "Blur Page Behind",
+    "zh-Hans": "模糊后方页面",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.commandBarBlur.detail": {
+    "en": "Blur the page behind the command bar.",
+    "zh-Hans": "模糊命令栏后方的页面。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.commandBarDarken.title": {
+    "en": "Darken Page Behind",
+    "zh-Hans": "调暗后方页面",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.commandBarDarken.detail": {
+    "en": "Darken the page behind the command bar.",
+    "zh-Hans": "调暗命令栏后方的页面。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.commandBarShadow.title": {
+    "en": "Shadow Behind Bar",
+    "zh-Hans": "命令栏阴影",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.commandBarShadow.detail": {
+    "en": "Add a shadow behind the command bar so it stands out when Blur and Darken are off, like Arc.",
+    "zh-Hans": "添加命令栏阴影，使其在未开启模糊和调暗时也更突出，类似 Arc。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.commandBarInteractive.title": {
+    "en": "Scroll Page Behind",
+    "zh-Hans": "滚动后方页面",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.commandBarInteractive.detail": {
+    "en": "Scroll the page behind the command bar while it's open, like Arc. The pointer doesn't highlight it, and clicking outside closes the bar without clicking the page.",
+    "zh-Hans": "命令栏打开时允许滚动后方页面。指针不会高亮页面，点击外部只关闭命令栏，不触发页面点击。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.commandBarKeepText.title": {
+    "en": "Remember What You Typed",
+    "zh-Hans": "记住输入内容",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.commandBarKeepText.detail": {
+    "en": "Bring back what you typed when you open the bar again after Escape, selected so you can carry on or type over it.",
+    "zh-Hans": "按 Escape 关闭后，再次打开命令栏时恢复并选中上次输入，便于继续输入或替换。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.bitwarden.title": {
+    "en": "Allow Bitwarden",
+    "zh-Hans": "允许 Bitwarden",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.bitwarden.detail": {
+    "en": "Unlock the Bitwarden extension with the Bitwarden app, such as with Touch ID. Bitwarden only sets this up for browsers it knows, so this adds the file Dia reads when it’s missing, and takes away only that file. Experimental.",
+    "zh-Hans": "通过 Bitwarden 应用（例如触控 ID）解锁扩展。仅在缺少所需连接文件时添加，关闭时仅移除该文件。实验性功能。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.appIcon.title": {
+    "en": "App Icon",
+    "zh-Hans": "应用图标",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.appIcon.detail": {
+    "en": "Choose a different icon for Dia. It follows the icon style you choose in System Settings.",
+    "zh-Hans": "选择其他 Dia 图标，遵循系统设置中的图标风格。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.keepWindowsActive.title": {
+    "en": "Keep Windows Active",
+    "zh-Hans": "保持窗口活跃外观",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.keepWindowsActive.detail": {
+    "en": "Keep windows looking active, with their shadow, sidebar color and window buttons, when you switch to another app. Experimental.",
+    "zh-Hans": "切换到其他应用时，保留窗口阴影、侧边栏颜色和窗口按钮的活跃外观。实验性功能。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.squareSidebarCorners.title": {
+    "en": "Square Corners Next to Sidebar",
+    "zh-Hans": "侧边栏相邻处使用直角",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.squareSidebarCorners.detail": {
+    "en": "Give web pages square corners where they meet the sidebar.",
+    "zh-Hans": "网页与侧边栏相接的边角使用直角。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.edgeToEdge.title": {
+    "en": "Edge-to-Edge Web Pages",
+    "zh-Hans": "网页铺满窗口",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.edgeToEdge.detail": {
+    "en": "Remove the padding between web pages and the window edge.",
+    "zh-Hans": "移除网页与窗口边缘之间的留白。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.hideTabGroupBackground.title": {
+    "en": "Hide Group Background",
+    "zh-Hans": "隐藏标签组背景",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.hideTabGroupBackground.detail": {
+    "en": "Leave an open tab group without the grey behind it, unless you've picked a colour for the group.",
+    "zh-Hans": "未指定分组颜色时，移除展开标签组后方的灰色背景。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.quietDownloads.title": {
+    "en": "Don’t Open Downloads List",
+    "zh-Hans": "不自动打开下载列表",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.quietDownloads.detail": {
+    "en": "Stop the downloads list from opening each time a download starts. The downloads button still shows progress.",
+    "zh-Hans": "开始下载时不弹出下载列表，下载按钮仍显示进度。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.littleDia.title": {
+    "en": "Little Dia",
+    "zh-Hans": "Little Dia 小窗口",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.littleDia.detail": {
+    "en": "Opens links from other apps, like Slack or Mail, in a small window instead of a tab, and so does right-clicking a link and choosing Open Link in Little Dia. It has back, forward, reload and an editable address. Open in Dia or ⌘O keeps it as a tab. Option-click opens a tab.",
+    "zh-Hans": "从 Slack、邮件等应用打开的链接使用小窗口，也可右键选择在 Little Dia 中打开。支持导航和编辑地址，点击在 Dia 中打开或按 ⌘O 转为标签页。按住 Option 点击则直接打开标签页。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.littleDiaEscapeCloses.title": {
+    "en": "Close with Escape",
+    "zh-Hans": "按 Escape 关闭",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.littleDiaEscapeCloses.detail": {
+    "en": "Press Escape to close the Little Dia window. Pages that use Escape themselves, like a dialog on the page, won’t see it.",
+    "zh-Hans": "按 Escape 关闭 Little Dia 窗口。页面自身的 Escape 操作（例如关闭网页对话框）将不会收到按键。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.newTabNextToCurrent.title": {
+    "en": "Open New Tabs Next to Current",
+    "zh-Hans": "在当前标签旁打开新标签",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.newTabNextToCurrent.detail": {
+    "en": "A new tab opens right after the tab you’re on, not at the end, as in Arc and Chrome. Close it and you’re back on the tab you came from. On a pinned tab, it opens at the top of the unpinned tabs.",
+    "zh-Hans": "像 Arc 和 Chrome 一样在当前标签后打开新标签，关闭后返回原标签。从固定标签打开时，新标签位于未固定标签的顶部。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.compactTabRows.title": {
+    "en": "Compact Tab Rows",
+    "zh-Hans": "紧凑标签行",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.compactTabRows.detail": {
+    "en": "Make the sidebar's tabs and folders as short as before Dia 1.57, so more fit.",
+    "zh-Hans": "将侧边栏标签和文件夹缩短至 Dia 1.57 之前的高度，以容纳更多内容。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.hideRecentTabsButton.title": {
+    "en": "Hide Recent Tabs Button",
+    "zh-Hans": "隐藏最近标签按钮",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.hideRecentTabsButton.detail": {
+    "en": "Hide the recent tabs button in the tab bar or sidebar.",
+    "zh-Hans": "隐藏标签栏或侧边栏中的最近标签按钮。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.splitClientHello.title": {
+    "en": "Split TLS ClientHello",
+    "zh-Hans": "拆分 TLS ClientHello",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.splitClientHello.detail": {
+    "en": "Send each HTTPS connection’s first message in two pieces, cut inside the site’s name, to get past networks that block sites by name. Not HTTP/3, DNS or address blocks, and a few servers refuse it. While on, Dia’s network code runs inside Dia, outside its sandbox. Experimental.",
+    "zh-Hans": "在网站名称中间拆分每个 HTTPS 连接的首条消息，以绕过按名称拦截的网络。不适用于 HTTP/3、DNS 或地址封锁，部分服务器可能拒绝连接。开启时网络代码运行于 Dia 主进程，位于沙盒之外。实验性功能。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.hideSidebarButton.title": {
+    "en": "Hide Sidebar Button",
+    "zh-Hans": "隐藏侧边栏按钮",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.hideSidebarButton.detail": {
+    "en": "Hide the sidebar toggle at the top left of the toolbar.",
+    "zh-Hans": "隐藏工具栏左上角的侧边栏开关。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.hideReloadNudge.title": {
+    "en": "Hide Site Not Working Prompt",
+    "zh-Hans": "隐藏网站异常提示",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.hideReloadNudge.detail": {
+    "en": "Stop the “not working correctly?” prompt that offers to turn off the ad blocker after you reload a page a few times.",
+    "zh-Hans": "多次刷新后，不再提示关闭广告拦截器来修复网站。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.profileShortcuts.title": {
+    "en": "Switch Profiles with ⌘1–9",
+    "zh-Hans": "使用 ⌘1–9 切换个人资料",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.profileShortcuts.detail": {
+    "en": "Press ⌘ and a number to switch to that profile, like Arc's spaces. The sidebar's items move to ⌃ and a number.",
+    "zh-Hans": "按 ⌘ 加数字切换个人资料，类似 Arc 空间。侧边栏项目改用 ⌃ 加数字。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.mouseBackForward.title": {
+    "en": "Mouse Back and Forward Buttons",
+    "zh-Hans": "鼠标前进和后退按钮",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.mouseBackForward.detail": {
+    "en": "Use your mouse’s side buttons to go back and forward, even on sites that block them. In split tabs, navigate the page under the pointer.",
+    "zh-Hans": "使用鼠标侧键前进和后退，即使网站阻止这些操作也有效。分屏时操作指针所在页面。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.peekPinnedLinks.title": {
+    "en": "Peek from Pinned Tabs",
+    "zh-Hans": "固定标签链接使用速览",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.peekPinnedLinks.detail": {
+    "en": "Open a link that leaves a pinned tab's site in Peek, like Arc, instead of in a new tab. Links on the same site still open in the pinned tab.",
+    "zh-Hans": "从固定标签打开其他网站的链接时使用速览，类似 Arc。同站链接仍在原标签中打开。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.peekDragLinks.title": {
+    "en": "Drag Links to Peek",
+    "zh-Hans": "拖动链接打开速览",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.peekDragLinks.detail": {
+    "en": "Drag a link and a small card appears above it. Drop the link on the card to open it in Peek, no Shift needed.",
+    "zh-Hans": "拖动链接时在上方显示小卡片，将链接放入卡片即可打开速览，无需按 Shift。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.peek.title": {
+    "en": "Peek on Shift-Click",
+    "zh-Hans": "按 Shift 点击速览",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.peek.detail": {
+    "en": "Shift-click a link to preview it in a card over the page, like Arc. Click outside, press Escape or ⌘W to close it, ⌘O to open it as a tab, or use the buttons beside it.",
+    "zh-Hans": "按住 Shift 点击链接，在页面上方卡片中预览。点击外部、按 Escape 或 ⌘W 关闭；按 ⌘O 转为标签页，也可使用旁边的按钮。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.hideSleepingTabs.title": {
+    "en": "Hide Sleeping Tabs",
+    "zh-Hans": "隐藏休眠标签页",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.hideSleepingTabs.detail": {
+    "en": "Leave tabs with nothing loaded, like a pinned tab you closed, out of the tab switcher (⌃⇥) instead of showing them as empty pictures.",
+    "zh-Hans": "标签切换器（⌃⇥）不再显示尚未加载内容的标签（例如已关闭页面的固定标签），避免出现空白缩略图。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  }
+}

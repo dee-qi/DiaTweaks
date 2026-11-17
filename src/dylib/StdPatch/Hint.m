@@ -15,7 +15,7 @@ static char DPHintKey;
 - (void)show {
     NSView *view = self.view;
     if (!self.text || self.popover.shown || !view.window || view.hiddenOrHasHiddenAncestor) return;
-    NSTextField *label = [NSTextField wrappingLabelWithString:self.text];
+    NSTextField *label = [NSTextField wrappingLabelWithString:DPLocalize(self.text, @"tweaks")];
     label.preferredMaxLayoutWidth = 240;
     label.translatesAutoresizingMaskIntoConstraints = NO;
     NSView *content = [NSView new];

@@ -1,0 +1,205 @@
+{
+  "tweak.control.position": {
+    "en": "Position",
+    "zh-Hans": "位置",
+    "contexts": [
+      "tweaks"
+    ]
+  },
+  "tweak.control.space.above.bar": {
+    "en": "Space Above Bar",
+    "zh-Hans": "命令栏上方间距",
+    "contexts": [
+      "tweaks"
+    ]
+  },
+  "tweak.control.blur.radius": {
+    "en": "Blur Radius",
+    "zh-Hans": "模糊半径",
+    "contexts": [
+      "tweaks"
+    ]
+  },
+  "tweak.control.blur.sidebar.too": {
+    "en": "Blur Sidebar Too",
+    "zh-Hans": "同时模糊侧边栏",
+    "contexts": [
+      "tweaks"
+    ]
+  },
+  "tweak.control.darkness": {
+    "en": "Darkness",
+    "zh-Hans": "调暗程度",
+    "contexts": [
+      "tweaks"
+    ]
+  },
+  "tweak.control.shadow.intensity": {
+    "en": "Shadow Intensity",
+    "zh-Hans": "阴影强度",
+    "contexts": [
+      "tweaks"
+    ]
+  },
+  "tweak.control.like.spotlight": {
+    "en": "Like Spotlight",
+    "zh-Hans": "与聚焦搜索相同",
+    "contexts": [
+      "tweaks"
+    ]
+  },
+  "tweak.control.center.of.window": {
+    "en": "Center of Window",
+    "zh-Hans": "窗口中央",
+    "contexts": [
+      "tweaks"
+    ]
+  },
+  "tweak.control.center.of.page": {
+    "en": "Center of Page",
+    "zh-Hans": "页面中央",
+    "contexts": [
+      "tweaks"
+    ]
+  },
+  "tweak.control.window.width": {
+    "en": "Window Width",
+    "zh-Hans": "窗口宽度",
+    "contexts": [
+      "tweaks"
+    ]
+  },
+  "tweak.control.window.height": {
+    "en": "Window Height",
+    "zh-Hans": "窗口高度",
+    "contexts": [
+      "tweaks"
+    ]
+  },
+  "tweak.control.speed": {
+    "en": "Speed",
+    "zh-Hans": "速度",
+    "contexts": [
+      "tweaks"
+    ]
+  },
+  "tweak.control.darken.the.page.behind": {
+    "en": "Darken the page behind",
+    "zh-Hans": "调暗后方页面",
+    "contexts": [
+      "tweaks"
+    ]
+  },
+  "tweak.control.show.address.toolbar": {
+    "en": "Show Address Toolbar",
+    "zh-Hans": "显示地址工具栏",
+    "contexts": [
+      "tweaks"
+    ]
+  },
+  "tweak.control.show.back.forward.reload.and.the.address.across.the.top.of.the.card.like.little.dia.it.hides.and.shows.with.hide.toolbar": {
+    "en": "Show back, forward, reload and the address across the top of the card, like Little Dia. It hides and shows with Hide Toolbar.",
+    "zh-Hans": "像 Little Dia 一样，在预览卡片顶部显示后退、前进、刷新和地址。它会随“隐藏工具栏”一起隐藏和显示。",
+    "contexts": [
+      "tweaks"
+    ]
+  },
+  "tweak.control.genie.effect": {
+    "en": "Genie Effect",
+    "zh-Hans": "神奇效果",
+    "contexts": [
+      "tweaks"
+    ]
+  },
+  "tweak.control.grow.the.card.out.of.the.link.you.clicked.and.shrink.it.back.into.it.as.it.closes": {
+    "en": "Grow the card out of the link you clicked, and shrink it back into it as it closes.",
+    "zh-Hans": "从点按的链接展开预览卡片，关闭时将其缩回链接。",
+    "contexts": [
+      "tweaks"
+    ]
+  },
+  "tweak.control.26.pt.is.macos.26.10.pt.is.macos.11.to.15.and.0.is.square": {
+    "en": "26 pt is macOS 26, 10 pt is macOS 11 to 15, and 0 is square.",
+    "zh-Hans": "26 点对应 macOS 26，10 点对应 macOS 11 至 15，0 表示直角。",
+    "contexts": [
+      "tweaks"
+    ]
+  },
+  "tweak.control.blue": {
+    "en": "Blue",
+    "zh-Hans": "蓝色",
+    "contexts": [
+      "tweaks"
+    ]
+  },
+  "tweak.control.purple": {
+    "en": "Purple",
+    "zh-Hans": "紫色",
+    "contexts": [
+      "tweaks"
+    ]
+  },
+  "tweak.control.pink": {
+    "en": "Pink",
+    "zh-Hans": "粉色",
+    "contexts": [
+      "tweaks"
+    ]
+  },
+  "tweak.control.orange": {
+    "en": "Orange",
+    "zh-Hans": "橙色",
+    "contexts": [
+      "tweaks"
+    ]
+  },
+  "tweak.control.green": {
+    "en": "Green",
+    "zh-Hans": "绿色",
+    "contexts": [
+      "tweaks"
+    ]
+  },
+  "tweak.control.graphite": {
+    "en": "Graphite",
+    "zh-Hans": "石墨色",
+    "contexts": [
+      "tweaks"
+    ]
+  },
+  "tweak.control.color": {
+    "en": "Color",
+    "zh-Hans": "颜色",
+    "contexts": [
+      "tweaks"
+    ]
+  },
+  "tweak.control.accent.color": {
+    "en": "Accent Color",
+    "zh-Hans": "强调色",
+    "contexts": [
+      "tweaks"
+    ]
+  },
+  "tweak.control.icon": {
+    "en": "Icon",
+    "zh-Hans": "图标",
+    "contexts": [
+      "tweaks"
+    ]
+  },
+  "tweak.control.hud.window": {
+    "en": "HUD Window",
+    "zh-Hans": "浮动面板窗口",
+    "contexts": [
+      "tweaks"
+    ]
+  },
+  "tweak.control.av.player": {
+    "en": "AV Player",
+    "zh-Hans": "影音播放器",
+    "contexts": [
+      "tweaks"
+    ]
+  }
+}

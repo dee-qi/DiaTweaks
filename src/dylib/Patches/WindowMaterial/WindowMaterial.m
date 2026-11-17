@@ -32,7 +32,7 @@ static NSMenu *DPMaterialChoices(void) {
     if (!DPGlassEffectView()) return menu;
     [menu addItem:[NSMenuItem sectionHeaderWithTitle:@"Liquid Glass"]];
     for (NSUInteger i = 0; i < sizeof DPGlasses / sizeof *DPGlasses; i++)
-        [menu addItemWithTitle:DPGlasses[i] action:nil keyEquivalent:@""].representedObject = [NSString stringWithFormat:@"glass.%lu", i];
+        [menu addItemWithTitle:DPLocalize(DPGlasses[i], @"material") action:nil keyEquivalent:@""].representedObject = [NSString stringWithFormat:@"glass.%lu", i];
     return menu;
 }
 

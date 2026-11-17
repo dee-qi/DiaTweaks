@@ -1,0 +1,560 @@
+{
+  "shortcut.description.open.dia.s.settings": {
+    "en": "Open Dia’s Settings.",
+    "zh-Hans": "打开 Dia 的设置。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.create.a.new.tab": {
+    "en": "Create a new tab.",
+    "zh-Hans": "新建一个标签页。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.create.a.new.tab.inside.the.current.tab.group.or.a.regular.new.tab.if.not.in.a.group": {
+    "en": "Create a new tab inside the current tab group, or a regular new tab if not in a group.",
+    "zh-Hans": "在当前标签组内新建标签页；如果当前标签页不属于任何分组，则新建普通标签页。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.create.a.new.window": {
+    "en": "Create a new window.",
+    "zh-Hans": "新建一个窗口。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.create.a.new.incognito.window": {
+    "en": "Create a new incognito window.",
+    "zh-Hans": "新建一个无痕窗口。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.reopen.the.most.recently.closed.tab": {
+    "en": "Reopen the most recently closed tab.",
+    "zh-Hans": "重新打开最近关闭的标签页。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.open.the.command.bar.to.search.the.web.or.start.a.new.chat": {
+    "en": "Open the Command Bar to search the web or start a new Chat.",
+    "zh-Hans": "打开命令栏，以搜索网页或开始新聊天。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.close.the.frontmost.window": {
+    "en": "Close the frontmost window.",
+    "zh-Hans": "关闭最前面的窗口。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.close.the.tab.that.s.in.focus": {
+    "en": "Close the tab that’s in focus.",
+    "zh-Hans": "关闭当前聚焦的标签页。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.close.all.tabs.in.the.current.window": {
+    "en": "Close all tabs in the current window.",
+    "zh-Hans": "关闭当前窗口中的所有标签页。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.close.duplicate.and.unused.tabs": {
+    "en": "Close duplicate and unused tabs.",
+    "zh-Hans": "关闭重复和未使用的标签页。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.share.the.url.of.the.current.page": {
+    "en": "Share the URL of the current page.",
+    "zh-Hans": "分享当前页面的网址。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.print.the.current.page.or.save.it.as.a.pdf": {
+    "en": "Print the current page, or save it as a PDF.",
+    "zh-Hans": "打印当前页面，或将其保存为 PDF。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.copy.the.current.url.to.your.clipboard.without.any.trackers": {
+    "en": "Copy the current URL to your clipboard without any trackers.",
+    "zh-Hans": "移除跟踪参数后，将当前网址复制到剪贴板。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.copy.the.current.url.as.markdown.to.your.clipboard.without.any.trackers": {
+    "en": "Copy the current URL as Markdown to your clipboard without any trackers.",
+    "zh-Hans": "移除跟踪参数后，将当前网址以 Markdown 格式复制到剪贴板。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.opens.a.search.box.to.find.words.on.the.current.page": {
+    "en": "Opens a search box to find words on the current page.",
+    "zh-Hans": "打开搜索框，在当前页面中查找文字。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.jumps.to.the.next.time.your.search.query.appears.on.the.page": {
+    "en": "Jumps to the next time your search query appears on the page.",
+    "zh-Hans": "跳转到页面中下一个匹配搜索内容的位置。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.jumps.to.the.previous.time.your.search.query.appears.on.the.page": {
+    "en": "Jumps to the previous time your search query appears on the page.",
+    "zh-Hans": "跳转到页面中上一个匹配搜索内容的位置。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.opens.a.search.box.to.find.the.words.you.ve.highlighted.on.the.current.page": {
+    "en": "Opens a search box to find the words you’ve highlighted on the current page.",
+    "zh-Hans": "打开搜索框，在当前页面中查找选中的文字。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.refresh.the.current.page": {
+    "en": "Refresh the current page.",
+    "zh-Hans": "刷新当前页面。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.refresh.the.page.and.clear.any.local.caching": {
+    "en": "Refresh the page and clear any local caching.",
+    "zh-Hans": "刷新页面并清除本地缓存。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.display.tabs.vertically.in.a.sidebar": {
+    "en": "Display tabs vertically in a sidebar.",
+    "zh-Hans": "在侧边栏中纵向显示标签页。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.hide.tabs.to.minimize.distractions": {
+    "en": "Hide tabs to minimize distractions.",
+    "zh-Hans": "隐藏标签页，减少干扰。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.add.a.new.page.to.your.current.split.view": {
+    "en": "Add a new page to your current Split View.",
+    "zh-Hans": "为当前分屏视图添加一个新页面。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.move.focus.to.the.next.pane.in.your.split.view": {
+    "en": "Move focus to the next pane in your Split View.",
+    "zh-Hans": "将焦点移至分屏视图中的下一个窗格。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.move.focus.to.the.previous.pane.in.your.split.view": {
+    "en": "Move focus to the previous pane in your Split View.",
+    "zh-Hans": "将焦点移至分屏视图中的上一个窗格。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.always.show.the.bookmarks.bar": {
+    "en": "Always show the bookmarks bar.",
+    "zh-Hans": "始终显示书签栏。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.toggle.the.bookmarks.bar.on.or.off": {
+    "en": "Toggle the bookmarks bar on or off.",
+    "zh-Hans": "显示或隐藏书签栏。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.zoom.to.actual.page.size": {
+    "en": "Zoom to actual page size.",
+    "zh-Hans": "将页面缩放恢复为实际大小。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.increases.the.magnification.of.the.current.website": {
+    "en": "Increases the magnification of the current website.",
+    "zh-Hans": "放大当前网页。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.decreases.the.magnification.of.the.current.website": {
+    "en": "Decreases the magnification of the current website.",
+    "zh-Hans": "缩小当前网页。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.opens.the.developer.tools.window": {
+    "en": "Opens the developer tools window.",
+    "zh-Hans": "打开开发者工具窗口。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.opens.the.element.inspector": {
+    "en": "Opens the element inspector.",
+    "zh-Hans": "打开元素检查器。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.opens.the.javascript.console": {
+    "en": "Opens the JavaScript console.",
+    "zh-Hans": "打开 JavaScript 控制台。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.go.back.to.the.last.page.you.visited.in.this.tab": {
+    "en": "Go back to the last page you visited in this tab.",
+    "zh-Hans": "返回此标签页中上一个访问过的页面。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.go.forward.to.page.you.had.previously.visited.in.this.tab": {
+    "en": "Go forward to page you had previously visited in this tab.",
+    "zh-Hans": "前往此标签页中之前访问过的下一页。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.jump.to.the.next.tab.in.your.sidebar": {
+    "en": "Jump to the next tab in your Sidebar.",
+    "zh-Hans": "切换到侧边栏中的下一个标签页。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.jump.to.the.previous.tab.in.your.sidebar": {
+    "en": "Jump to the previous tab in your Sidebar.",
+    "zh-Hans": "切换到侧边栏中的上一个标签页。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.switch.to.the.previous.profile": {
+    "en": "Switch to the previous Profile.",
+    "zh-Hans": "切换到上一个个人资料。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.switch.to.the.next.profile": {
+    "en": "Switch to the next Profile.",
+    "zh-Hans": "切换到下一个个人资料。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.search.through.all.open.tabs": {
+    "en": "Search through all open tabs.",
+    "zh-Hans": "搜索所有已打开的标签页。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.pin.or.unpin.the.current.tab": {
+    "en": "Pin or unpin the current tab.",
+    "zh-Hans": "固定或取消固定当前标签页。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.create.a.copy.of.the.current.tab": {
+    "en": "Create a copy of the current tab.",
+    "zh-Hans": "创建当前标签页的副本。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.reset.the.pinned.tab.to.its.base.url": {
+    "en": "Reset the Pinned Tab to its Base URL.",
+    "zh-Hans": "将固定标签页重置为其原始网址。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.move.the.selected.tabs.into.a.new.tab.group": {
+    "en": "Move the selected tabs into a new tab group.",
+    "zh-Hans": "将选中的标签页移入新标签组。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.open.the.tab.switcher.where.you.can.cycle.through.recent.tabs": {
+    "en": "Open the tab switcher, where you can cycle through recent tabs.",
+    "zh-Hans": "打开标签切换器，循环切换最近使用的标签页。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.cycle.backwards.through.your.most.recent.tabs.for.quick.access": {
+    "en": "Cycle backwards through your most recent tabs for quick access.",
+    "zh-Hans": "反向循环切换最近使用的标签页，以便快速访问。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.save.the.current.page.to.your.bookmarks": {
+    "en": "Save the current page to your bookmarks.",
+    "zh-Hans": "将当前页面保存到书签。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.open.the.bookmarks.manager": {
+    "en": "Open the bookmarks manager.",
+    "zh-Hans": "打开书签管理器。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.open.your.history.in.a.new.tab": {
+    "en": "Open your History in a new tab.",
+    "zh-Hans": "在新标签页中打开历史记录。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.open.your.downloads": {
+    "en": "Open your downloads.",
+    "zh-Hans": "打开下载内容。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.switch.to.profile.1": {
+    "en": "Switch to Profile 1.",
+    "zh-Hans": "切换到个人资料 1。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.open.the.profile.switcher.to.change.profiles": {
+    "en": "Open the profile switcher to change profiles.",
+    "zh-Hans": "打开个人资料切换器，以切换个人资料。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.merge.all.tabs.across.all.windows.into.the.fewest.possible.windows": {
+    "en": "Merge all tabs, across all windows, into the fewest possible windows.",
+    "zh-Hans": "将所有窗口中的标签页合并到尽可能少的窗口中。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.copy.app.and.system.diagnostics.to.the.clipboard": {
+    "en": "Copy app and system diagnostics to the clipboard.",
+    "zh-Hans": "将应用和系统的诊断信息复制到剪贴板。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.profile.2": {
+    "en": "Switch to Profile 2.",
+    "zh-Hans": "切换到个人资料 2。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.profile.3": {
+    "en": "Switch to Profile 3.",
+    "zh-Hans": "切换到个人资料 3。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.profile.4": {
+    "en": "Switch to Profile 4.",
+    "zh-Hans": "切换到个人资料 4。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.profile.5": {
+    "en": "Switch to Profile 5.",
+    "zh-Hans": "切换到个人资料 5。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.profile.6": {
+    "en": "Switch to Profile 6.",
+    "zh-Hans": "切换到个人资料 6。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.profile.7": {
+    "en": "Switch to Profile 7.",
+    "zh-Hans": "切换到个人资料 7。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.profile.8": {
+    "en": "Switch to Profile 8.",
+    "zh-Hans": "切换到个人资料 8。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.description.profile.9": {
+    "en": "Switch to Profile 9.",
+    "zh-Hans": "切换到个人资料 9。",
+    "contexts": [
+      "settings",
+      "shortcut"
+    ]
+  },
+  "shortcut.conflict.scope": {
+    "en": "When shortcut conflicts",
+    "zh-Hans": "快捷键冲突时",
+    "contexts": [
+      "shortcut",
+      "settings",
+      "menu"
+    ]
+  },
+  "shortcut.website.first": {
+    "en": "Use Website First",
+    "zh-Hans": "优先用于网站",
+    "contexts": [
+      "shortcut",
+      "settings",
+      "menu"
+    ]
+  },
+  "shortcut.website.prompt": {
+    "en": "Prompt after using on Website",
+    "zh-Hans": "用于网站后显示提示",
+    "contexts": [
+      "shortcut",
+      "settings",
+      "menu"
+    ]
+  },
+  "shortcut.dia.first": {
+    "en": "Use Dia First",
+    "zh-Hans": "优先用于 Dia",
+    "contexts": [
+      "shortcut",
+      "settings",
+      "menu"
+    ]
+  },
+  "shortcut.reset.all": {
+    "en": "Reset All Shortcuts",
+    "zh-Hans": "重置所有快捷键",
+    "contexts": [
+      "shortcut",
+      "settings",
+      "menu"
+    ]
+  },
+  "shortcut.conflict.inline": {
+    "en": "This shortcut conflicts with another shortcut:",
+    "zh-Hans": "此快捷键与另一个快捷键冲突：",
+    "contexts": [
+      "shortcut",
+      "settings",
+      "menu"
+    ]
+  }
+}
