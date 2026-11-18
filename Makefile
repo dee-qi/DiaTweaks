@@ -78,8 +78,8 @@ TIDY := src/dylib/Patches/TidyTabs/Tabs.m src/dylib/Patches/CommandBar/Tabs.m sr
 build/tidy-tabs: tests/tidy-tabs.m $(TIDY) | build
 	clang $(CFLAGS) -Isrc/dylib -framework AppKit -framework QuartzCore -o $@ $^
 
-build/drag-offset: tests/drag-offset.m src/dylib/Patches/CompactTabRows/CompactTabRows.m src/dylib/StdPatch/Hook.m src/dylib/StdPatch/Views.m $(wildcard src/dylib/StdPatch/*.h) | build
-	clang $(CFLAGS) -Isrc/dylib -framework AppKit -o $@ tests/drag-offset.m src/dylib/StdPatch/Hook.m src/dylib/StdPatch/Views.m
+build/drag-offset: tests/drag-offset.m src/dylib/Patches/CompactTabRows/CompactTabRows.m src/dylib/StdPatch/Hook.m src/dylib/StdPatch/Views.m src/dylib/Localization/Catalog.m build/Catalog.inc $(wildcard src/dylib/StdPatch/*.h) | build
+	clang $(CFLAGS) -Isrc/dylib -Ibuild -framework AppKit -o $@ tests/drag-offset.m src/dylib/StdPatch/Hook.m src/dylib/StdPatch/Views.m src/dylib/Localization/Catalog.m
 
 build/launch-flags: tests/launch-flags.m src/dylib/StdPatch/Extensions.m src/dylib/StdPatch/Hook.m $(wildcard src/dylib/StdPatch/*.h) | build
 	clang $(CFLAGS) -Isrc/dylib -framework AppKit -o $@ tests/launch-flags.m src/dylib/StdPatch/Hook.m

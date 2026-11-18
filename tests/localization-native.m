@@ -103,6 +103,14 @@ int main(void) { @autoreleasepool {
     assert([DPLocalize(@"Automatic Picture-In-Picture", @"menu") isEqual:@"自动画中画"]);
     assert([DPLocalize(@"Site Settings", @"menu") isEqual:@"网站设置"]);
     assert([DPLocalize(@"Connection is secure", @"menu") isEqual:@"连接安全"]);
+    // Installer reasons reach Software Update verbatim; translate the wrapper only.
+    NSString *reason = @"the download holds build 199, not 200";
+    assert([DPLocalize([@"Couldn’t verify this version: " stringByAppendingString:reason], @"tweaks")
+        isEqual:[@"无法验证此版本：" stringByAppendingString:reason]]);
+    assert([DPLocalize(@"Couldn’t patch this version: /Users/test/Dia.app: Code 6 %2$@", @"tweaks")
+        isEqual:@"无法修补此版本：/Users/test/Dia.app: Code 6 %2$@"]);
+    assert([DPLocalize(@"Couldn’t verify this version: User title", @"website")
+        isEqual:@"Couldn’t verify this version: User title"]);
     Class errorClass=objc_allocateClassPair(NSViewController.class, "TestNativeErrorViewController", 0);
     objc_registerClassPair(errorClass);
     NSViewController *errorController=[errorClass new];

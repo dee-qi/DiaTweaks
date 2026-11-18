@@ -53,5 +53,23 @@
     ],
     "pattern": "^Today at ([0-9: APMapm]+)$",
     "prefix": "Today at "
+  },
+  "dynamic.updates.couldnt.verify": {
+    "en": "Couldn’t verify this version: %1$@",
+    "zh-Hans": "无法验证此版本：%1$@",
+    "contexts": [
+      "tweaks"
+    ],
+    "pattern": "^Couldn’t verify this version: (.+)$",
+    "prefix": "Couldn’t verify this version: "
+  },
+  "dynamic.updates.couldnt.patch": {
+    "en": "Couldn’t patch this version: %1$@",
+    "zh-Hans": "无法修补此版本：%1$@",
+    "contexts": [
+      "tweaks"
+    ],
+    "pattern": "^Couldn’t patch this version: (.+)$",
+    "prefix": "Couldn’t patch this version: "
   }
 }
