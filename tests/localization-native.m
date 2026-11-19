@@ -151,6 +151,16 @@ int main(void) { @autoreleasepool {
     assert([command.title isEqual:@"编辑固定页面"]);
     assert([menu itemWithTitle:@"Edit Pinned Page"]==command);
     assert([command.keyEquivalent isEqual:@"w"]);
+    NSMenuItem *newTab=[[NSMenuItem alloc] initWithTitle:@"New Tab" action:NULL keyEquivalent:@"t"];
+    newTab.keyEquivalentModifierMask=NSEventModifierFlagCommand;
+    [menu addItem:newTab];
+    assert([newTab.title isEqual:@"新建标签页"]);
+    assert(DPTextMatches(DPOriginalText(newTab, @"title", newTab.title), @"New Tab"));
+    assert([newTab.keyEquivalent isEqual:@"t"]);
+    assert(newTab.keyEquivalentModifierMask==NSEventModifierFlagCommand);
+    // A reused menu item must not keep matching its former command.
+    newTab.title=@"Close Tab";
+    assert(!DPTextMatches(DPOriginalText(newTab, @"title", newTab.title), @"New Tab"));
     NSTextField *input=[NSTextField new]; input.stringValue=@"General";
     input.placeholderAttributedString=[[NSAttributedString alloc] initWithString:@"Search" attributes:@{NSForegroundColorAttributeName:NSColor.secondaryLabelColor}];
     [window.contentView addSubview:input]; DPTranslateView(input);

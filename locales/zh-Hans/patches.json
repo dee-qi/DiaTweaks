@@ -675,8 +675,8 @@
     ]
   },
   "patch.hideToolbar.detail": {
-    "en": "Hide the bar with the address field, navigation buttons and extensions. Experimental.",
-    "zh-Hans": "隐藏包含地址栏、导航按钮和扩展程序的工具栏。实验性功能。",
+    "en": "Hide the bar with the address field, navigation buttons and extensions. It opens for website permission prompts. Experimental.",
+    "zh-Hans": "隐藏包含地址栏、导航按钮和扩展程序的工具栏。网站请求权限时会显示工具栏。实验性功能。",
     "contexts": [
       "tweaks",
       "settings",
@@ -1397,6 +1397,42 @@
   "patch.hideSleepingTabs.detail": {
     "en": "Leave tabs with nothing loaded, like a pinned tab you closed, out of the tab switcher (⌃⇥) instead of showing them as empty pictures.",
     "zh-Hans": "标签切换器（⌃⇥）不再显示尚未加载内容的标签（例如已关闭页面的固定标签），避免出现空白缩略图。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.commandBarHideTab.title": {
+    "en": "Hide New Tab Until Opened",
+    "zh-Hans": "打开结果前隐藏新标签页",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.commandBarHideTab.detail": {
+    "en": "Keep the new tab out of the sidebar and the tab bar while the command bar is open. The New Tab button shows as selected instead, and clicking it again closes the bar. The tab shows once you choose a result. Experimental.",
+    "zh-Hans": "命令栏打开时，在侧边栏和顶部标签栏中隐藏新标签页，改为将“新建标签页”按钮显示为选中状态。再次点击该按钮可关闭命令栏，选择结果后才显示标签页。实验性功能。",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.littleDiaFollowRules.title": {
+    "en": "Follow Link Rules",
+    "zh-Hans": "遵循链接规则",
+    "contexts": [
+      "tweaks",
+      "settings",
+      "menu"
+    ]
+  },
+  "patch.littleDiaFollowRules.detail": {
+    "en": "Hands links from other apps to Dia untouched, so its Link Rules pick the profile and they open as tabs, not in Little Dia. Right-clicking a link and choosing Open Link in Little Dia still works.",
+    "zh-Hans": "将其他应用的链接交由 Dia 按链接规则选择个人资料，并作为标签页打开。仍可右键点击链接，选择“在 Little Dia 中打开链接”。",
     "contexts": [
       "tweaks",
       "settings",

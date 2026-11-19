@@ -1,3 +1,4 @@
+#import "Localization/Localization.h"
 #import "Patches/CommandBar/HideTab.h"
 #import "Patches/CommandBar/Tabs.h"
 #import "Patches/CommandBar/CommandBarOverlay.h"
@@ -157,7 +158,7 @@ static void DPInstallHideTab(void) {
     // The New Tab menu item, however it's chosen, before it makes the tab.
     [center addObserverForName:NSMenuWillSendActionNotification object:nil queue:nil usingBlock:^(NSNotification *note) {
         NSMenuItem *item = note.userInfo[@"MenuItem"];
-        if ([item.title isEqualToString:@"New Tab"] && NSApp.keyWindow) DPExpectNewTab(NSApp.keyWindow);
+        if (DPTextMatches(DPOriginalText(item, @"title", item.title), @"New Tab") && NSApp.keyWindow) DPExpectNewTab(NSApp.keyWindow);
     }];
     [center addObserverForName:NSWindowWillCloseNotification object:nil queue:nil usingBlock:^(NSNotification *note) { DPForgetWindow(note.object); }];
     for (NSNotificationName name in @[ NSWindowWillEnterFullScreenNotification, NSWindowWillExitFullScreenNotification ])

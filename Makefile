@@ -84,22 +84,22 @@ build/drag-offset: tests/drag-offset.m src/dylib/Patches/CompactTabRows/CompactT
 build/little-dia-stack: tests/little-dia-stack.m src/dylib/Patches/LittleDia/Stack.m $(wildcard src/dylib/StdPatch/*.h) | build
 	clang $(CFLAGS) -Isrc/dylib -framework AppKit -o $@ $<
 
-build/tracking: tests/tracking.m src/dylib/Commands/GroupTabs/Tracking.m src/dylib/Commands/GroupTabs/Messages.m src/dylib/StdPatch/Hook.m src/dylib/StdPatch/Views.m $(wildcard src/dylib/StdPatch/*.h) | build
-	clang $(CFLAGS) -Isrc/dylib -framework AppKit -o $@ tests/tracking.m src/dylib/StdPatch/Hook.m src/dylib/StdPatch/Views.m src/dylib/Commands/GroupTabs/Messages.m
+build/tracking: tests/tracking.m src/dylib/Commands/GroupTabs/Tracking.m src/dylib/Commands/GroupTabs/Messages.m src/dylib/StdPatch/Hook.m src/dylib/StdPatch/Views.m $(wildcard src/dylib/StdPatch/*.h) src/dylib/Localization/Catalog.m build/Catalog.inc | build
+	clang $(CFLAGS) -Isrc/dylib -Ibuild -framework AppKit -o $@ tests/tracking.m src/dylib/StdPatch/Hook.m src/dylib/StdPatch/Views.m src/dylib/Commands/GroupTabs/Messages.m src/dylib/Localization/Catalog.m
 
-build/little-dia-over: tests/little-dia-over.m src/dylib/Patches/LittleDia/Route.m src/dylib/StdPatch/Hook.m src/dylib/StdPatch/Views.m $(wildcard src/dylib/StdPatch/*.h) | build
-	clang $(CFLAGS) -Isrc/dylib -framework AppKit -o $@ tests/little-dia-over.m src/dylib/StdPatch/Hook.m src/dylib/StdPatch/Views.m
+build/little-dia-over: tests/little-dia-over.m src/dylib/Patches/LittleDia/Route.m src/dylib/StdPatch/Hook.m src/dylib/StdPatch/Views.m $(wildcard src/dylib/StdPatch/*.h) src/dylib/Localization/Catalog.m build/Catalog.inc | build
+	clang $(CFLAGS) -Isrc/dylib -Ibuild -framework AppKit -o $@ tests/little-dia-over.m src/dylib/StdPatch/Hook.m src/dylib/StdPatch/Views.m src/dylib/Localization/Catalog.m
 
 HIDE_TOOLBAR_DIR := src/dylib/Patches/HideToolbar
 HIDE_TOOLBAR_LAYOUT := $(addprefix $(HIDE_TOOLBAR_DIR)/,HideToolbar.m Layout.m Hover.m Permission.m)
 HIDE_TOOLBAR := $(HIDE_TOOLBAR_LAYOUT) $(addprefix $(HIDE_TOOLBAR_DIR)/,RevealOnHover.m ShowOnNewTab.m ShowWithSidebar.m ShowWithTopTabs.m)
 SETTLE := src/dylib/Test/Scenarios.m src/dylib/StdPatch/Patch.m src/dylib/StdPatch/Views.m src/dylib/StdPatch/Hook.m $(HIDE_TOOLBAR)
 
-build/toolbar-permission: tests/toolbar-permission.m $(HIDE_TOOLBAR_LAYOUT) $(HIDE_TOOLBAR_DIR)/HideToolbar.h src/dylib/StdPatch/Hook.m src/dylib/StdPatch/Views.m $(wildcard src/dylib/StdPatch/*.h) | build
-	clang $(CFLAGS) -Isrc/dylib -framework AppKit -framework QuartzCore -o $@ $(filter %.m,$^)
+build/toolbar-permission: tests/toolbar-permission.m $(HIDE_TOOLBAR_LAYOUT) $(HIDE_TOOLBAR_DIR)/HideToolbar.h src/dylib/StdPatch/Hook.m src/dylib/StdPatch/Views.m $(wildcard src/dylib/StdPatch/*.h) src/dylib/Localization/Catalog.m build/Catalog.inc | build
+	clang $(CFLAGS) -Isrc/dylib -Ibuild -framework AppKit -framework QuartzCore -o $@ $(filter %.m,$^)
 
-build/hide-toolbar-settle: tests/hide-toolbar-settle.m src/dylib/Test/Test.m $(SETTLE) $(wildcard src/dylib/StdPatch/*.h src/dylib/Patches/HideToolbar/*.h) | build
-	clang $(CFLAGS) -Isrc/dylib -framework AppKit -framework QuartzCore -o $@ tests/hide-toolbar-settle.m $(SETTLE)
+build/hide-toolbar-settle: tests/hide-toolbar-settle.m src/dylib/Test/Test.m $(SETTLE) $(wildcard src/dylib/StdPatch/*.h src/dylib/Patches/HideToolbar/*.h) src/dylib/Localization/Catalog.m build/Catalog.inc | build
+	clang $(CFLAGS) -Isrc/dylib -Ibuild -framework AppKit -framework QuartzCore -o $@ tests/hide-toolbar-settle.m $(SETTLE) src/dylib/Localization/Catalog.m
 
 build/launch-flags: tests/launch-flags.m src/dylib/StdPatch/Extensions.m src/dylib/StdPatch/Hook.m $(wildcard src/dylib/StdPatch/*.h) | build
 	clang $(CFLAGS) -Isrc/dylib -framework AppKit -o $@ tests/launch-flags.m src/dylib/StdPatch/Hook.m
