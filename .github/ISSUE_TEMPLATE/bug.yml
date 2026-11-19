@@ -55,6 +55,7 @@ body:
         - Shadow Behind Bar
         - Scroll Page Behind
         - Remember What You Typed
+        - Hide New Tab Until Opened
         - Hide History Suggestions
         - Hide New Tab Logo
         - Turn Off AI
@@ -83,6 +84,7 @@ body:
         - Hide Link Address
         - Little Dia
         - Close with Escape
+        - Follow Link Rules
         - Open Links from Tabs
         - Split TLS ClientHello
         - Patches pane in Settings
